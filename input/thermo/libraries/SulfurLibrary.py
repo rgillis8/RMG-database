@@ -3961,11 +3961,7 @@ entry(
         H298 = (47.85,'kcal/mol','+|-',1),
         S298 = (82.53,'cal/(mol*K)','+|-',1),
     ),
-<<<<<<< HEAD
-    shortDesc = u"""Calculated with CBS-QB3, 2016""",
-=======
     shortDesc = u"""Calculated at CBS-QB3 lvl of theory, Ryan Gillis""",
->>>>>>> c91af95... several modifications for DBDS modeling, adds a key reaction, adds a leaf to the kinetic tree
     longDesc = 
 u"""
 
