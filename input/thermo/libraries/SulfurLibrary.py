@@ -3961,7 +3961,7 @@ entry(
         H298 = (43.95,'kcal/mol','+|-',1),
         S298 = (82.19,'cal/(mol*K)','+|-',1),
     ),
-    shortDesc = u"""""",
+    shortDesc = u"""Calculated at CBS-QB3 lvl of theory, Ryan Gillis""",
     longDesc = 
 u"""
 
