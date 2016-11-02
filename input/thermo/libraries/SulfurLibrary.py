@@ -3957,11 +3957,15 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([27.26,35.41,42.29,47.81,55.83,61.26,68.97],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (43.95,'kcal/mol','+|-',1),
-        S298 = (82.19,'cal/(mol*K)','+|-',1),
+        Cpdata = ([27.34,35.14,41.68,47.03,55.34,61.14,68.9],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+        H298 = (47.85,'kcal/mol','+|-',1),
+        S298 = (82.53,'cal/(mol*K)','+|-',1),
     ),
-    shortDesc = u"""""",
+<<<<<<< HEAD
+    shortDesc = u"""Calculated with CBS-QB3, 2016""",
+=======
+    shortDesc = u"""Calculated at CBS-QB3 lvl of theory, Ryan Gillis""",
+>>>>>>> c91af95... several modifications for DBDS modeling, adds a key reaction, adds a leaf to the kinetic tree
     longDesc = 
 u"""
 

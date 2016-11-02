@@ -2451,3 +2451,17 @@ entry(
     shortDesc = u"""CAC CBS-QB3 1dhr""",
 )
 
+entry(
+    index = 161,
+    label = "S-Ss(Cs)Ss(Ss);CsJ-CbHH",
+    kinetics = ArrheniusEP(
+        A = (5967, 'cm^3/(mol*s)'),
+        n = 2.663,
+        alpha = 0,
+        E0 = (4.45, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""based on reverse rate and thermo""",
+)
