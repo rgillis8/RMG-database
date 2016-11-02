@@ -2465,3 +2465,48 @@ entry(
     rank = 3,
     shortDesc = u"""based on reverse rate and thermo""",
 )
+
+entry(
+    index = 162,
+    label = "S-Cs(Cs)Ss(Ss);CsJ-CbHH",###############################################################################
+    kinetics = ArrheniusEP(
+        A = (5967, 'cm^3/(mol*s)'),
+        n = 2.663,
+        alpha = 0,
+        E0 = (4.45, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""Testing""",
+)
+
+entry(
+    index = 163,
+    label = "S-Ss(Cs)Ss(Ss);SsJ-Ss",###############################################################################
+    kinetics = ArrheniusEP(
+        A = (11.16, 'cm^3/(mol*s)'),
+        n = 3.63,
+        alpha = 0,
+        E0 = (19.836, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""Testing""",
+)
+
+entry(
+    index = 164,
+    label = "S-Cs(Cs)Ss(Ss);SsJ-Ss",###############################################################################
+    kinetics = ArrheniusEP(
+        A = (11.16, 'cm^3/(mol*s)'),
+        n = 3.63,
+        alpha = 0,
+        E0 = (19.836, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""Testing""",
+)
