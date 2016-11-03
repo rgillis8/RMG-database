@@ -6192,3 +6192,38 @@ u"""
 Singlet sulfur, thermo data copied from triplet sulfur, likely very incorrect.
 """,
 )
+
+entry(
+     index = 156,
+     label = "benzyl",
+     molecule = 
+ """
+ multiplicity 2
+ 1  C u0 p0 c0 {2,B} {6,B} {8,S}
+ 2  C u0 p0 c0 {1,B} {3,B} {9,S}
+ 3  C u0 p0 c0 {2,B} {4,B} {10,S}
+ 4  C u0 p0 c0 {3,B} {5,B} {11,S}
+ 5  C u0 p0 c0 {4,B} {6,B} {12,S}
+ 6  C u0 p0 c0 {1,B} {5,B} {7,S}
+ 7  C u1 p0 c0 {6,S} {13,S} {14,S}
+ 8  H u0 p0 c0 {1,S}
+ 9  H u0 p0 c0 {2,S}
+ 10 H u0 p0 c0 {3,S}
+ 11 H u0 p0 c0 {4,S}
+ 12 H u0 p0 c0 {5,S}
+ 13 H u0 p0 c0 {7,S}
+ 14 H u0 p0 c0 {7,S}
+ """,
+     thermo = ThermoData(
+         Tdata = ([300,400,500,600,800,1000,1500],'K'),
+         Cpdata = ([26.48,34.85,41.67,47.06,54.92,60.39,68.52],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+         H298 = (49.5,'kcal/mol','+|-',1),
+         S298 = (76.31,'cal/(mol*K)','+|-',1),
+     ),
+     shortDesc = u"""see NIST, used QCISD/cc-pVDZ for Cp""",
+     longDesc = 
+ u"""
+ 
+ """,
+ )
+
