@@ -10,9 +10,9 @@ entry(
     index = 1,
     label = "C7H7 + C7H6S <=> C14H13S",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(0.00850306, 's^-1'),
-                         n= 2.52,
-                         Ea=(12.78, 'kcal/mol'),
+    kinetics = Arrhenius(A=(2096, 'cm^3/(mol*s)'),
+                         n= 2.526,
+                         Ea=(1.15, 'kcal/mol'),
                          T0=(1, 'K')
                          ),
     longDesc = 
