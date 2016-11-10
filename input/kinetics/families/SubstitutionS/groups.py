@@ -3309,6 +3309,24 @@ entry(
 )
 
 entry(
+    index = 357,
+    label = "S-Cs(Cb)Cs(Cb)",
+    group =
+"""
+1 *1 Ss u0 {2,S} {3,S}
+2 *2 Cs u0 {1,S} {5,S}
+3    Cs u0 {1,S} {4,S}
+4    Cb u0 {3,S}
+5    Cb u0 {2,S}
+6    H  u0 {2,S}
+7    H  u0 {2,S}
+8    H  u0 {3,S}
+9    H  u0 {3,S}
+""",
+    kinetics = None,
+)
+
+entry(
     index = 224,
     label = "S-Ss(Ss)Ss(Cs)",
     group = 
@@ -4986,6 +5004,7 @@ entry(
     kinetics = None,
 )
 
+
 tree(
 """
 L1: S-RR_or_RRrad
@@ -5080,9 +5099,6 @@ L1: S-RR_or_RRrad
                     L6: S-Cs(ThreeDe)Cs(NonDe)
                 L5: S-Cs(De)Cs(De)
                     L6:S-Cs(OneDe)Cs(OneDe)
-                        L7: S-Cs(CdHH)Cs(CdHH)
-                        L7: S-Cs(CdCsH)Cs(CdCsH)
-                        L7: S-Cs(CdHH)Cs(CdCsH)
                         L7: S-Cs(Cb)Cs(Cb)
             L4: S-CsCd
                 L5: S-Cs(HHH)Cds(H)
