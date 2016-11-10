@@ -5078,6 +5078,12 @@ L1: S-RR_or_RRrad
                         L7: S-Cs(CtCsCs)Cs(HHH)
                     L6: S-Cs(TwoDe)Cs(NonDe)
                     L6: S-Cs(ThreeDe)Cs(NonDe)
+                L5: S-Cs(De)Cs(De)
+                    L6:S-Cs(OneDe)Cs(OneDe)
+                        L7: S-Cs(CdHH)Cs(CdHH)
+                        L7: S-Cs(CdCsH)Cs(CdCsH)
+                        L7: S-Cs(CdHH)Cs(CdCsH)
+                        L7: S-Cs(Cb)Cs(Cb)
             L4: S-CsCd
                 L5: S-Cs(HHH)Cds(H)
                 L5: S-Cs(CsHH)Cds(H)
