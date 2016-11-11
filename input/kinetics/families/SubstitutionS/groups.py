@@ -1257,6 +1257,42 @@ entry(
 )
 
 entry(
+    index = 358,
+    label = "S-Cs(De)Cs(De)",
+    group =
+"""
+1 *1 Ss            u0 {2,S} {3,S}
+2 *2 Cs            u0 {1,S} {4,S} {5,S} {6,S}
+3    Cs            u0 {1,S} {7,S} {8,S} {9,S}
+4    [Cd,Ct,Cb,CO] u0 {2,S}
+5    R             u0 {2,S}
+6    R             u0 {2,S}
+7    [Cd,Ct,Cb,CO] u0 {3,S}
+8    R             u0 {3,S}
+9    R             u0 {3,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 359,
+    label = "S-Cs(OneDe)Cs(OneDe)",
+    group =
+"""
+1 *1 Ss            u0 {2,S} {3,S}
+2 *2 Cs            u0 {1,S} {4,S} {5,S} {6,S}
+3    Cs            u0 {1,S} {7,S} {8,S} {9,S}
+4    [Cd,Ct,Cb,CO] u0 {2,S}
+5    [H,Cs]        u0 {2,S}
+6    [H,Cs]        u0 {2,S}
+7    [Cd,Ct,Cb,CO] u0 {3,S}
+8    [H,Cs]        u0 {3,S}
+9    [H,Cs]        u0 {3,S}
+""",
+    kinetics = None,
+)
+
+entry(
     index = 82,
     label = "S-Cs(OneDe)Cs(NonDe)",
     group = 
