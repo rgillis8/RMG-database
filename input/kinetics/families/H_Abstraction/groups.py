@@ -276,7 +276,7 @@ entry(
 """
 1 *1 S u0 {2,S} {3,S}
 2 *2 H u0 {1,S}
-3    R u0 {1,S}
+3    R ux {1,S}
 """,
     kinetics = None,
 )
@@ -300,7 +300,7 @@ entry(
 """
 1 *1 S   u0 {2,S} {3,S}
 2 *2 H   u0 {1,S}
-3    R!H u0 {1,S}
+3    R!H ux {1,S}
 """,
     kinetics = None,
 )
@@ -324,7 +324,7 @@ entry(
 """
 1 *1 S u0 {2,S} {3,S}
 2 *2 H u0 {1,S}
-3    S u0 {1,S}
+3    S ux {1,S}
 """,
     kinetics = None,
 )
