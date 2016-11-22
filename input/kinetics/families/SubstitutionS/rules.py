@@ -2468,7 +2468,7 @@ entry(
 
 entry(
     index = 162,
-    label = "S-Cs(Cs)Ss(Ss);CsJ-CbHH",
+    label = "S-Cs(CsHH)Ss(Ss);CsJ-CbHH",
 	kinetics = ArrheniusEP(
         A = (5967, 'cm^3/(mol*s)'),
         n = 2.663,
@@ -2498,7 +2498,7 @@ entry(
 
 entry(
     index = 164,
-    label = "S-Cs(Cs)Ss(Ss);SsJ-Ss",
+    label = "S-Cs(CsHH)Ss(Ss);SsJ-Ss",
     kinetics = ArrheniusEP(
         A = (11.16, 'cm^3/(mol*s)'),
         n = 3.63,
