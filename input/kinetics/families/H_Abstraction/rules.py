@@ -45827,15 +45827,15 @@ entry(
     index = 6278,
     label = "S/H/NonDeS;C_rad/H/CbS",
     kinetics = ArrheniusEP(
-        A = (57.8, 'cm^3/(mol*s)'),
-        n = 3.06,
+        A = (16060, 'cm^3/(mol*s)'),
+        n = 2.56,
         alpha = 0,
-        E0 = (-0.3, 'kcal/mol'),
+        E0 = (9.485, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 4,
-    shortDesc = u"""Group additivity method for C--H--S abstractions, Aaron Vandeputte""",
+    shortDesc = u"""Ryan Gillis addition""",
 )
 
 entry(
