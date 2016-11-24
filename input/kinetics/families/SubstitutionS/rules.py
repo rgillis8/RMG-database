@@ -2511,3 +2511,17 @@ entry(
     shortDesc = u"""Testing""",
 )
 
+entry(
+    index = 165,
+    label = "S-SsSs;CsJ-CbCsH",
+    kinetics = ArrheniusEP(
+        A = (2984, 'cm^3/(mol*s)'),
+        n = 2.663,
+        alpha = 0,
+        E0 = (4.45, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""Testing - Old Kinetic data""",
+)
