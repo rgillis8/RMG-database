@@ -6192,3 +6192,132 @@ u"""
 Singlet sulfur, thermo data copied from triplet sulfur, likely very incorrect.
 """,
 )
+
+
+entry(
+      index = 211,
+      label = "benzyl",
+      molecule =
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,B} {6,B} {8,S}
+2  C u0 p0 c0 {1,B} {3,B} {9,S}
+3  C u0 p0 c0 {2,B} {4,B} {10,S}
+4  C u0 p0 c0 {3,B} {5,B} {11,S}
+5  C u0 p0 c0 {4,B} {6,B} {12,S}
+6  C u0 p0 c0 {1,B} {5,B} {7,S}
+7  C u1 p0 c0 {6,S} {13,S} {14,S}
+8  H u0 p0 c0 {1,S}
+9  H u0 p0 c0 {2,S}
+10 H u0 p0 c0 {3,S}
+11 H u0 p0 c0 {4,S}
+12 H u0 p0 c0 {5,S}
+13 H u0 p0 c0 {7,S}
+14 H u0 p0 c0 {7,S}
+""",
+    thermo = ThermoData(
+       Tdata = ([300,400,500,600,800,1000,1500],'K'),
+       Cpdata = ([26.48,34.85,41.67,47.06,54.92,60.39,68.52],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+       H298 = (49.5,'kcal/mol','+|-',1),
+       S298 = (76.31,'cal/(mol*K)','+|-',1),
+    ),
+    shortDesc = u"""see NIST, used QCISD/cc-pVDZ for Cp""",
+    longDesc =
+u"""
+""",
+)
+
+entry(
+    index = 212,
+    label = "bibenzyl",
+    molecule =
+"""
+1  C u0 p0 c0 {2,D} {6,S} {15,S}
+2  C u0 p0 c0 {1,D} {3,S} {16,S}
+3  C u0 p0 c0 {2,S} {4,D} {17,S}
+4  C u0 p0 c0 {3,D} {5,S} {18,S}
+5  C u0 p0 c0 {4,S} {6,D} {19,S}
+6  C u0 p0 c0 {1,S} {5,D} {7,S}
+7  C u0 p0 c0 {6,S} {8,S} {20,S} {21,S}
+8  C u0 p0 c0 {7,S} {9,S} {22,S} {23,S}
+9  C u0 p0 c0 {8,S} {10,D} {14,S}
+10 C u0 p0 c0 {9,D} {11,S} {24,S}
+11 C u0 p0 c0 {10,S} {12,D} {25,S}
+12 C u0 p0 c0 {11,D} {13,S} {26,S}
+13 C u0 p0 c0 {12,S} {14,D} {27,S}
+14 C u0 p0 c0 {9,S} {13,D} {28,S}
+15 H u0 p0 c0 {1,S}
+16 H u0 p0 c0 {2,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {4,S}
+19 H u0 p0 c0 {5,S}
+20 H u0 p0 c0 {7,S}
+21 H u0 p0 c0 {7,S}
+22 H u0 p0 c0 {8,S}
+23 H u0 p0 c0 {8,S}
+24 H u0 p0 c0 {10,S}
+25 H u0 p0 c0 {11,S}
+26 H u0 p0 c0 {12,S}
+27 H u0 p0 c0 {13,S}
+28 H u0 p0 c0 {14,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([49.4,65.9,79.9,91.3,108.3,120.1,136.78],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+        H298 = (32.4,'kcal/mol','+|-',1),
+        S298 = (117.22,'cal/(mol*K)','+|-',1),
+    ),
+    shortDesc = u"""GAV values except for experimentally determined H298 (NIST)""",
+    longDesc =
+u"""
+Added by Ryan Gillis for DBDS Mechanism
+""",
+)
+
+entry(
+    index = 213,
+    label = "DBMS",
+    molecule =
+"""
+1  C u0 p0 c0 {2,D} {6,S} {16,S}
+2  C u0 p0 c0 {1,D} {3,S} {17,S}
+3  C u0 p0 c0 {2,S} {4,D} {18,S}
+4  C u0 p0 c0 {3,D} {5,S} {19,S}
+5  C u0 p0 c0 {4,S} {6,D} {20,S}
+6  C u0 p0 c0 {1,S} {5,D} {7,S}
+7  C u0 p0 c0 {6,S} {8,S} {21,S} {22,S}
+8  S u0 p2 c0 {7,S} {9,S}
+9  C u0 p0 c0 {8,S} {10,S} {23,S} {24,S}
+10 C u0 p0 c0 {9,S} {11,D} {15,S}
+11 C u0 p0 c0 {10,D} {12,S} {25,S}
+12 C u0 p0 c0 {11,S} {13,D} {26,S}
+13 C u0 p0 c0 {12,D} {14,S} {27,S}
+14 C u0 p0 c0 {13,S} {15,D} {28,S}
+15 C u0 p0 c0 {10,S} {14,D} {29,S}
+16 H u0 p0 c0 {1,S}
+17 H u0 p0 c0 {2,S}
+18 H u0 p0 c0 {3,S}
+19 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {5,S}
+21 H u0 p0 c0 {7,S}
+22 H u0 p0 c0 {7,S}
+23 H u0 p0 c0 {9,S}
+24 H u0 p0 c0 {9,S}
+25 H u0 p0 c0 {11,S}
+26 H u0 p0 c0 {12,S}
+27 H u0 p0 c0 {13,S}
+28 H u0 p0 c0 {14,S}
+29 H u0 p0 c0 {15,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([56.1,72.4,86.0,97.1,113.7,125.3,142.9],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+        H298 = (46.1,'kcal/mol','+|-',1),
+        S298 = (128.78,'cal/(mol*K)','+|-',1),
+    ),
+    shortDesc = u"""GAV values except for experimentally determined H298 (NIST)""",
+    longDesc =
+u"""
+Added by Ryan Gillis for DBDS Mechanism
+""",
+)
