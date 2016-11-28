@@ -40978,15 +40978,15 @@ entry(
 entry(
     index = 3137,
     label = "Sd_Cds-CdH;SsJ-Ss",
-    kinetics = Arrhenius(
+    kinetics = ArrheniusEP(
         A = (333.1, 'cm^3/(mol*s)'),
         n = 2.967,
-        Ea = (-2.633, 'kcal/mol'),
-        T0 = (1, 'K'),
+	alpha = 0,
+        E0 = (-2.633, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
-    rank = 5,
+    rank = 3,
     shortDesc = u"""Old averaged value""",
     longDesc =
     """
