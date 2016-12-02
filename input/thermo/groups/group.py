@@ -43288,6 +43288,79 @@ u"""
 """,
 )
 
+entry(
+    index = 1919,
+    label = "Ss-Cs(c1ccccc1)Cs(c1ccccc1)",
+    group =
+"""
+1   C u0 p0 c0 {2,D} {6,S} {16,S}
+2   C u0 p0 c0 {1,D} {3,S} {17,S}
+3   C u0 p0 c0 {2,S} {4,D} {18,S}
+4   C u0 p0 c0 {3,D} {5,S} {19,S}
+5   C u0 p0 c0 {4,S} {6,D} {20,S}
+6   C u0 p0 c0 {1,S} {5,D} {7,S}
+7   C u0 p0 c0 {6,S} {8,S} {21,S} {22,S}
+8 * S u0 p2 c0 {7,S} {9,S}
+9   C u0 p0 c0 {8,S} {10,S} {23,S} {24,S}
+10  C u0 p0 c0 {9,S} {11,D} {15,S}
+11  C u0 p0 c0 {10,D} {12,S} {25,S}
+12  C u0 p0 c0 {11,S} {13,D} {26,S}
+13  C u0 p0 c0 {12,D} {14,S} {27,S}
+14  C u0 p0 c0 {13,S} {15,D} {28,S}
+15  C u0 p0 c0 {10,S} {14,D} {29,S}
+16  H u0 p0 c0 {1,S}
+17  H u0 p0 c0 {2,S}
+18  H u0 p0 c0 {3,S}
+19  H u0 p0 c0 {4,S}
+20  H u0 p0 c0 {5,S}
+21  H u0 p0 c0 {7,S}
+22  H u0 p0 c0 {7,S}
+23  H u0 p0 c0 {9,S}
+24  H u0 p0 c0 {9,S}
+25  H u0 p0 c0 {11,S}
+26  H u0 p0 c0 {12,S}
+27  H u0 p0 c0 {13,S}
+28  H u0 p0 c0 {14,S}
+29  H u0 p0 c0 {15,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([5.8,5.76,5.63,5.51,5.3,5.18,5.07],'cal/(mol*K)'),
+        H298 = (12.16,'kcal/mol'),
+        S298 = (13.72,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Avoiding thermo library""",
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 1920,
+    label = "Cs-CbCsHH(c1ccccc1)",
+    group =
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cb u0 {1,S}
+3   Cs u0 {1,S}
+4   H  u0 {1,S}
+5   H  u0 {1,S}
+6   Cb u0 {3,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([5.84,7.61,8.98,10.01,11.49,12.54,13.76],'cal/(mol*K)','+|-',[0.1,0.1,0.1,0.1,0.1,0.1,0.1]),
+        H298 = (-5.81,'kcal/mol','+|-',0.2),
+        S298 = (9.34,'cal/(mol*K)','+|-',0.19),
+    ),
+    shortDesc = u"""temporary avoiding thermo library""",
+    longDesc =
+u"""
+
+""",
+)
+
 tree(
 """
 L1: R
@@ -43954,6 +44027,7 @@ L1: R
                             L8: Cs-(Cds-Cdd-Cd)CtHH
                 L5: Cs-CtCtHH
                 L5: Cs-CbCsHH
+                    L6: Cs-CbCsHH(c1ccccc1)
                 L5: Cs-CbCdsHH
                     L6: Cs-(Cds-Od)CbHH
                     L6: Cs-(Cds-Cd)CbHH
@@ -45270,6 +45344,7 @@ L1: R
                 L5: Ss-C=SSs
             L4: Ss-CC
                 L5: Ss-CsCs
+                    L6: Ss-Cs(c1ccccc1)Cs(c1ccccc1)
                 L5: Ss-CsCd
                 L5: Ss-CsCO
                 L5: Ss-CsCt
