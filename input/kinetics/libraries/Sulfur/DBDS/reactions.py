@@ -10,12 +10,13 @@ entry(
     index = 1,
     label = "C7H7 + C7H6S <=> C14H13S",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(38.2, 's^-1'),
+    kinetics = Arrhenius(A=(38.2, 'cm^3/(mol*s)'),
                          n= 2.76,
-                         Ea=(4.51, 'kcal/mol'),
+                         Ea=(6.52, 'kcal/mol'),
                          T0=(1, 'K')
                          ),
     longDesc = 
 u"""
+Combination of GAV value and calculated value
 """,
 )
