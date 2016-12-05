@@ -42845,12 +42845,12 @@ entry(
         A = (79.6, 'cm^3/(mol*s)'),
         n = 3.06,
         alpha = 0,
-        E0 = (5.1, 'kcal/mol'),
+        E0 = (2.8, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 4,
-    shortDesc = u"""Group additivity method for C--H--S abstractions, Aaron Vandeputte""",
+    shortDesc = u"""Barrier-height from Coote, Beare, J. Phys. Chem. A, Vol. 108, No. 35, 2004 added by Ryan Gillis. Remainder from Group additivity method for C--H--S abstractions, Aaron Vandeputte""",
 )
 
 entry(
