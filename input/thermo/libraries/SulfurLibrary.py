@@ -6217,11 +6217,11 @@ multiplicity 2
 """,
     thermo = ThermoData(
        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-       Cpdata = ([26.48,34.85,41.67,47.06,54.92,60.39,68.52],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-       H298 = (49.5,'kcal/mol','+|-',1),
-       S298 = (76.31,'cal/(mol*K)','+|-',1),
+       Cpdata = ([25.287,33.517,40.191,45.494,53.803,59.724,67.94],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+       H298 = (53.389,'kcal/mol','+|-',1),
+       S298 = (72.849,'cal/(mol*K)','+|-',1),
     ),
-    shortDesc = u"""see NIST, used QCISD/cc-pVDZ for Cp""",
+    shortDesc = u"""Ryan Gillis CBS-QB3 Calculation""",
     longDesc =
 u"""
 """,
