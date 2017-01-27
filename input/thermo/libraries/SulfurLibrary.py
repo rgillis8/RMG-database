@@ -6219,7 +6219,7 @@ multiplicity 2
        Tdata = ([300,400,500,600,800,1000,1500],'K'),
        Cpdata = ([25.287,33.517,40.191,45.494,53.803,59.724,67.94],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
        H298 = (53.389,'kcal/mol','+|-',1),
-       S298 = (72.849,'cal/(mol*K)','+|-',1),
+       S298 = (75.032,'cal/(mol*K)','+|-',1),
     ),
     shortDesc = u"""Ryan Gillis CBS-QB3 Calculation""",
     longDesc =
@@ -6301,7 +6301,7 @@ multiplicity 2
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
         Cpdata = ([27.762,35.837,42.653,48.292,57.095,63.293,71.750],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
         H298 = (58.277,'kcal/mol','+|-',1),
-        S298 = (81.805,'cal/(mol*K)','+|-',1),
+        S298 = (83.183,'cal/(mol*K)','+|-',1),
     ),
     shortDesc = u"""Ryan Gillis CBS-QB3""",
     longDesc =
@@ -6433,7 +6433,7 @@ multiplicity 2
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
         Cpdata = ([33.379,41.558,48.886,55.181,64.567,70.718,79.669],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
         H298 = (45.849,'kcal/mol','+|-',1),
-        S298 = (94.736,'cal/(mol*K)','+|-',1),
+        S298 = (97.491,'cal/(mol*K)','+|-',1),
     ),
     shortDesc = u"""Ryan Gillis CBS-QB3""",
     longDesc =
@@ -6442,4 +6442,38 @@ CBS-QB3 calculation for use originally in the DBDS cycle
 """,
 )
 
+entry(
+    index = 218,
+    label = "C7H8S",
+    molecule =
+"""
+1  C u0 p0 c0 {2,B} {6,B} {9,S}
+2  C u0 p0 c0 {1,B} {3,B} {10,S}
+3  C u0 p0 c0 {2,B} {4,B} {11,S}
+4  C u0 p0 c0 {3,B} {5,B} {12,S}
+5  C u0 p0 c0 {4,B} {6,B} {13,S}
+6  C u0 p0 c0 {1,B} {5,B} {7,S}
+7  C u0 p0 c0 {6,S} {8,S} {14,S} {15,S}
+8  S u0 p2 c0 {7,S} {16,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {2,S}
+11 H u0 p0 c0 {3,S}
+12 H u0 p0 c0 {4,S}
+13 H u0 p0 c0 {5,S}
+14 H u0 p0 c0 {7,S}
+15 H u0 p0 c0 {7,S}
+16 H u0 p0 c0 {8,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([31.048,39.680,46.816,52.869,62.403,69.192,78.588],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+        H298 = (23.544,'kcal/mol','+|-',1),
+        S298 = (87.998,'cal/(mol*K)','+|-',1),
+    ),
+    shortDesc = u"""Ryan Gillis CBS-QB3""",
+    longDesc =
+u"""
+CBS-QB3 calculation for use originally in the DBDS cycle
+""",
+)
 
