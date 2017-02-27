@@ -3957,9 +3957,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([27.26,35.41,42.29,47.81,55.83,61.26,68.97],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (43.95,'kcal/mol','+|-',1),
-        S298 = (82.19,'cal/(mol*K)','+|-',1),
+        Cpdata = ([27.335,35.143,41.675,47.028,55.336,61.136,68.903],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+        H298 = (45.691,'kcal/mol','+|-',1),
+        S298 = (82.341,'cal/(mol*K)','+|-',1),
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6192,3 +6192,287 @@ u"""
 Singlet sulfur, thermo data copied from triplet sulfur, likely very incorrect.
 """,
 )
+
+entry(
+      index = 211,
+      label = "benzyl",
+      molecule =
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,B} {6,B} {8,S}
+2  C u0 p0 c0 {1,B} {3,B} {9,S}
+3  C u0 p0 c0 {2,B} {4,B} {10,S}
+4  C u0 p0 c0 {3,B} {5,B} {11,S}
+5  C u0 p0 c0 {4,B} {6,B} {12,S}
+6  C u0 p0 c0 {1,B} {5,B} {7,S}
+7  C u1 p0 c0 {6,S} {13,S} {14,S}
+8  H u0 p0 c0 {1,S}
+9  H u0 p0 c0 {2,S}
+10 H u0 p0 c0 {3,S}
+11 H u0 p0 c0 {4,S}
+12 H u0 p0 c0 {5,S}
+13 H u0 p0 c0 {7,S}
+14 H u0 p0 c0 {7,S}
+""",
+    thermo = ThermoData(
+       Tdata = ([300,400,500,600,800,1000,1500],'K'),
+       Cpdata = ([25.287,33.517,40.191,45.494,53.803,59.724,67.94],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+       H298 = (51.179,'kcal/mol','+|-',1),
+       S298 = (75.032,'cal/(mol*K)','+|-',1),
+    ),
+    shortDesc = u"""Ryan Gillis CBS-QB3 Calculation""",
+    longDesc =
+u"""
+""",
+)
+
+entry(
+    index = 213,
+    label = "DBMS",
+    molecule =
+"""
+1 C u0 p0 c0 {2,S} {15,S} {16,S} {17,S}
+2 C u0 p0 c0 {1,S} {4,B} {5,B}
+3 C u0 p0 c0 {6,B} {7,B} {14,S}
+4 C u0 p0 c0 {2,B} {11,B} {22,S}
+5 C u0 p0 c0 {2,B} {12,B} {23,S}
+6 C u0 p0 c0 {3,B} {8,B} {18,S}
+7 C u0 p0 c0 {3,B} {9,B} {19,S}
+8 C u0 p0 c0 {6,B} {10,B} {20,S}
+9 C u0 p0 c0 {7,B} {10,B} {21,S}
+10 C u0 p0 c0 {8,B} {9,B} {24,S}
+11 C u0 p0 c0 {4,B} {13,B} {25,S}
+12 C u0 p0 c0 {5,B} {13,B} {26,S}
+13 C u0 p0 c0 {11,B} {12,B} {27,S}
+14 C u0 p0 c0 {3,S} {15,S} {28,S} {29,S}
+15 S u0 p2 c0 {1,S} {14,S}
+16 H u0 p0 c0 {1,S}
+17 H u0 p0 c0 {1,S}
+18 H u0 p0 c0 {6,S}
+19 H u0 p0 c0 {7,S}
+20 H u0 p0 c0 {8,S}
+21 H u0 p0 c0 {9,S}
+22 H u0 p0 c0 {4,S}
+23 H u0 p0 c0 {5,S}
+24 H u0 p0 c0 {10,S}
+25 H u0 p0 c0 {11,S}
+26 H u0 p0 c0 {12,S}
+27 H u0 p0 c0 {13,S}
+28 H u0 p0 c0 {14,S}
+29 H u0 p0 c0 {14,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([56.1,72.4,86.0,97.1,113.7,125.3,142.9],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+        H298 = (46.1,'kcal/mol','+|-',1),
+        S298 = (128.78,'cal/(mol*K)','+|-',1),
+    ),
+    shortDesc = u"""GAV values except for experimentally determined H298 (NIST)""",
+    longDesc =
+u"""
+Added by Ryan Gillis for DBDS Mechanism
+""",
+)
+
+entry(
+    index = 214,
+    label = "C7H7S",
+    molecule =
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,B} {6,B} {9,S}
+2  C u0 p0 c0 {1,B} {3,B} {10,S}
+3  C u0 p0 c0 {2,B} {4,B} {11,S}
+4  C u0 p0 c0 {3,B} {5,B} {12,S}
+5  C u0 p0 c0 {4,B} {6,B} {13,S}
+6  C u0 p0 c0 {1,B} {5,B} {7,S}
+7  C u0 p0 c0 {6,S} {8,S} {14,S} {15,S}
+8  S u1 p2 c0 {7,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {2,S}
+11 H u0 p0 c0 {3,S}
+12 H u0 p0 c0 {4,S}
+13 H u0 p0 c0 {5,S}
+14 H u0 p0 c0 {7,S}
+15 H u0 p0 c0 {7,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([27.762,35.837,42.653,48.292,57.095,63.293,71.750],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+        H298 = (56.497,'kcal/mol','+|-',1),
+        S298 = (83.183,'cal/(mol*K)','+|-',1),
+    ),
+    shortDesc = u"""Ryan Gillis CBS-QB3""",
+    longDesc =
+u"""
+CBS-QB3 calculation for use originally in the DBDS cycle
+""",
+)
+
+entry(
+    index = 215,
+    label = "DBDS",
+    molecule =
+"""
+1  C u0 p0 c0 {2,B} {6,B} {17,S}
+2  C u0 p0 c0 {1,B} {3,B} {18,S}
+3  C u0 p0 c0 {2,B} {4,B} {19,S}
+4  C u0 p0 c0 {3,B} {5,B} {20,S}
+5  C u0 p0 c0 {4,B} {6,B} {21,S}
+6  C u0 p0 c0 {1,B} {5,B} {7,S}
+7  C u0 p0 c0 {6,S} {8,S} {22,S} {23,S}
+8  S u0 p2 c0 {7,S} {9,S}
+9  S u0 p2 c0 {8,S} {10,S}
+10 C u0 p0 c0 {9,S} {11,S} {24,S} {25,S}
+11 C u0 p0 c0 {10,S} {12,B} {16,B}
+12 C u0 p0 c0 {11,B} {13,B} {26,S}
+13 C u0 p0 c0 {12,B} {14,B} {27,S}
+14 C u0 p0 c0 {13,B} {15,B} {28,S}
+15 C u0 p0 c0 {14,B} {16,B} {29,S}
+16 C u0 p0 c0 {11,B} {15,B} {30,S}
+17 H u0 p0 c0 {1,S}
+18 H u0 p0 c0 {2,S}
+19 H u0 p0 c0 {3,S}
+20 H u0 p0 c0 {4,S}
+21 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {7,S}
+23 H u0 p0 c0 {7,S}
+24 H u0 p0 c0 {10,S}
+25 H u0 p0 c0 {10,S}
+26 H u0 p0 c0 {12,S}
+27 H u0 p0 c0 {13,S}
+28 H u0 p0 c0 {14,S}
+29 H u0 p0 c0 {15,S}
+30 H u0 p0 c0 {16,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([57.967,73.613,87.777,100.177,119.315,131.79,149.365],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+        H298 = (51.960,'kcal/mol','+|-',1),
+        S298 = (128.153,'cal/(mol*K)','+|-',1),
+    ),
+    shortDesc = u"""Ryan Gillis CBS-QB3""",
+    longDesc =
+u"""
+CBS-QB3 calculation for use originally in the DBDS cycle
+""",
+)
+
+entry(
+    index = 216,
+    label = "bibenzyl",
+    molecule =
+"""
+1  C u0 p0 c0 {2,B} {6,B} {15,S}
+2  C u0 p0 c0 {1,B} {3,B} {16,S}
+3  C u0 p0 c0 {2,B} {4,B} {17,S}
+4  C u0 p0 c0 {3,B} {5,B} {18,S}
+5  C u0 p0 c0 {4,B} {6,B} {19,S}
+6  C u0 p0 c0 {1,B} {5,B} {7,S}
+7  C u0 p0 c0 {6,S} {8,S} {20,S} {21,S}
+8  C u0 p0 c0 {7,S} {9,S} {22,S} {23,S}
+9  C u0 p0 c0 {8,S} {10,B} {14,B}
+10 C u0 p0 c0 {9,B} {11,B} {24,S}
+11 C u0 p0 c0 {10,B} {12,B} {25,S}
+12 C u0 p0 c0 {11,B} {13,B} {26,S}
+13 C u0 p0 c0 {12,B} {14,B} {27,S}
+14 C u0 p0 c0 {9,B} {13,B} {28,S}
+15 H u0 p0 c0 {1,S}
+16 H u0 p0 c0 {2,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {4,S}
+19 H u0 p0 c0 {5,S}
+20 H u0 p0 c0 {7,S}
+21 H u0 p0 c0 {7,S}
+22 H u0 p0 c0 {8,S}
+23 H u0 p0 c0 {8,S}
+24 H u0 p0 c0 {10,S}
+25 H u0 p0 c0 {11,S}
+26 H u0 p0 c0 {12,S}
+27 H u0 p0 c0 {13,S}
+28 H u0 p0 c0 {14,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([49.957,65.754,79.156,90.632,108.694,121.533,139.191],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+        H298 = (34.144,'kcal/mol','+|-',1),
+        S298 = (109.865,'cal/(mol*K)','+|-',1),
+    ),
+    shortDesc = u"""Ryan Gillis CBS-QB3""",
+    longDesc =
+u"""
+CBS-QB3 calculation for use originally in the DBDS cycle
+""",
+)
+
+entry(
+    index = 217,
+    label = "c7h7s2",
+    molecule =
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,B} {6,B} {10,S}
+2  C u0 p0 c0 {1,B} {3,B} {11,S}
+3  C u0 p0 c0 {2,B} {4,B} {12,S}
+4  C u0 p0 c0 {3,B} {5,B} {13,S}
+5  C u0 p0 c0 {4,B} {6,B} {14,S}
+6  C u0 p0 c0 {1,B} {5,B} {7,S}
+7  C u0 p0 c0 {6,S} {8,S} {15,S} {16,S}
+8  S u0 p2 c0 {7,S} {9,S}
+9  S u1 p2 c0 {8,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {2,S}
+12 H u0 p0 c0 {3,S}
+13 H u0 p0 c0 {4,S}
+14 H u0 p0 c0 {5,S}
+15 H u0 p0 c0 {7,S}
+16 H u0 p0 c0 {7,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([33.379,41.558,48.886,55.181,64.567,70.718,79.669],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+        H298 = (43.829,'kcal/mol','+|-',1),
+        S298 = (97.491,'cal/(mol*K)','+|-',1),
+    ),
+    shortDesc = u"""Ryan Gillis CBS-QB3""",
+    longDesc =
+u"""
+CBS-QB3 calculation for use originally in the DBDS cycle
+""",
+)
+
+entry(
+    index = 218,
+    label = "C7H8S",
+    molecule =
+"""
+1  C u0 p0 c0 {2,B} {6,B} {9,S}
+2  C u0 p0 c0 {1,B} {3,B} {10,S}
+3  C u0 p0 c0 {2,B} {4,B} {11,S}
+4  C u0 p0 c0 {3,B} {5,B} {12,S}
+5  C u0 p0 c0 {4,B} {6,B} {13,S}
+6  C u0 p0 c0 {1,B} {5,B} {7,S}
+7  C u0 p0 c0 {6,S} {8,S} {14,S} {15,S}
+8  S u0 p2 c0 {7,S} {16,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {2,S}
+11 H u0 p0 c0 {3,S}
+12 H u0 p0 c0 {4,S}
+13 H u0 p0 c0 {5,S}
+14 H u0 p0 c0 {7,S}
+15 H u0 p0 c0 {7,S}
+16 H u0 p0 c0 {8,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([31.048,39.680,46.816,52.869,62.403,69.192,78.588],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+        H298 = (21.764,'kcal/mol','+|-',1),
+        S298 = (87.998,'cal/(mol*K)','+|-',1),
+    ),
+    shortDesc = u"""Ryan Gillis CBS-QB3""",
+    longDesc =
+u"""
+CBS-QB3 calculation for use originally in the DBDS cycle
+""",
+)
+
