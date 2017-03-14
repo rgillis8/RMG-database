@@ -6347,14 +6347,14 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([57.967,73.613,87.777,100.177,119.315,131.79,149.365],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (49.960,'kcal/mol','+|-',1),
-        S298 = (128.153,'cal/(mol*K)','+|-',1),
+        Cpdata = ([61.52,78.06,91.92,103.14,119.86,131.46,148.64],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
+        H298 = (51.960,'kcal/mol','+|-',1),
+        S298 = (140.28,'cal/(mol*K)','+|-',1),
     ),
     shortDesc = u"""Ryan Gillis CBS-QB3""",
     longDesc =
 u"""
-CBS-QB3 calculation for use originally in the DBDS cycle
+CBS-QB3 calculation for enthalpy and group addivitity for entrop and Cp
 """,
 )
 
