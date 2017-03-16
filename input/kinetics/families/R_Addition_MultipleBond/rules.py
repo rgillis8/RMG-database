@@ -40974,3 +40974,23 @@ entry(
     around single bonds, tunneling with Eckart potentials.
     """
 )
+
+entry(
+    index = 3137,
+    label = "Sd_Cds-CdH;SsJ-Ss",
+    kinetics = ArrheniusEP(
+        A = (333.1, 'cm^3/(mol*s)'),
+        n = 2.967,
+	alpha = 0,
+        E0 = (-2.633, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""Old averaged value""",
+    longDesc =
+    """
+    Old Averaged Value
+    """
+)
+
