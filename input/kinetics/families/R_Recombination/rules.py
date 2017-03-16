@@ -2436,3 +2436,21 @@ entry(
     shortDesc = u"""GA Jonas x 3 for spinorbit""",
 )
 
+entry(
+    index = 3001,
+    label = "SsJ-Ss;C_rad/H2/Cb",
+    kinetics = ArrheniusEP(
+        A = (3.94e+09, 'cm^3/(mol*s)'),
+        n = 1.25,
+        alpha = 0,
+        E0 = (-0.74, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 1,
+    shortDesc = u"""Ryan Gillis added because I think this is a better match for the SS-C-Cb bond scission""",
+    longDesc =
+u"""
+""",
+)
+
