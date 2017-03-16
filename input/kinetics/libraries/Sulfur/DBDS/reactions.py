@@ -12,7 +12,7 @@ entry(
     degeneracy = 1,
     kinetics = Arrhenius(A=(38.2, 'cm^3/(mol*s)'),
                          n= 2.76,
-                         Ea=(4.51, 'kcal/mol'),
+                         Ea=(2.19, 'kcal/mol'),
                          T0=(1, 'K')
                          ),
     longDesc = 
