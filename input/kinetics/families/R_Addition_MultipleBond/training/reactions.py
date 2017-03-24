@@ -1233,3 +1233,93 @@ Ethylamine paper
 """,
 )
 
+entry(
+    index = 76,
+    label = "HNCN + OH <=> NCOHNH",
+    degeneracy = 1,
+    kinetics = PDepArrhenius(
+        pressures = ([1, 10, 100, 300, 760, 7600], 'torr'),
+        arrhenius = [
+            Arrhenius(A=(1.72e+37, 'cm^3/(mol*s)'), n=-9.55, Ea=(7019, 'cal/mol'), T0 = (1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
+            Arrhenius(A=(1.96e+38, 'cm^3/(mol*s)'), n=-9.54, Ea=(7836, 'cal/mol'), T0 = (1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
+            Arrhenius(A=(8.43e+38, 'cm^3/(mol*s)'), n=-9.39, Ea=(6683, 'cal/mol'), T0 = (1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
+            Arrhenius(A=(8.55e+38, 'cm^3/(mol*s)'), n=-9.23, Ea=(9364, 'cal/mol'), T0 = (1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
+            Arrhenius(A=(5.02e+38, 'cm^3/(mol*s)'), n=-9.03, Ea=(9731, 'cal/mol'), T0 = (1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
+            Arrhenius(A=(8.67e+36, 'cm^3/(mol*s)'), n=-8.19, Ea=(10264, 'cal/mol'), T0 = (1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
+        ],
+    ),
+    rank = 2,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+k8 in S. Xu, M.C. Lin, J. Phys. Chem. A, 2007, 111, 6730-6740, doi: 10.1021/jp069038+
+Done at the CCSD(T)/6-311+G(3df,2p)//B3LYP/6-311+G(3df,2p) level of theory
+""",
+)
+
+entry(
+    index = 77,
+    label = "N2 + H <=> NNH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(7.6e+15, 'cm^3/(mol*s)'), n=-0.64, Ea=(15333, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (25000, 'K')),
+    rank = 2,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+P.J.S.B. Caridade, S.P.J. Rodrigues, F. Sousa, A.J.C. Varandas, J. Phys. Chem. A ,2005, 109, 2356-2363, doi: 10.1021/jp045102g
+Fits to a total of 972 MRCI energies (based on the aug-cc-pVQZ basis set of Dunning27), scaled by the DMBE-SEC
+method to account for excitations higher than singles and doubles and the incompleteness of the one-electron basis set.
+The paper reports a HO-RR rate, and a sum-over-states rate (where vib-rot aren't assumed to be independent).
+The sum-over-states rate was taken here.
+""",
+)
+
+entry(
+    index = 78,
+    label = "N2H3O_a <=> NH2 + HNO",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(9.12e+33, 's^-1'), n=-6.68, Ea=(35217, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
+    rank = 2,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+P. Raghunath, N.T. Nghia, M.C. Lin, Advances in Quantum Chemistry, 2014, 69, 253-301, doi: 10.1016/B978-0-12-800345-9.00007-6
+p. 284
+P = 1 atm
+calculations done at the CCSD(T)/6-311þG(3df,2p)//CCSD/6-311þþG(d,p) level of theoty
+""",
+)
+
+entry(
+    index = 78,
+    label = "N2H3O_b <=> NH2NO + H",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.57e+34, 's^-1'), n=-6.63, Ea=(44953, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
+    rank = 2,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+P. Raghunath, N.T. Nghia, M.C. Lin, Advances in Quantum Chemistry, 2014, 69, 253-301, doi: 10.1016/B978-0-12-800345-9.00007-6
+p. 284
+P = 1 atm
+calculations done at the CCSD(T)/6-311þG(3df,2p)//CCSD/6-311þþG(d,p) level of theoty
+""",
+)
+
+entry(
+    index = 79,
+    label = "SO2 + H <=> HOSO",
+    degeneracy = 1,
+    kinetics = Troe(
+        arrheniusHigh = Arrhenius(A=(2.37e+08, 'cm^3/(mol*s)'), n=1.63, Ea=(7339, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (1700, 'K')),
+        arrheniusLow = Arrhenius(A=(1.85e+37, 'cm^6/(mol^2*s)'), n=-6.14, Ea=(11075, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (1700, 'K')),
+        alpha=0.283, T3=(272, 'K'), T1=(3995, 'K'), efficiencies={'O=S=O': 10, 'O': 10, 'O=C=O': 2.5}),
+    rank = 1,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+M.A. Blitz, K.J. Hughes, M.J. Pilling, S.H. Robertson, J. Phys. Chem. A, 2006, 110(9), 2996–3009, doi: 10.1021/jp054722u
+As reported by Gimenez-Lopez, M. Martinez, A. Millera, R. Bilbao, M.U. Alzueta, Comb. Flame 2011, 158(1), 48-56, doi: 10.1016/j.combustflame.2010.07.017
+""",
+)
+

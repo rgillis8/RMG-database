@@ -34,7 +34,7 @@ recommendedFamilies = {
 'Intra_R_Add_Exocyclic':True,
 'Korcek_step1':False,
 'Korcek_step2':False,
-'Oa_R_Recombination':True,
+'OaSa_R_Recombination':True,
 'R_Addition_COm':True,
 'R_Addition_CSm':False,
 'R_Addition_MultipleBond':True,
