@@ -46,6 +46,8 @@ Reference legend:
 [Cohen1991] N. Cohen, K. R. Westberg, Journal of Physical and Chemical Reference Data, 1991, 20, 1211,; doi: 10.1063/1.555901
 [Cohen1992] Cohen, N. (1992). Chemical Kinetic Data Sheets for High-Temperature Chemical Reactions, Vol. III., Aerospace Corporation Report ATR-91 (7189)-2.
 [DeanBozz] (RMG's Nitrogen_Dean_and_Bozzelli library) Anthony M. Dean, Joseph W. Bozzelli, Combustion Chemistry of Nitrogen, in: Gas-Phase Combustion Chemistry, Editor: W.C. Gardiner, 2000, 125-341, doi: 10.1007/978-1-4612-1310-9_2
+[DeRuyck2001] A.A. Konnov, J. De Ruyck, Comb. Flame, 2001, 125(4), 1258-1264, doi: 10.1016/S0010-2180(01)00250-4
+[Dupre1993] K. Tsuchiya, H. Matsui, M. Oya, G. Dupre, in: R. Burn, L.Z. Dumitrescu (Ed.) Shock Waves @ Marseille II (Proceedings Marseille France), 1993, 71-76, doi: 10.1007/978-3-642-78832-1
 [Flower1977] W. L. Flower , R. K. Hanson, c. H. Kruger, Comb. Sci. Tech., 1977, 15(3-4), 115-128, doi: 10.1080/00102207708946777
 [Friedrichs2011] J. Dammeier, G. Friedrichs, J. Phys. Chem. A, 2011, 115, 14382-14390, doi: 10.1021/jp208715c
 [GlarBozz] (RMG's Sulfur/GlarborgBozzelli library) P. Glarborg, D. Kubel, K. Dam-Johansen, H-M. Chiang, J.W. Bozzelli, Int. J. Chem. Kin., 1996, 28, 773-790, doi: 10.1002/(SICI)1097-4601(1996)28:10<773::AID-KIN8>3.0.CO;2-K
@@ -53,14 +55,20 @@ Reference legend:
 [GlarZha] (RMG's Nitrogen_Glarborg_Zhang_et_al library) Kuiwen Zhang et al. Proceedings of the Combustion Institute, 2013, 34, 617–624, doi: 10.1016/j.proci.2012.06.010
 [GRI] (RMG's GRI-Mech3.0-N library) GRI-Mech 3.0, http://www.me.berkeley.edu/gri_mech/
 [Hanson1981] T.R. Roose, R.K. Hanson, C.H. Kruger, Symposium (International) on Combustion, 1981, 18(1), 853-862, doi: 10.1016/S0082-0784(81)80089-6
+[Hanson1984a] M.Y. Louge, R.K. Hanson, Int. J. Chem. Kin., 1984, 16(3), 231-250, doi: 10.1002/kin.550160306
+[Hanson1984b] M.Y. Louge, R.K. Hanson, Int. J. Chem. Kin., 1984, 58(3), 291-300, doi: 10.1016/0010-2180(84)90113-5
 [Hanson1990a] D.F. Davidson, K. Kohse-Hoinghaus, A.Y. Chang, R.K. Hanson, Int. J. Chem. Kin., 1990, 22(5), 513-535, doi: 10.1002/kin.550220508
 [Hanson1990b] D.F. Davidson, R.K. Hanson, Int. J. Chem. Kin., 1990, 22(8), 843–861, doi: 10.1002/kin.550220805
 [Hanson1991a] A.J. Dean, R.K. Hanson, C.T. Bowman, J. Phys. Chem., 1991, 95(8), 3180–3189, doi: 10.1021/j100161a042
 [Hanson1991b] D.F. Davidson, R.K. Hanson, Symposium (International) on Combustion, 1991, 23(1), 267-273, doi: 10.1016/S0082-0784(06)80269-9
-[Hanson1996] M. Rohrig, E.L. Petersen, D.F. Davidson, R.K. Hanson, Int. J. Chem. Kin., 1997, 29(7), 483-493, doi: 10.1002/(SICI)1097-4601(1997)29:7<483::AID-KIN2>3.0.CO;2-Q
+[Hanson1993] M.S. Wooldridge, R.K. Hanson, C.T. Bowman, in: R. Burn, L.Z. Dumitrescu (Ed.) Shock Waves @ Marseille II (Proceedings Marseille France), 1993, 83-88, doi: 10.1007/978-3-642-78832-1
+[Hanson1996] S.T. Wooldridge, R.K. Hanson, C.T. Bowman, Int. J. Chem. Kin., 1996, 28(4), 254-258, doi: 10.1002/(SICI)1097-4601(1996)28:4<245::AID-KIN2>3.0.CO;2-V
+[Hanson1997] M. Rohrig, E.L. Petersen, D.F. Davidson, R.K. Hanson, Int. J. Chem. Kin., 1997, 29(7), 483-493, doi: 10.1002/(SICI)1097-4601(1997)29:7<483::AID-KIN2>3.0.CO;2-Q
 [Herron1991] W. Tsang, J.T. Herron, Journal of Physical and Chemical Reference Data, 1991, 20, 609, doi: 10.1063/1.555890
+[Hindelang1993] M.L. Thoma, F.J. Hindelang in: R. Burn, L.Z. Dumitrescu (Ed.) Shock Waves @ Marseille II (Proceedings Marseille France), 1993, 59-64, doi: 10.1007/978-3-642-78832-1
 [Klemm1985] J.V. Michael, J.W. Sutherland, R.B. Klemm, Int. J. Chem. Kin., 1985, 17(3), 315-326, doi: 10.1002/kin.550170308
 [Lin1990] C-Y. Lin, H-T. Wang, M.C. Lin, C.F. Melius, Int. J. Chem. Kin., 1990, 22(5), 455-482, doi: 10.1002/kin.550220504
+[Lin1993] Y. He, C.H. Wu, M.C. Lin, C.F. Melius, in: R. Burn, L.Z. Dumitrescu (Ed.) Shock Waves @ Marseille II (Proceedings Marseille France), 1993, 89-94, doi: 10.1007/978-3-642-78832-1
 [Lin1996a] A.M. Mebel, E.W.G. Diau, M.C. Lin, K.Morokuma, J. Phys. Chem., 1996, 100, 7517-7525, doi: 10.1021/jp953644f
 [Lin1996b] A.M. Mebel, M.C. Lin, K. Morokuma, C.F. Melius, Int. J. Chem. Kin., 1996, 28(9), 693-703, doi: 10.1002/(SICI)1097-4601(1996)28:9<693::AID-KIN8>3.0.CO;2-Q
 [Lin1997a] C.C. Hsu, M.C. Lin, A.M. Mebel, C.F. Melius, J. Phys. Chem. A, 1997, 101(1), 60–66, doi: 10.1021/jp962286t
@@ -115,10 +123,13 @@ Reference legend:
 [Morley1976] C. Morley, Combustion and Flame, 1976, 27, 189-204, doi: 10.1016/0010-2180(76)90022-5
 [Page1992] M.R. Soto, M. Page, J. Chem. Phys., 1992, 97, 7287, doi: 10.1063/1.463501
 [Palmer1977] H. Freund, H.B. Palmer, Int. J. Chem. Kin., 1977, 9(6), 887-905, doi: 10.1002/kin.550090605
+[Perry1984] R.A. Perry, Chem. Phys. Lett., 1984, 106(3), 223-228, doi: 10.1016/0009-2614(84)80230-4
+[Perry1985] R.A. Perry, J. Chem. Phys, 1985, 82, 5485, doi: 10.1063/1.448583
 [Pilling2002] M.A. Blitz, K.W. McKee, M.J. Pilling, J. Phys. Chem. A, 2002, 106(36), 8406–8410, doi: 10.1021/jp025508y
 [Pilling2003] M.A. Blitz, K.J. Hughes, M.J. Pilling, J. Phys. Chem. A, 2003, 107(12), 1971-1978, doi: 10.1021/jp026524y
 [Pilling2006] M.A. Blitz, K.J. Hughes, M.J. Pilling, S.H. Robertson, J. Phys. Chem. A, 2006, 110(9), 2996–3009, doi: 10.1021/jp054722u
 [Rabinowitz2010] S.M. Hwang, J.A. Cooke, K.J. De Witt, M.J. Rabinowitz, Int. J. Chem. Kin., 2010, 42(3), 168-180, doi: 10.1002/kin.20472
+[Roth1993] D. Woiki, P. Roth, in: R. Burn, L.Z. Dumitrescu (Ed.) Shock Waves @ Marseille II (Proceedings Marseille France), 1993, 53-58, doi: 10.1007/978-3-642-78832-1
 [Roth1996a] D. Woiki, P. Roth, Israel Journal of Chemistry, 1996, 36(3), 279-283, doi: 10.1002/ijch.199600039
 [Roth1996b] D. Woiki, P. Roth, Symposium (International) on Combustion, 1996, 26(1), 583-588, doi: 10.1016/S0082-0784(96)80263-3
 [Sendt2002] K. Sendt, M. Jazbec, B.S. Haynes, Proceedings of the Combustion Institute, 2002, 29, 2439-2446, doi: 10.1016/S1540-7489(02)80297-8
@@ -643,7 +654,7 @@ Done at the G2M(RCC2)//B3LYP/6-311G(d,p) level of theory
 
 entry(
     index = 28,
-    label = "CN + CN <=> NCCN",
+    label = "CN + CN <=> C2N2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.251e+14, 'cm^3/(mol*s)'), n=0, Ea=(8020, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Lin2000a]""",
@@ -808,6 +819,36 @@ Part of the "Prompt NO, NCN subset" mechanism
 k2 and k3
 T range: 200-3000 K
 Measured rate constant is also available by [Friedrichs2011]
+""",
+)
+
+entry(
+    index = 37,
+    label = "CN + NO <=> NCO + N",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(5.5e+12, 'cm^3/(mol*s)'), n=0, Ea=(30623, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Lin1993]""",
+    longDesc =
+u"""
+Part of the "Prompt NO, NCN subset" mechanism
+k1
+T range: 2200-2810 K
+Shock Tube + BAC-MP4
+""",
+)
+
+entry(
+    index = 37,
+    label = "CN + NO <=> CO + N2",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(3.9e+11, 'cm^3/(mol*s)'), n=0, Ea=(27820, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Lin1993]""",
+    longDesc =
+u"""
+Part of the "Prompt NO, NCN subset" mechanism
+k2
+T range: 2200-2810 K
+Shock Tube + BAC-MP4
 """,
 )
 
@@ -1237,6 +1278,116 @@ CASPT2(10,10)/6-311+G(d)//CAS(10,10)/6-311+G(d).
 )
 
 entry(
+    index = 57,
+    label = "C2N2 + O <=> CN + NCO",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(5.01e+11, 'cm^3/(mol*s)'), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Hanson1984a]""",
+    longDesc =
+u"""
+Part of the "Prompt NO, NCN subset" mechanism
+k2
+T range: 1920-2110 K
+Shock Tube
+""",
+)
+
+entry(
+    index = 57,
+    label = "CN + HCN <=> C2N2 + H",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.51e+07, 'cm^3/(mol*s)'), n=1.71, Ea=(1530, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Hanson1996]""",
+    longDesc =
+u"""
+Part of the "Prompt NO, NCN subset" mechanism
+T range: 300-3000 K
+k2 Table 1, p. 249
+Shock Tube
+""",
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+entry(
+    index = 57,
+    label = "CN + O <=> CO + N",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.8e+13, 'cm^3/(mol*s)'), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Hanson1984a]""",
+    longDesc =
+u"""
+Part of the "Prompt NO, NCN subset" mechanism
+k3
+T range: 1920-2110 K
+Shock Tube
+""",
+)
+
+entry(
+    index = 57,
+    label = "NCO <=> CO + N",
+    degeneracy = 1,
+    kinetics = ThirdBody(
+        arrheniusLow = Arrhenius(A=(6.31e+16, 'cm^3/(mol*s)'), n=-0.5, Ea=(47700, 'cal/mol'), T0 = (1, 'K'))),
+    shortDesc = u"""[Hanson1984b]""",
+    longDesc =
+u"""
+Part of the "Prompt NO, NCN subset" mechanism
+k4
+T range: 2150-2400 K
+Shock Tube
+""",
+)
+
+entry(
+    index = 57,
+    label = "CN + O2 <=> NCO + O",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(4.8e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Hanson1984a]""",
+    longDesc =
+u"""
+Part of the "Prompt NO, NCN subset" mechanism
+k4
+T range: 1920-2110 K
+Shock Tube
+""",
+)
+
+entry(
+    index = 57,
+    label = "NCO + H2 <=> HNCO + H",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(8.61e+12, 'cm^3/(mol*s)'), n=0, Ea=(9000, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Perry1985]""",
+    longDesc =
+u"""
+Part of the "Prompt NO, NCN subset" mechanism
+k6
+T range: 592-913(-2000) K
+Ea uncertainty: 17%
+Shock Tube
+""",
+)
+
+entry(
     index = 58,
     label = "N2O <=> N2 + O",
     degeneracy = 1,
@@ -1325,22 +1476,6 @@ See [DeanBozz] 2.6.3, p. 158, and Table 2.6 on p. 163
 )
 
 entry(
-    index = 64,
-    label = "HNNO <=> O + NNH",
-    degeneracy = 1,
-    kinetics = ThirdBody(
-        arrheniusLow = Arrhenius(A=(4.9e+15, 'cm^3/(mol*s)'), n=0, Ea=(61663, 'cal/mol'), T0 = (1, 'K'))),
-    shortDesc = u"""[DeanBozz]""",
-    longDesc =
-u"""
-Part of the "N2O Pathway"
-See [DeanBozz] 2.6.3, p. 158, and Table 2.6 on p. 163
-
-Added as a training reaction to Birad_R_Recombination
-""",
-)
-
-entry(
     index = 65,
     label = "HNNO <=> N2 + OH",
     degeneracy = 1,
@@ -1398,6 +1533,37 @@ Part of the "N2O Pathway"
 k2B on p. 702
 T range: 1000-5000 K
 calculations done at the B3LYP/6-311G(d,p)//B3LYP/6-311G(d,p) level of theory
+""",
+)
+
+entry(
+    index = 64,
+    label = "HNNO <=> O + NNH",
+    degeneracy = 1,
+    kinetics = ThirdBody(
+        arrheniusLow = Arrhenius(A=(4.9e+15, 'cm^3/(mol*s)'), n=0, Ea=(61663, 'cal/mol'), T0 = (1, 'K'))),
+    shortDesc = u"""[DeanBozz]""",
+    longDesc =
+u"""
+Part of the "NNH Pathway"
+See [DeanBozz] 2.6.3, p. 158, and Table 2.6 on p. 163
+
+Added as a training reaction to Birad_R_Recombination
+""",
+)
+
+entry(
+    index = 64,
+    label = "NNH + O <=> NH + NO",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(2e+14, 'cm^3/(mol*s)'), n=0, Ea=(4015, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[DeRuyck2001]""",
+    longDesc =
+u"""
+Part of the "NNH Pathway"
+k1
+T range: 1200-2500 K
+Uncertainty: A 50%, Ea 25%
 """,
 )
 
@@ -2990,6 +3156,21 @@ k2, p. 2467
 )
 
 entry(
+    index = 155,
+    label = "H2S + O <=> HSO + H",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(4.0e+13, 'cm^3/(mol*s)'), n=0, Ea=(7650, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Dupre1993]""",
+    longDesc =
+u"""
+Part of the "SOx" subset
+Sock Tube
+T range: 1520-1820 K
+Uncertainty: A 38%, Ea 6.3%
+""",
+)
+
+entry(
     index = 156,
     label = "COS + O <=> SO + CO",
     degeneracy = 1,
@@ -3077,6 +3258,38 @@ Part of the "COS" subset
 Sock Tube
 k2
 T range: 1140-3230 K
+""",
+)
+
+entry(
+    index = 161,
+    label = "COS <=> CO + S",
+    degeneracy = 1,
+    kinetics = ThirdBody(
+        arrheniusLow = Arrhenius(A=(2.9e+14, 'cm^3/(mol*s)'), n=0, Ea=(63360, 'cal/mol'), T0 = (1, 'K'))),
+    shortDesc = u"""[Roth1993]""",
+    longDesc =
+u"""
+Part of the "COS" subset
+T range: 1830-3020 K
+Sock Tube
+Measured in Ar
+""",
+)
+
+entry(
+    index = 161,
+    label = "COS <=> CO + Sa",
+    degeneracy = 1,
+    kinetics = ThirdBody(
+        arrheniusLow = Arrhenius(A=(4.8e+22, 'cm^3/(mol*s)'), n=0, Ea=(71800, 'cal/mol'), T0 = (1, 'K'))),
+    shortDesc = u"""[Roth1993]""",
+    longDesc =
+u"""
+Part of the "COS" subset
+T range: 1830-3020 K
+Sock Tube
+Measured in Ar
 """,
 )
 
@@ -3484,7 +3697,7 @@ entry(
         arrheniusHigh = Arrhenius(A=(3.98e+14, 's^-1'), n=0, Ea=(71700, 'cal/mol'), T0=(1, 'K')),
         arrheniusLow = Arrhenius(A=(3.98e+15, 'cm^3/(mol*s)'), n=0, Ea=(60000, 'cal/mol'), T0=(1, 'K')),
         alpha=1, T3=(1e-30, 'K'), T1=(1e+30, 'K'), efficiencies={}),
-    shortDesc = u"""[Hanson1996]""",
+    shortDesc = u"""[Hanson1997]""",
     longDesc =
 u"""
 Part of the "NO2 decomposition" subset
@@ -3505,7 +3718,7 @@ entry(
 u"""
 Part of the "NO2 decomposition" subset
 T range: 625-2100 K
-Shock tube measurement by [Hanson1996], and rate improvement by [Lin1998b]
+Shock tube measurement by [Hanson1997], and rate improvement by [Lin1998b]
 """,
 )
 
@@ -3514,7 +3727,7 @@ entry(
     label = "NO2 + NO2 <=> NO3 + NO",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.00e+13, 'cm^3/(mol*s)'), n=0, Ea=(25800, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Hanson1996]""",
+    shortDesc = u"""[Hanson1997]""",
     longDesc =
 u"""
 Part of the "NO2 decomposition" subset
@@ -3961,6 +4174,21 @@ conformer-dup: rate are for both cis-HONO and trans-HONO reactants
 )
 
 entry(
+    index = 215,
+    label = "O3 <=> O2 + O",
+    degeneracy = 1,
+    kinetics = ThirdBody(
+        arrheniusLow = Arrhenius(A=(1.25e+19, 'cm^3/(mol*s)'), n=-1.25, Ea=(24367, 'cal/mol'), T0 = (1, 'K'))),
+    shortDesc = u"""[Hindelang1993]""",
+    longDesc =
+u"""
+Part of the "NOx" subset
+T range: 300-3000 K
+Shock Tube
+""",
+)
+
+entry(
     index = 216,
     label = "HONO + NH3 <=> H2NNO + H2O",
     degeneracy = 1,
@@ -4068,6 +4296,31 @@ Shock tube measurement
 )
 
 entry(
+    index = 221,
+    label = "HNO3 <=> NO2 + OH",
+    degeneracy = 1,
+    kinetics = ThirdBody(
+        arrheniusLow = Arrhenius(A=(1.01e+16, 'cm^3/(mol*s)'), n=0, Ea=(34340, 'cal/mol'), T0 = (1, 'K'))),
+    shortDesc = u"""[Hanson1993]""",
+    longDesc =
+u"""
+Part of the "NOx" subset
+T range: 900-1400 K
+Shock tube measurement
+""",
+)
+
+
+
+
+
+
+
+
+
+
+
+entry(
     index = 222,
     label = "HCN + O <=> CN + OH",
     degeneracy = 1,
@@ -4087,13 +4340,14 @@ entry(
     index = 222,
     label = "CN + OH <=> NCO + H",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(6e+13, 'cm^3/(mol*s)'), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Morley1976]""",
+    kinetics = Arrhenius(A=(4.00e+13, 'cm^3/(mol*s)'), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Hanson1996]""",
     longDesc =
 u"""
 Part of the "HCN" subset
-T range: 2300-2560 K
-Experimental
+T range: 1250-1863 K
+k1 Table 1, p. 249
+Shock Tube
 """,
 )
 
@@ -4168,6 +4422,22 @@ u"""
 Part of the "HCN" subset
 T range: 298-2840 K
 Review and reccomendation, p. 656, 13,5(b)
+""",
+)
+
+entry(
+    index = 227,
+    label = "HCN + OH <=> NH2 + CO",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(7.83e-04, 'cm^3/(mol*s)'), n=4.00, Ea=(4000, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Hanson1996]""",
+    longDesc =
+u"""
+Part of the "HCN" subset
+T range: 500-2500 K
+BAC-MP4
+J.A. Miller, C.F. Melius, Symposium (International) on Combustion, 1988, 21(1), 919-927, doi: 10.1016/S0082-0784(88)80324-2
+as reported by [Hanson1996] (4d in Table 1, p. 249)
 """,
 )
 
@@ -4308,7 +4578,6 @@ HSO + H <=> HSOH
 HSO + H <=> SH + OH
 HSO + H <=> S + H2O
 HSO + H <=> H2SO
-HSO + H <=> H2S + O
 HSO + H <=> SO + H2
 HSO + O <=> SO2 + H
 HSO + O <=> HOS + O
