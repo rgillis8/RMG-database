@@ -317,7 +317,7 @@ Done at the G2M(RCC2)//B3LYP/6-311G(d,p) level of theory
 
 entry(
     index = 18,
-    label = "HNCN + OH <=> HONCNH",
+    label = "HNCN_r + OH <=> HONCNH",
     degeneracy = 1,
     kinetics = PDepArrhenius(
         pressures = ([1, 10, 100, 300, 760, 7600], 'torr'),
@@ -340,8 +340,8 @@ Done at the CCSD(T)/6-311+G(3df,2p)//B3LYP/6-311+G(3df,2p) level of theory
 )
 
 entry(
-    index = 18,
-    label = "HNCN <=> H + NCN",
+    index = 19,
+    label = "HNCN_p <=> H + NCN",
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(A=(1.79e+28, 'cm^3/(mol*s)'), n=-3.44, Ea=(64502, 'cal/mol'), T0 = (1, 'K'), Tmin = (2000, 'K'), Tmax = (4000, 'K'))),
@@ -418,7 +418,7 @@ calculations done at the CCSD(T)/6-311þG(3df,2p) level of theoty
 )
 
 entry(
-    index = 23,
+    index = 24,
     label = "CH3ONO <=> CH3O + NO",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.58e+23, 's^-1'), n=-2.18, Ea=(41930, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
@@ -434,7 +434,7 @@ The high pressure limit rate is giving here. A 1 atm rate is akso available from
 )
 
 entry(
-    index = 24,
+    index = 25,
     label = "HSOO <=> SH + O2",
     degeneracy = 1,
     kinetics = Troe(
@@ -452,7 +452,7 @@ calculations done at the QCISD(T)/6-311+G(3df,2p)//MP2=FULL/6-31G(d) level of th
 )
 
 entry(
-    index = 25,
+    index = 26,
     label = "H + S2 <=> HSS",
     degeneracy = 1,
     kinetics = ThirdBody(
@@ -468,7 +468,7 @@ UNIMOL calculation
 )
 
 entry(
-    index = 26,
+    index = 27,
     label = "HSSH <=> SH + SH_r1",
     degeneracy = 1,
     kinetics = ThirdBody(
@@ -484,7 +484,7 @@ UNIMOL calculation
 )
 
 entry(
-    index = 26,
+    index = 28,
     label = "OH + NO2-2 <=> HOONO",
     degeneracy = 1,
     kinetics = Troe(
@@ -500,7 +500,7 @@ R.S. Zhu, M.C. Lin, J. Chem. Phys., 2003, 119, 10667, doi: 10.1063/1.1619373
 )
 
 entry(
-    index = 27,
+    index = 29,
     label = "S + NO <=> SNO",
     degeneracy = 1,
     kinetics = Troe(

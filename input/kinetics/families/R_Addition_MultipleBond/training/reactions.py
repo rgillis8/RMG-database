@@ -1043,8 +1043,6 @@ Taken from entry: pdt38 + H <=> pdt37
 """,
 )
 
-
-
 entry(
     index = 64,
     label = "C6H6 + H <=> C6H7-4",
@@ -1124,8 +1122,6 @@ u"""
 Taken from entry: cyC6H7 <=> benzene + H
 """,
 )
-
-
 
 entry(
     index = 69,
@@ -1291,7 +1287,7 @@ calculations done at the CCSD(T)/6-311þG(3df,2p)//CCSD/6-311þþG(d,p) level of
 )
 
 entry(
-    index = 78,
+    index = 79,
     label = "N2H3O_b <=> NH2NO + H",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.57e+34, 's^-1'), n=-6.63, Ea=(44953, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
@@ -1307,7 +1303,7 @@ calculations done at the CCSD(T)/6-311þG(3df,2p)//CCSD/6-311þþG(d,p) level of
 )
 
 entry(
-    index = 79,
+    index = 80,
     label = "SO2 + H <=> HOSO",
     degeneracy = 1,
     kinetics = Troe(

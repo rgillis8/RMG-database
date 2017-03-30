@@ -956,7 +956,7 @@ InChI=1/C3H6O/c1-2-3-4/h2-4H,1H3/ (external symmetry number = 1, spin multiplici
 
 entry(
     index = 525,
-    label = "C4H8-2 + HO2 <=> C4H7-2 + H2O2",
+    label = "C4H8-2 + HO2_r3 <=> C4H7-2 + H2O2",
     degeneracy = 6,
     kinetics = Arrhenius(
         A = (0.00346998, 'cm^3/(mol*s)'),
@@ -1014,7 +1014,7 @@ HO2 (external symmetry number = 1, spin multiplicity = 2)
 
 entry(
     index = 529,
-    label = "C4H8-4 + HO2 <=> C4H7-4 + H2O2",
+    label = "C4H8-4 + HO2_r3 <=> C4H7-4 + H2O2",
     degeneracy = 2,
     kinetics = Arrhenius(
         A = (0.000508, 'cm^3/(mol*s)'),
@@ -1223,7 +1223,7 @@ than calculations of MHS.
 
 entry(
     index = 540,
-    label = "C4H8O-3 + HO2 <=> C4H7O-3 + H2O2",
+    label = "C4H8O-3 + HO2_r3 <=> C4H7O-3 + H2O2",
     degeneracy = 1,
     kinetics = Arrhenius(
         A = (0.000191, 'cm^3/(mol*s)', '*|/', 3),
@@ -1573,7 +1573,7 @@ Ethylamine paper
 
 entry(
     index = 1204,
-    label = "CH3CH2NH2_1 + CH3b <=> CH2CH2NH2 + CH4",
+    label = "CH3CH2NH2_1 + CH3_r3 <=> CH2CH2NH2 + CH4",
     degeneracy = 3,
     kinetics = Arrhenius(
         A = (3.28e-04, 'cm^3/(mol*s)'),
@@ -1593,7 +1593,7 @@ Ethylamine paper
 
 entry(
     index = 1205,
-    label = "CH3CH2NH2_2 + CH3b <=> CH3CHNH2 + CH4",
+    label = "CH3CH2NH2_2 + CH3_r3 <=> CH3CHNH2 + CH4",
     degeneracy = 2,
     kinetics = Arrhenius(
         A = (2.76e-02, 'cm^3/(mol*s)'),
@@ -1613,7 +1613,7 @@ Ethylamine paper
 
 entry(
     index = 1206,
-    label = "CH3CH2NH2_3 + CH3b <=> CH3CH2NH + CH4",
+    label = "CH3CH2NH2_3 + CH3_r3 <=> CH3CH2NH + CH4",
     degeneracy = 2,
     kinetics = Arrhenius(
         A = (1.27e-02, 'cm^3/(mol*s)'),
@@ -1782,7 +1782,7 @@ Ethylamine paper
 
 entry(
     index = 1214,
-    label = "N2H4 + CH3b <=> N2H3 + CH4",
+    label = "N2H4 + CH3_r3 <=> N2H3 + CH4",
     degeneracy = 4,
     kinetics = Arrhenius(
         A = (1.77e+01, 'cm^3/(mol*s)'),
@@ -1862,7 +1862,7 @@ Ethylamine paper
 
 entry(
     index = 1230,
-    label = "NH + CH4b <=> NH2b + CH3a",
+    label = "NH + CH4b <=> NH2b + CH3_p1",
     degeneracy = 1,
     kinetics = Arrhenius(
         A = (9e13, 'cm^3/(mol*s)', '*|/', 1.5),
@@ -1934,7 +1934,7 @@ DOI: 10.1021/jp972959n
 
 entry(
     index = 1011,
-    label = "CH4b + SH <=> CH3a + H2S",
+    label = "CH4b + SH <=> CH3_p1 + H2S",
     degeneracy = 1,
     kinetics = Arrhenius(
         A = (7.78e-22, 'cm^3/(mol*s)'),
@@ -2287,7 +2287,7 @@ calculations done at the G2M//B3LYP/6-311G(d,p) level of theory
 
 entry(
     index = 1032,
-    label = "NH2 + CH4_r <=> NH3 + CH3a",
+    label = "NH2 + CH4_r <=> NH3 + CH3_p1",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.36e+04, 'cm^3/(mol*s)'), n=2.87, Ea=(10691, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (5000, 'K')),
     rank = 2,
@@ -2301,7 +2301,7 @@ calculations done at the G2M//B3LYP/6-311G(d,p) level of theory
 )
 
 entry(
-    index = 1032,
+    index = 1033,
     label = "NH2 + H2O <=> NH3 + OH_p1",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.62e+13, 'cm^3/(mol*s)'), n=0, Ea=(16846, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (5000, 'K')),
@@ -2318,7 +2318,7 @@ Fitted to a 2 parameter Arrhenius with a coefficient of determination of 0.9943
 )
 
 entry(
-    index = 1033,
+    index = 1034,
     label = "NH3_r + NO2 <=> NH2_p + HONO_p",
     degeneracy = 1,
     kinetics = MultiArrhenius(
@@ -2341,7 +2341,7 @@ conformer-dup: both rates for cis/trans-HONO products were taken
 )
 
 entry(
-    index = 1034,
+    index = 1035,
     label = "NH3_r + NO3 <=> HNO3 + NH2_p",
     degeneracy = 1,
     kinetics = PDepArrhenius(
@@ -2367,7 +2367,7 @@ k-1 was addopted here due to the strange T dependence of k+1
 )
 
 entry(
-    index = 1035,
+    index = 1036,
     label = "H2S_r + H <=> SH_p1 + H2_p",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.5e+07, 'cm^3/(mol*s)'), n=1.94, Ea=(904, 'cal/mol'), T0=(1, 'K'), Tmin = (190, 'K'), Tmax = (2237, 'K')),
@@ -2382,7 +2382,7 @@ Combined experimental (298-598 K) and computational calculation at the QCISD(T)/
 )
 
 entry(
-    index = 1036,
+    index = 1037,
     label = "H2S_r + S_rad <=> SH_p1 + SH_p23",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.7e+06, 'cm^3/(mol*s)'), n=2.297, Ea=(9010, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
@@ -2396,7 +2396,7 @@ calculations done at the MRCI/aug-cc-pV(Q+d)Z//MRCI/aug-cc-pVTZ level of theory
 )
 
 entry(
-    index = 1037,
+    index = 1038,
     label = "H2 + S_rad <=> SH_p23 + H_p",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.58e+14, 'cm^3/(mol*s)'), n=0, Ea=(19700, 'cal/mol'), T0=(1, 'K'), Tmin = (2740, 'K'), Tmax = (3570, 'K')),
@@ -2410,8 +2410,8 @@ H. Shiina, M. Oya, K. Yamashita, A. Miyoshi, H. Matsui, J. Phys. Chem., 1996, 10
 )
 
 entry(
-    index = 1038,
-    label = "CH4_r + S_rad <=> SH_p23 + CH3a",
+    index = 1039,
+    label = "CH4_r + S_rad <=> SH_p23 + CH3_p1",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.04e+14, 'cm^3/(mol*s)'), n=0, Ea=(19910, 'cal/mol'), T0=(1, 'K'), Tmin = (830, 'K'), Tmax = (2500, 'K')),
     rank = 1,
@@ -2425,7 +2425,7 @@ T > 830 K
 )
 
 entry(
-    index = 1039,
+    index = 1040,
     label = "C2H6 + S_rad <=> SH_p23 + C2H5b",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.23e+14, 'cm^3/(mol*s)'), n=0, Ea=(14750, 'cal/mol'), T0=(1, 'K'), Tmin = (830, 'K'), Tmax = (2500, 'K')),
@@ -2440,8 +2440,8 @@ T > 830 K
 )
 
 entry(
-    index = 1040,
-    label = "H + HSS_r <=> H2_p + S2_p1",
+    index = 1041,
+    label = "H + HSS_r12 <=> H2_p + S2_p1",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.23e+08, 'cm^3/(mol*s)'), n=1.653, Ea=(-1105, 'cal/mol'), T0=(1, 'K'), Tmin = (873, 'K'), Tmax = (1423, 'K')),
     rank = 3,
@@ -2454,8 +2454,8 @@ TST
 )
 
 entry(
-    index = 1041,
-    label = "S + HSS_r12 <=> SH_p1 + S2_p1",
+    index = 1042,
+    label = "S_rad + HSS_r12 <=> SH_p1 + S2_p1",
     degeneracy = 1,
     kinetics = Arrhenius(A=(4.17e+06, 'cm^3/(mol*s)'), n=2.200, Ea=(-600, 'cal/mol'), T0=(1, 'K'), Tmin = (873, 'K'), Tmax = (1423, 'K')),
     rank = 3,
@@ -2468,7 +2468,7 @@ TST
 )
 
 entry(
-    index = 1042,
+    index = 1043,
     label = "HSS_r12 + HSS_r3 <=> HSSH_p23 + S2_p1",
     degeneracy = 1,
     kinetics = Arrhenius(A=(9.56e+00, 'cm^3/(mol*s)'), n=3.370, Ea=(-1672, 'cal/mol'), T0=(1, 'K'), Tmin = (873, 'K'), Tmax = (1423, 'K')),
@@ -2482,7 +2482,7 @@ TST
 )
 
 entry(
-    index = 1043,
+    index = 1044,
     label = "HSSH_r12 + H <=> HSS_p1 + H2_p",
     degeneracy = 1,
     kinetics = Arrhenius(A=(9.56e+00, 'cm^3/(mol*s)'), n=3.370, Ea=(-1672, 'cal/mol'), T0=(1, 'K'), Tmin = (873, 'K'), Tmax = (1423, 'K')),
@@ -2496,7 +2496,7 @@ TST
 )
 
 entry(
-    index = 1044,
+    index = 1045,
     label = "HSSH_r12 + SH <=> H2S + HSS_p1",
     degeneracy = 1,
     kinetics = Arrhenius(A=(6.40e+03, 'cm^3/(mol*s)'), n=2.980, Ea=(-1480, 'cal/mol'), T0=(1, 'K'), Tmin = (873, 'K'), Tmax = (1423, 'K')),
@@ -2510,7 +2510,7 @@ TST
 )
 
 entry(
-    index = 1045,
+    index = 1046,
     label = "HSSH_r12 + S_rad <=> HSS_p1 + SH_p23",
     degeneracy = 1,
     kinetics = Arrhenius(A=(6.40e+03, 'cm^3/(mol*s)'), n=2.980, Ea=(-1480, 'cal/mol'), T0=(1, 'K'), Tmin = (873, 'K'), Tmax = (1423, 'K')),
@@ -2524,7 +2524,7 @@ TST
 )
 
 entry(
-    index = 1046,
+    index = 1047,
     label = "HONO_r + H <=> H2_p + NO2_p",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.01e+08, 'cm^3/(mol*s)'), n=1.55, Ea=(6614, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (3500, 'K')),
@@ -2538,7 +2538,7 @@ G2 and BAC-MP4
 )
 
 entry(
-    index = 1047,
+    index = 1048,
     label = "HNO_r + H <=> NO_p + H2_p",
     degeneracy = 1,
     kinetics = Arrhenius(A=(4.46e+11, 'cm^3/(mol*s)'), n=0.720, Ea=(655, 'cal/mol'), T0=(1, 'K'), Tmin = (200, 'K'), Tmax = (3000, 'K')),
@@ -2552,7 +2552,7 @@ calculations done at the CASSCF//(CASSCF and CISD) levels of theory
 )
 
 entry(
-    index = 1048,
+    index = 1049,
     label = "HNO3_r + H <=> H2_p + NO3_p",
     degeneracy = 1,
     kinetics = Arrhenius(A=(5.56e+08, 'cm^3/(mol*s)'), n=1.53, Ea=(16400, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
@@ -2566,7 +2566,7 @@ CTST
 )
 
 entry(
-    index = 1048,
+    index = 1050,
     label = "HCO_r3 + HNO_r <=> CH2O_p + NO_p",
     degeneracy = 1,
     kinetics = Arrhenius(A=(5.83e-01, 'cm^3/(mol*s)'), n=3.84, Ea=(115, 'cal/mol'), T0=(1, 'K'), Tmin = (300, 'K'), Tmax = (3000, 'K')),
@@ -2580,7 +2580,7 @@ calculations done at the G2M//BH&HLYP/6-311G(d, p) level of theory
 )
 
 entry(
-    index = 1049,
+    index = 1051,
     label = "CH2O + NO2 <=> CHO_p1 + HONO_p",
     degeneracy = 3,
     kinetics = Arrhenius(A=(8.55e+16, 'cm^3/(mol*s)'), n=5.64, Ea=(9221, 'cal/mol'), T0=(1, 'K'), Tmin = (200, 'K'), Tmax = (3000, 'K')),
@@ -2595,7 +2595,7 @@ calculations done at the G2M//B3LYP/6−311+G(d,p) and G2M//MPW1PW91/6−311+G(3
 )
 
 entry(
-    index = 1050,
+    index = 1052,
     label = "HNO3_r + OH <=> H2O_p + NO3_p",
     degeneracy = 1,
     kinetics = Arrhenius(A=(8.73e+00, 'cm^3/(mol*s)'), n=3.50, Ea=(-1667, 'cal/mol'), T0=(1, 'K'), Tmin = (750, 'K'), Tmax = (1500, 'K')),
@@ -2609,8 +2609,8 @@ calculations done at the B3LYP/6-311G(d,p)//B3LYP/6-311G(d,p) level of theory
 )
 
 entry(
-    index = 1051,
-    label = "HCN_r + O <=> CN_p + OH_p23",
+    index = 1053,
+    label = "HCN_r + O_rad <=> CN_p + OH_p23",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.0e+08, 'cm^3/(mol*s)'), n=1.47, Ea=(7550, 'cal/mol'), T0=(1, 'K'), Tmin = (500, 'K'), Tmax = (2500, 'K')),
     rank = 1,
@@ -2623,7 +2623,7 @@ Review and reccomendation, based on 5 different experimental studies
 )
 
 entry(
-    index = 1052,
+    index = 1054,
     label = "HCN_r + H <=> CN_p + H2_p",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.8e+14, 'cm^3/(mol*s)'), n=0, Ea=(24600, 'cal/mol'), T0=(1, 'K'), Tmin = (500, 'K'), Tmax = (2500, 'K')),
@@ -2637,7 +2637,7 @@ Review and reccomendation, based on experimental studies
 )
 
 entry(
-    index = 1053,
+    index = 1055,
     label = "HCN_r + OH <=> CN_p + H2O_p",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.8e+14, 'cm^3/(mol*s)'), n=0, Ea=(24600, 'cal/mol'), T0=(1, 'K'), Tmin = (298, 'K'), Tmax = (2840, 'K')),
@@ -2651,7 +2651,7 @@ Review and reccomendation, based on experimental studies
 )
 
 entry(
-    index = 1054,
+    index = 1056,
     label = "CH3SH_r1 + H <=> CH3S_p + H2_p",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.39e+08, 'cm^3/(mol*s)'), n=1.729, Ea=(986, 'cal/mol'), T0=(1, 'K'), Tmin = (250, 'K'), Tmax = (3000, 'K')),
@@ -2666,7 +2666,7 @@ calculations done at the QCISD/6-311G(d,p) level
 )
 
 entry(
-    index = 1055,
+    index = 1057,
     label = "CH3SH_r2 + H <=> CH2SH_p + H2_p",
     degeneracy = 1,
     kinetics = Arrhenius(A=(4.16e+03, 'cm^3/(mol*s)'), n=2.925, Ea=(4747, 'cal/mol'), T0=(1, 'K'), Tmin = (250, 'K'), Tmax = (3000, 'K')),

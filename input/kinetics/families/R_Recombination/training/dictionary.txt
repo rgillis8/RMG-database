@@ -231,7 +231,7 @@ multiplicity 2
 4 C u0 p0 c0 {3,D} {5,D}
 5 N u1 p1 c0 {4,D}
 
-HNCN
+HNCN_r
 multiplicity 2
 1   N u0 p1 c0 {2,D} {4,S}
 2   C u0 p0 c0 {1,D} {3,D}
@@ -246,7 +246,7 @@ HONCNH
 5 H u0 p0 c0 {1,S}
 6 H u0 p0 c0 {4,S}
 
-HNCN
+HNCN_p
 multiplicity 2
 1 *2 N u0 p1 c0 {2,D} {4,S}
 2    C u0 p0 c0 {1,D} {3,D}
@@ -256,12 +256,6 @@ multiplicity 2
 H
 multiplicity 2
 1 *1 H u1 p0 c0
-
-NCN
-multiplicity 3
-1 *2 N u1 p1 c0 {2,D}
-2    C u0 p0 c0 {1,D} {3,D}
-3    N u1 p1 c0 {2,D}
 
 NH2
 multiplicity 2

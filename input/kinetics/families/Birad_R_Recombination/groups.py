@@ -8,7 +8,7 @@ This reaction family is reserved for recombination of O_atom, S_atom, N_R_birad 
 The forbidden groups at the bottom prevent it from reacting with other forms of O, S, NH.
 """
 
-template(reactants=["Y_rad", "OSa"], products=["YOS."], ownReverse=False)
+template(reactants=["Y_rad", "Birad"], products=["YOS."], ownReverse=False)
 
 reverse = "ROS_Bond_Dissociation"
 
@@ -85,7 +85,7 @@ entry(
     group = 
 """
 1 *2 N u2 p1 {2,S}
-2    C       {1,S}
+2    C u0    {1,S}
 """,
     kinetics = None,
 )
@@ -96,7 +96,7 @@ entry(
     group = 
 """
 1 *2 N u2 p1 {2,S}
-2    O       {1,S}
+2    O u0    {1,S}
 """,
     kinetics = None,
 )
@@ -107,7 +107,7 @@ entry(
     group = 
 """
 1 *2 N u2 p1 {2,S}
-2    N       {1,S}
+2    N u0    {1,S}
 """,
     kinetics = None,
 )
@@ -118,7 +118,7 @@ entry(
     group = 
 """
 1 *2 N u2 p1 {2,S}
-2    S       {1,S}
+2    S u0    {1,S}
 """,
     kinetics = None,
 )
