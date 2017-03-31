@@ -461,7 +461,7 @@ multiplicity 4
 3 N u1 p1 c0 {2,S} {4,S}
 4 H u0 p0 c0 {3,S}
 
-CCO
+C2O
 multiplicity 3
 1 C u2 p0 c0 {2,D}
 2 C u0 p0 c0 {1,D} {3,D}
@@ -470,8 +470,8 @@ multiplicity 3
 CNN
 multiplicity 3
 1 C u2 p0 c0 {2,D}
-2 N u0 p1 c0 {1,D} {3,S}
-3 N u0 p2 c0 {2,S}
+2 N u0 p0 c+1 {1,D} {3,D}
+3 N u0 p2 c-1 {2,D}
 
 HNCN
 multiplicity 2
@@ -490,11 +490,11 @@ multiplicity 2
 
 CH2NC
 multiplicity 4
-1 C u0 p0 c0 {2,D} {4,S} {5,S}
-2 N u0 p1 c0 {1,D} {3,S}
-3 C u3 p0 c0 {2,S}
-4 H u0 p0 c0 {1,S}
-5 H u0 p0 c0 {1,S}
+1 C u1 p0 c0 {2,S} {3,S} {4,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 N u0 p1 c0 {1,S} {5,D}
+5 C u2 p0 c0 {4,D}
 
 CH2NCN
 multiplicity 3
@@ -689,9 +689,9 @@ SO3
 
 HSO
 multiplicity 2
-1 S u0 p2 c0 {2,S} {3,S}
-2 O u1 p2 c0 {1,S}
-3 H u0 p0 c0 {1,S}
+1 S u1 p1 c0 {2,S} {3,D}
+2 H u0 p0 c0 {1,S}
+3 O u0 p2 c0 {1,D}
 
 HOSO
 multiplicity 2

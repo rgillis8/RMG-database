@@ -10,8 +10,8 @@ Prepared by Alon Grinberg Dana
 Notes for users:
 - Consider setting an appropriate maximumRadicalElectrons value in your input file to allow the [N] quartet radicat
 - For NOx, the Nitrogen_Dean_and_Bozzelli library should be used conjointly with this one.
-- It is reccomended to include the NitrogenCurran, SulfurLibrary, thermo_DFT_CCSDTF12_BAC, primaryThermoLibrary
-  and SOxNOx thermo libraries in your model generation
+- It is reccomended to consider the NitrogenCurran, SulfurLibrary, thermo_DFT_CCSDTF12_BAC, primaryThermoLibrary,
+  CHN, and SOxNOx thermo libraries for your model generation
 - Some reactions have different kinetics coefficients reported for different T range,
   'The Low T' rate is reported in the comments.
 - This library should be used along with the FFCM kinetic & thermo libraries which handle well the transition of ground/excited states of small radicals
@@ -463,7 +463,7 @@ Shock tube measurement, no T dependence
 
 entry(
     index = 16,
-    label = "CCO + N2 <=> cNCN + CO",
+    label = "C2O + N2 <=> cNCN + CO",
     degeneracy = 1,
     kinetics = Arrhenius(A=(4.13e+04, 'cm^3/(mol*s)'), n=0, Ea=(27700, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Lin2010b]""",
@@ -478,7 +478,7 @@ Done at the CCSD(T)/6-311+G(3df)//B3LYP/6-311+G(3df) level of theory
 
 entry(
     index = 17,
-    label = "CCO + N2 <=> CNN + CO",
+    label = "C2O + N2 <=> CNN + CO",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.1e+13, 'cm^3/(mol*s)'), n=0, Ea=(36800, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Lin2010b]""",
@@ -489,12 +489,12 @@ k1 in [Lin2010b] (p. 124)
 T range: 800-3000 K
 Done at the CCSD(T)/6-311+G(3df)//B3LYP/6-311+G(3df) level of theory
 
-The sister reaction "CCO + N2 <=> CNN(Singlet) + CO"
+The sister reaction "C2O + N2 <=> CNN(Singlet) + CO"
 has a rate lower or equal to 1.75e+12exp(33.2 kcal/mol/RT)
 
 formation of NCO + CN and 1CNN/3NCN + CO are too small to be important in the temperature range of 800–3000 K
 
-Predicted values imply that CCO + N2 may not compete with the CH + N2 reaction and
+Predicted values imply that C2O + N2 may not compete with the CH + N2 reaction and
 thus the reaction is not expected to be important for the ‘prompt-NO’ formation in combustion.
 """,
 )
