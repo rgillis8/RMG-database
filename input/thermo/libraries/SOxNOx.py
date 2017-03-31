@@ -8,38 +8,7 @@ longDesc = u"""
 """
 
 entry(
-    index = 2,
-    label = "N2O5",
-    molecule = 
-"""
-1 O u0 p2 c0 {2,D}
-2 N u0 p0 c+1 {1,D} {3,S} {4,S}
-3 O u0 p3 c-1 {2,S}
-4 O u0 p2 c0 {2,S} {5,S}
-5 N u0 p0 c+1 {4,S} {6,S} {7,D}
-6 O u0 p3 c-1 {5,S}
-7 O u0 p2 c0 {5,D}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([86.53,99.74,109.60,117.11,127.29,133.42,140.73],'J/(mol*K)'),
-        H298 = (13.53,'kJ/mol','+|-',0.56),
-        S298 = (353.45,'J/(mol*K)'),
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-M06-2X/MG3S
-I.M. Alecu, P. Marshall
-Computational Study of the Thermochemistry of N2O5 and the Kinetics of the Reaction N2O5 + H2O => 2 HNO3
-J. Phys. Chem. A, 2014, 118, 11405−11416
-doi: 10.1021/jp509301t (see also erratum: doi: 10.1021/acs.jpca.6b12514)
-Data available in the source at a widet T range than reported here
-""",
-)
-
-entry(
-    index = 3,
+    index = 1,
     label = "HOSH",
     molecule = 
 """
@@ -61,73 +30,6 @@ UMP2=full/6-31G+
 A. Goumri, J-D.R. Rocha, D. Laakso, C.E. Smith, P. Marshall
 The Journal of Chemical Physics 101, 9405 (1994); doi: http://dx.doi.org/10.1063/1.467971
 As reported by: M.U. Alzueta, R. Bilbao, P. Glarborg, Comb. Flame, 2001, 127(4) 2234-2251, doi: 10.1016/S0010-2180(01)00325-X 
-""",
-)
-
-entry(
-    index = 4,
-    label = "S",
-    molecule = 
-"""
-multiplicity 3
-1 S u2 p2 c0
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([5.67,5.54,5.43,5.35,5.22,5.13,5.06],'cal/(mol*K)'),
-        H298 = (66.2,'kcal/mol'),
-        S298 = (40.09,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-R.J. Kee, F.M. Rupley, J.A. Miller, The Chemkin Thermodynamic Data Base, Sandia Report SAND87-8215, Sandia National Laboratories, Livermore, California, 1991
-As reported by: P. Glarborg, D. Kubel, K Dam-Johansen, H-M. Chiang, J.W. Bozzelli, Int. J. Chem. Kin., 1996, 28(10), 773-790, doi: 10.1002/(SICI)1097-4601(1996)28:10<773::AID-KIN8>3.0.CO;2-K
-""",
-)
-
-entry(
-    index = 4,
-    label = "S2",
-    molecule = 
-"""
-1 S u0 p2 c0 {2,D}
-2 S u0 p2 c0 {1,D}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([7.79,8.13,8.38,8.56,8.76,8.89,9.29],'cal/(mol*K)'),
-        H298 = (30.7,'kcal/mol'),
-        S298 = (54.50,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-R.J. Kee, F.M. Rupley, J.A. Miller, The Chemkin Thermodynamic Data Base, Sandia Report SAND87-8215, Sandia National Laboratories, Livermore, California, 1991
-As reported by: P. Glarborg, D. Kubel, K Dam-Johansen, H-M. Chiang, J.W. Bozzelli, Int. J. Chem. Kin., 1996, 28(10), 773-790, doi: 10.1002/(SICI)1097-4601(1996)28:10<773::AID-KIN8>3.0.CO;2-K
-""",
-)
-
-entry(
-    index = 4,
-    label = "SH",
-    molecule = 
-"""
-multiplicity 2
-1 S u1 p2 c0 {2,S}
-2 H u0 p0 c0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([7.74,7.59,7.49,7.46,7.59,7.85,8.34],'cal/(mol*K)'),
-        H298 = (33.3,'kcal/mol'),
-        S298 = (46.73,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-R.J. Kee, F.M. Rupley, J.A. Miller, The Chemkin Thermodynamic Data Base, Sandia Report SAND87-8215, Sandia National Laboratories, Livermore, California, 1991
-As reported by: P. Glarborg, D. Kubel, K Dam-Johansen, H-M. Chiang, J.W. Bozzelli, Int. J. Chem. Kin., 1996, 28(10), 773-790, doi: 10.1002/(SICI)1097-4601(1996)28:10<773::AID-KIN8>3.0.CO;2-K
 """,
 )
 
@@ -376,30 +278,6 @@ As reported by: P. Glarborg, D. Kubel, K Dam-Johansen, H-M. Chiang, J.W. Bozzell
 
 entry(
     index = 4,
-    label = "HS2",
-    molecule = 
-"""
-multiplicity 2
-1 S u0 p2 c0 {2,S} {3,S}
-2 S u1 p2 c0 {1,S}
-3 H u0 p0 c0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([39.75,42.72,45.02,46.82,49.50,51.55,54.39],'J/(mol*K)'),
-        H298 = (104.6,'kJ/mol'),
-        S298 = (253.3,'J/(mol*K)'),
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-A. Burcat, B. McBride, (1995) Ideal Gas Thermodynamic Data for Combustion and Air-Pollution Use; Aerospace Engineering Report TAE 732, Technion, Israel Institute of Technology; January 2001 update
-As reported by: M.U. Alzueta, R. Bilbao, P. Glarborg, Comb. Flame, 2001, 127(4) 2234-2251, doi: 10.1016/S0010-2180(01)00325-X 
-""",
-)
-
-entry(
-    index = 4,
     label = "HSOO",
     molecule = 
 """
@@ -425,8 +303,135 @@ J. Phys. Chem. A, 1999, 103, 11328-11335, doi: 10.1021/jp9924070
 """,
 )
 
+entry(
+    index = 4,
+    label = "TrinitroMethane",
+    molecule = 
+"""
+1  C u0 p0 c0 {2,S} {5,S} {8,S} {11,S}
+2  N u0 p0 c+1 {1,S} {3,D} {4,S}
+3  O u0 p2 c0 {2,D}
+4  O u0 p3 c-1 {2,S}
+5  N u0 p0 c+1 {1,S} {6,D} {7,S}
+6  O u0 p2 c0 {5,D}
+7  O u0 p3 c-1 {5,S}
+8  N u0 p0 c+1 {1,S} {9,D} {10,S}
+9  O u0 p2 c0 {8,D}
+10 O u0 p3 c-1 {8,S}
+11 H u0 p0 c0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([44.27,45.71,47.02,48.21,50.27,51.92,54.65],'cal/(mol*K)'),
+        H298 = (-5.69,'kcal/mol'),
+        S298 = (98.34,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+517-25-9 CH(NO2)3 Tri-Nitro Methane
+REF= A.BURCAT PM3 JPCRD 28,(1999),63
+Moments=Melius HF298=-3.2 kcal  REF=Carpenter et. al. JCED 15,(1970),535
+Max Lst Sq Error Cp @ 1300 K 0.50%
+
+Alexander Burcat and Branko Ruscic
+"Third Millennium Ideal Gas and Condensed Phase Thermochemical Database for
+Combustion with updates from Active Thermochemical Tables" TAE # 960; ANL-50/20
+Technion-IIT, Aerospace Engineering, and Argonne National Laboratory, Chemistry
+Division, 2005.
+""",
+)
+
+entry(
+    index = 4,
+    label = "CNH2",
+    molecule = 
+"""
+multiplicity 4
+1 C u3 p0 c0 {2,S}
+2 N u0 p1 c0 {1,S} {3,S} {4,S}
+3 H u0 p0 c0 {2,S}
+4 H u0 p0 c0 {2,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([10.42,11.22,11.96,12.65,13.87,14.89,16.79],'cal/(mol*K)'),
+        H298 = (87.84,'kcal/mol'),
+        S298 = (52.93,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+CNH2  triradical  SIGMA=2.  STATWT=2.  IA=0.2456  IB=2.2408  IC=2.4865
+Nu=3331.5,3304,1652,1438,1029,718  HF298=368.7+/-1.45 kJ  REF=ATcT C 2011
+{HF298=366.7+/-8. kJ  REF=Burcat G3B3}  Max Lst Sq Error Cp @ 6000 K 0.40%.
+
+Alexander Burcat and Branko Ruscic
+"Third Millennium Ideal Gas and Condensed Phase Thermochemical Database for
+Combustion with updates from Active Thermochemical Tables" TAE # 960; ANL-50/20
+Technion-IIT, Aerospace Engineering, and Argonne National Laboratory, Chemistry
+Division, 2005.
+""",
+)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+
+Add:
+
+N2H3NO
+HNNO2 - bad
+H2NONO
+NH2NHNO
+NH2NHNO2
+NH2NHONO
+CH2N2 - radical, but no data for non-rad
+CHN2 - same
+cN2CH2 - same
+CNNH - same
+CNN - same
+CH2NC - same
+CH2NCN
+NCCHN
+NCNCN
+cNCN
+OHNHCN - bad
+HONCNH
+NCOHNH
+HN(O)CN - bad
+HNC(O)N
+
+
+
+
+HOOS
+H2SO4
+NS
+SNO
+CS - bad
+
+
+
+
+
+"""
 
 
 
