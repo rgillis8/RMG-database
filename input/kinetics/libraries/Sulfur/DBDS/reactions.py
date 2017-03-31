@@ -66,3 +66,18 @@ forward reaction estimated by RMG... but not thermo favored so they use the reve
 """,
 )
 
+entry(
+    index = 5,
+    label = "C7H7 + C7H6S <=> DBMS_rad",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(675.891, 'cm^3/(mol*s)'),
+                         n= 2.96536,
+                         Ea=(-1.5, 'kcal/mol'),
+                         T0=(1, 'K')
+                         ),
+    longDesc =
+u"""
+Based on thioldiene + propyl radical rxn similar to index 1 rxn; barrier adjusted down from 0.5 -> -1.5 to account for the Cd to Cb change from the comparison rxn.
+""",
+)
+
