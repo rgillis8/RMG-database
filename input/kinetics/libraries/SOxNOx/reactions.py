@@ -11,7 +11,7 @@ Notes for users:
 - Consider setting an appropriate maximumRadicalElectrons value in your input file to allow the [N] quartet radicat
 - For NOx, the Nitrogen_Dean_and_Bozzelli library should be used conjointly with this one.
 - It is reccomended to consider the NitrogenCurran, SulfurLibrary, thermo_DFT_CCSDTF12_BAC, primaryThermoLibrary,
-  CHN, and SOxNOx thermo libraries for your model generation
+  CHN, CHON, and SOxNOx thermo libraries for your model generation
 - Some reactions have different kinetics coefficients reported for different T range,
   'The Low T' rate is reported in the comments.
 - This library should be used along with the FFCM kinetic & thermo libraries which handle well the transition of ground/excited states of small radicals

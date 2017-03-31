@@ -362,9 +362,47 @@ multiplicity 4
     shortDesc = u"""""",
     longDesc = 
 u"""
+35430-17-2
 CNH2  triradical  SIGMA=2.  STATWT=2.  IA=0.2456  IB=2.2408  IC=2.4865
 Nu=3331.5,3304,1652,1438,1029,718  HF298=368.7+/-1.45 kJ  REF=ATcT C 2011
 {HF298=366.7+/-8. kJ  REF=Burcat G3B3}  Max Lst Sq Error Cp @ 6000 K 0.40%.
+
+Alexander Burcat and Branko Ruscic
+"Third Millennium Ideal Gas and Condensed Phase Thermochemical Database for
+Combustion with updates from Active Thermochemical Tables" TAE # 960; ANL-50/20
+Technion-IIT, Aerospace Engineering, and Argonne National Laboratory, Chemistry
+Division, 2005.
+""",
+)
+
+entry(
+    index = 4,
+    label = "NH2CO",
+    molecule = 
+"""
+multiplicity 2
+1 N u0 p1 c0 {2,S} {4,S} {5,S}
+2 C u1 p0 c0 {1,S} {3,D}
+3 O u0 p2 c0 {2,D}
+4 H u0 p0 c0 {1,S}
+5 H u0 p0 c0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([12.49,14.04,15.42,16.60,18.46,19.86,22.10],'cal/(mol*K)'),
+        H298 = (-3.23,'kcal/mol'),
+        S298 = (62.53,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+3858-51-7
+CH2NO  H2N-C(*)=O RADICAL   STATWT=2  SIGMA=2  IA=0.6788  IB=7.7562  IC=8.4350
+NU=3695,3484,1871,1626,1233,1090,641,521,211.  HF298=-3.225+/-2. kcal REF=Burcat
+G3B3   {HF298=-5.57 +/-2.37 kcal  REF= C. Melius Database BAC/MP4 C37;
+HF298=-15.1+/-4. kJ  REF=Luo Comprehensive Handbook Chem. Bond Energ. CRC press
+2007; HF298=-15.7 kJ REF=Morochkin & Dorofeeva Comp.& Theo Chem. 991,(2012),182}
+Max Lst Sq Error Cp @ 6000 K 0.36%.
 
 Alexander Burcat and Branko Ruscic
 "Third Millennium Ideal Gas and Condensed Phase Thermochemical Database for
@@ -394,6 +432,9 @@ Division, 2005.
 
 """
 
+check Burcat?
+
+
 Add:
 
 N2H3NO
@@ -422,11 +463,8 @@ HNC(O)N
 
 
 HOOS
-H2SO4
 NS
 SNO
-CS - bad
-
 
 
 
