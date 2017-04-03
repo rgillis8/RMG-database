@@ -37010,7 +37010,7 @@ entry(
         A = (0.00178, 'cm^3/(mol*s)'),
         n = 4.34,
         alpha = 0,
-        E0 = (9.8, 'kcal/mol'),
+        E0 = (3.8, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
