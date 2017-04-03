@@ -94,6 +94,7 @@ Reference legend:
 [Lin2004] Z.F. Xu, M.C. Lin, Int. J. Chem. Kin., 2004, 36(4), 205-215, doi: 10.1002/kin.10178
 [Lin2005a] R.S. Zhu, M.C. Lin, Int. J. Chem. Kin., 2005, 37(10), 593-598, doi: 10.1002/kin.20066
 [Lin2005b] R.S. Zhu, M.C. Lin, Ab initio study on the oxidation of NCN by O and HO radicals: Prediction of the total rate constant and product branching ratios, in: 6th International Conference of Chemical Kinetics, NIST, Gaithersberg, MD, 2005
+[Lin2005c] Z.F. Xu, C.-H. Hsu, M.C. Lin, J. Chem. Phys., 2005, 122, 234308, doi: 10.1063/1.1917834
 [Lin2007a] R.S. Zhu, M.C. Lin, J. Phys. Chem. A, 2007, 111, 6766-6771, doi: 10.1021/jp068991b
 [Lin2007b] S. Xu, M.C. Lin, J. Phys. Chem. A, 2007, 111, 6730-6740, doi: 10.1021/jp069038+
 [Lin2009a] S. Xu, M.C. Lin, Proceedings of the Combustion Institute, 2009, 32, 99-106, doi: 10.1016/j.proci.2008.07.011
@@ -3161,6 +3162,24 @@ The Low T (400-1000 K) rate is:
 
 entry(
     index = 171,
+    label = "HCO + NO <=> HNO + CO",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.04e+08, 'cm^3/(mol*s)'), n=1.47, Ea=(-1765, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Lin2005c]""",
+    longDesc =
+u"""
+Part of the "NOx" subset
+T range: 500-3000 K
+calculations done at the G2M(CC5)//B3LYP/6-311G(d, p) level of theory
+k(HNO+CO), p. 234308-10
+
+The Low T (200-500 K) rate is:
+    kinetics = Arrhenius(A=(1.85e+12, 'cm^3/(mol*s)'), n=0.10, Ea=(-481, 'cal/mol'), T0=(1, 'K')),
+""",
+)
+
+entry(
+    index = 172,
     label = "NH3 + HNO3 <=> H2NNO2 + H2O",
     degeneracy = 1,
     kinetics = Arrhenius(A=(8.1e-01, 'cm^3/(mol*s)'), n=3.47, Ea=(43060, 'cal/mol'), T0=(1, 'K')),
@@ -3174,7 +3193,7 @@ calculations done at the G2M//PMP4/6-311G(d, p) level of theory
 )
 
 entry(
-    index = 172,
+    index = 173,
     label = "NH3 + HNO3 <=> H2NONO + H2O",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.32e+01, 'cm^3/(mol*s)'), n=3.50, Ea=(44930, 'cal/mol'), T0=(1, 'K')),
@@ -3188,7 +3207,7 @@ calculations done at the G2M//PMP4/6-311G(d, p) level of theory
 )
 
 entry(
-    index = 173,
+    index = 174,
     label = "CH2O + NO2 <=> CHO + HONO",
     degeneracy = 3,
     kinetics = Arrhenius(A=(1.42e-07, 'cm^3/(mol*s)'), n=5.64, Ea=(9221, 'cal/mol'), T0=(1, 'K')),
@@ -3205,7 +3224,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 174,
+    index = 175,
     label = "CH2O + NO2 <=> CHO + HNO2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.07e-01, 'cm^3/(mol*s)'), n=4.22, Ea=(19852, 'cal/mol'), T0=(1, 'K')),
@@ -3219,7 +3238,7 @@ calculations done at the G2M//B3LYP/6−311+G(d,p) and G2M//MPW1PW91/6−311+G(3
 )
 
 entry(
-    index = 175,
+    index = 176,
     label = "HONO + O3 <=> HNO3 + O2",
     degeneracy = 1,
     duplicate = True,
@@ -3240,7 +3259,7 @@ conformer-dup: rate are for both cis-HONO and trans-HONO reactants
 )
 
 entry(
-    index = 176,
+    index = 177,
     label = "O3 <=> O2 + O",
     degeneracy = 1,
     kinetics = ThirdBody(
@@ -3255,7 +3274,7 @@ Shock Tube
 )
 
 entry(
-    index = 177,
+    index = 178,
     label = "HONO + NH3 <=> H2NNO + H2O",
     degeneracy = 1,
     duplicate = True,
@@ -3276,7 +3295,7 @@ conformer-dup: rate are for both cis-HONO and trans-HONO reactants
 )
 
 entry(
-    index = 178,
+    index = 179,
     label = "HNO3 + OH <=> H2O + NO3",
     degeneracy = 1,
     kinetics = Arrhenius(A=(8.73e+00, 'cm^3/(mol*s)'), n=3.50, Ea=(-1667, 'cal/mol'), T0=(1, 'K')),
@@ -3293,7 +3312,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 179,
+    index = 180,
     label = "OH + NO2 <=> HNO3",
     degeneracy = 1,
     kinetics = Troe(
@@ -3312,7 +3331,7 @@ Also available from [Lin1998a] at the B3LYP/6-311G(d,p)//B3LYP/6-311G(d,p) level
 )
 
 entry(
-    index = 180,
+    index = 181,
     label = "OH + NO2 <=> HOONO",
     degeneracy = 1,
     kinetics = Troe(
@@ -3331,7 +3350,7 @@ Added as a training reaction to R_Recombination
 )
 
 entry(
-    index = 181,
+    index = 182,
     label = "OH + NO2 <=> HO2 + NO",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.00e+06, 'cm^3/(mol*s)'), n=2.00, Ea=(3000, 'cal/mol'), T0=(1, 'K')),
@@ -3348,7 +3367,7 @@ Probably not the best fit... but deviated only by ~5% above 1000 K (larger devia
 )
 
 entry(
-    index = 182,
+    index = 183,
     label = "NO2 + CO <=> NO + CO2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(8.91e+13, 'cm^3/(mol*s)'), n=0, Ea=(67200, 'cal/mol'), T0=(1, 'K')),
@@ -4739,7 +4758,7 @@ http://pubs.acs.org/doi/abs/10.1021/jp067499p
 http://pubs.acs.org/doi/abs/10.1021/j100185a016
 http://pubs.acs.org/doi/abs/10.1021/jp054722u
 http://pubs.acs.org/doi/abs/10.1021/jp0544585
-
+go through all Lin's papers
 
 
 
