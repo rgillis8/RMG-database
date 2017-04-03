@@ -125,6 +125,8 @@ Reference legend:
 [Matsui1996b] K. Tsuchiya, K. Yamashita, A. Miyoshi, H. Matsui, J. Phys. Chem., 1996, 100(43), 17202–17206, doi: 10.1021/jp961252i
 [Matsui1998] H. Shiina, A. Miyoshi, H. Matsui, J. Phys. Chem. A, 1998, 102(20), 3556–3559, doi: 10.1021/jp980650d
 [Miller1992] J.A. Miller, C.F. Melius, Simp. (Int.) Comb., 1992, 24(1), 719-726, doi: 10.1016/S0082-0784(06)80088-3
+[Miller2008] L.B. Harding, S.J. Klippenstein, J.A. Miller, J. Phys. Chem. A, 2008, 112 (3), pp 522–532, doi: 10.1021/jp077526r
+[Miller2011] S.J. Klippenstein, L.B. Harding, P. Glarborg, J.A. Miller, Comb. Flame, 2011, 158(4), 774-789, doi: 10.1016/j.combustflame.2010.12.013
 [Molina1997] J.T. Jayne, U. Poschl, Y-m. Chen, D. Dai, L.T. Molina, D.R. Worsnop, C.E. Kolb, M.J. Molina, J. Phys. Chem. A, 1997, 101(51), 10000-10011, doi: 10.1021/jp972549z
 [Morley1976] C. Morley, Combustion and Flame, 1976, 27, 189-204, doi: 10.1016/0010-2180(76)90022-5
 [Page1992] M.R. Soto, M. Page, J. Chem. Phys., 1992, 97, 7287, doi: 10.1063/1.463501
@@ -228,15 +230,15 @@ entry(
     index = 4,
     label = "CH + N2 <=> NCN + H",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(2.22e+07, 'cm^3/(mol*s)'), n=1.48, Ea=(23367, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Lin2000a]""",
+    kinetics = Arrhenius(A=(4.10e+08, 'cm^3/(mol*s)'), n=1.122, Ea=(17525, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Miller2008]""",
     longDesc =
 u"""
 Part of the "Prompt NO" mechanism. This is the MAIN Prompt NO reaction
-k3 in [Lin2000a], also first on p. 2397
 
-T range: 1500-4000 K
-Done at the G2M(RCC2)//B3LYP/6-311G(d,p) level of theory
+calculated at the CASPT2,CAS+1+2+QC,CCSD-(T)/aug-cc-pvtz levels of theory
+
+T range: 400-3000
 
 This mechanism was first suggested by Fenimore in 1971 (C.P. Fenimore, Symposium (International) on Combustion 13(1) 1971, 373-380)
 He found that 'post-flame' NO profiles extrapolated to zero at the burner surface
@@ -265,6 +267,10 @@ In the end, it appears that Fenimore's prompt NO is due to a reaction between CH
 as he suggested. However, the reaction does conserve electron spin, producing NCN+H rather than HCN + N.
 
 More info available in Miller & Troe 2005 (J.A. Miller, M.J. Pillingb, J. Troe, Proceedings of the Combustion Institute 30(1) 2005, 43–88).
+
+Also available from [Lin2000a]:
+    kinetics = Arrhenius(A=(2.22e+07, 'cm^3/(mol*s)'), n=1.48, Ea=(23367, 'cal/mol'), T0=(1, 'K')),
+k3 in [Lin2000a], also first on p. 2397, T range: 1500-4000 K, Done at the G2M(RCC2)//B3LYP/6-311G(d,p) level of theory
 """,
 )
 
@@ -1546,17 +1552,49 @@ Added as a training reaction to Birad_R_Recombination
 )
 
 entry(
-    index = 77,
-    label = "NNH + O <=> NH + NO",
+    index = 187,
+    label = "NNH + O <=> N2O + H",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(2e+14, 'cm^3/(mol*s)'), n=0, Ea=(4015, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[DeRuyck2001]""",
+    kinetics = Arrhenius(A=(1.9e+14, 'cm^3/(mol*s)'), n=-0.274, Ea=(-22, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Miller2011]""",
     longDesc =
 u"""
 Part of the "NNH Pathway"
-k1
-T range: 1200-2500 K
-Uncertainty: A 50%, Ea 25%
+calculated at the (CCSD(T) and QCISD(T)) and multireference CASPT2 and CAS + 1 + 2 + QC electronic structure calculations level
+
+Also available from [Bozzelli1994]:
+    kinetics = Arrhenius(A=(5.5e+18, 'cm^3/(mol*s)'), n=-1.06, Ea=(47300, 'cal/mol'), T0=(1, 'K')),
+T range: 300-4000 K, k1d, QRRK
+""",
+)
+
+entry(
+    index = 187,
+    label = "NNH + O <=> N2 + OH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.2e+13, 'cm^3/(mol*s)'), n=0.145, Ea=(-217, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Miller2011]""",
+    longDesc =
+u"""
+Part of the "NNH Pathway"
+calculated at the (CCSD(T) and QCISD(T)) and multireference CASPT2 and CAS + 1 + 2 + QC electronic structure calculations level
+""",
+)
+
+entry(
+    index = 77,
+    label = "NNH + O <=> NH + NO",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(5.2e+11, 'cm^3/(mol*s)'), n=0.388, Ea=(-409, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Miller2011]""",
+    longDesc =
+u"""
+Part of the "NNH Pathway"
+calculated at the (CCSD(T) and QCISD(T)) and multireference CASPT2 and CAS + 1 + 2 + QC electronic structure calculations level
+
+Also available from [DeRuyck2001]:
+    kinetics = Arrhenius(A=(2e+14, 'cm^3/(mol*s)'), n=0, Ea=(4015, 'cal/mol'), T0=(1, 'K')),
+k1, T range: 1200-2500 K, Uncertainty: A 50%, Ea 25%
 """,
 )
 
@@ -1630,29 +1668,17 @@ Added as a training reaction to H_Abstraction
 
 entry(
     index = 82,
-    label = "NNH + O2 <=> HO2 + N2",
+    label = "NNH + O2 <=> N2 + HO2",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(1.2e+12, 'cm^3/(mol*s)'), n=-0.34, Ea=(149, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[DeanBozz2000]""",
+    kinetics = Arrhenius(A=(5.55e+13, 'cm^3/(mol*s)'), n=-0.385, Ea=(-13.4, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Miller2011]""",
     longDesc =
 u"""
 Part of the "NNH Pathway"
-reaction 28b1, p. 236
-calculated using the QRRK approach
-""",
-)
-
-entry(
-    index = 83,
-    label = "NNH + O2 <=> N2O + OH",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(2.9e+11, 'cm^3/(mol*s)'), n=-0.34, Ea=(149, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[DeanBozz2000]""",
-    longDesc =
-u"""
-Part of the "NNH Pathway"
-reaction 28b2, p. 236
-calculated using the QRRK approach
+p. 776
+T range: 200-2400 K
+Uncertainty: a factor of 1.5
+calculated at the (CCSD(T) and QCISD(T)) and multireference CASPT2 and CAS + 1 + 2 + QC electronic structure calculations level
 """,
 )
 
@@ -2534,19 +2560,60 @@ Shocktube measurement
 
 entry(
     index = 135,
-    label = "N2O + H <=> NH + NO",
+    label = "NH + NO <=> N2O + H",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(6.7e+22, 'cm^3/(mol*s)'), n=-2.16, Ea=(37160, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Hanson1981]""",
+    kinetics = Arrhenius(A=(1.8e+14, 'cm^3/(mol*s)'), n=-0.351, Ea=(-244, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Miller2011]""",
     longDesc =
 u"""
 Part of the "Thermal de-NOx" mechanism
-T range: 300-4000 K
-k1c
-QRRK
+calculated at the (CCSD(T) and QCISD(T)) and multireference CASPT2 and CAS + 1 + 2 + QC electronic structure calculations level
 
-Also available from [Hanson1981], k3, Shock Tube, Uncertainty: +200%, -70%, T range: 1680-2850 K, reverse reaction:
+Also available from [Hanson1981], k3, Shock Tube, Uncertainty: +200%, -70%, T range: 1680-2850 K:
     kinetics = Arrhenius(A=(8e+13, 'cm^3/(mol*s)'), n=0, Ea=(29400, 'cal/mol'), T0=(1, 'K')),
+""",
+)
+
+entry(
+    index = 188,
+    label = "NH + NO <=> N2 + OH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(2.7e+12, 'cm^3/(mol*s)'), n=-0.0721, Ea=(-512, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Miller2011]""",
+    longDesc =
+u"""
+Part of the "Thermal de-NOx" mechanism
+calculated at the (CCSD(T) and QCISD(T)) and multireference CASPT2 and CAS + 1 + 2 + QC electronic structure calculations level
+
+Also availabvle from [Bozzelli1994]:
+    kinetics = Arrhenius(A=(6.1e+13, 'cm^3/(mol*s)'), n=-0.50, Ea=(120, 'cal/mol'), T0=(1, 'K')),
+T range: 300-4000 K, k2a, QRRK
+""",
+)
+
+entry(
+    index = 188,
+    label = "NH2 + O2 <=> H2NO + O",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(2.6e+11, 'cm^3/(mol*s)'), n=0.4872, Ea=(29050, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Miller2011]""",
+    longDesc =
+u"""
+Part of the "Thermal de-NOx" mechanism
+calculated at the (CCSD(T) and QCISD(T)) and multireference CASPT2 and CAS + 1 + 2 + QC electronic structure calculations level
+""",
+)
+
+entry(
+    index = 188,
+    label = "NH2 + O2 <=> HNO + OH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(2.9e-02, 'cm^3/(mol*s)'), n=3.764, Ea=(18185, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Miller2011]""",
+    longDesc =
+u"""
+Part of the "Thermal de-NOx" mechanism
+calculated at the (CCSD(T) and QCISD(T)) and multireference CASPT2 and CAS + 1 + 2 + QC electronic structure calculations level
 """,
 )
 
@@ -2850,13 +2917,16 @@ entry(
     index = 151,
     label = "N2O + H <=> N2 + OH",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(9.6e+13, 'cm^3/(mol*s)'), n=0, Ea=(15100, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Herron1991]""",
+    kinetics = Arrhenius(A=(6.4e+07, 'cm^3/(mol*s)'), n=1.835, Ea=(13492, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Miller2011]""",
     longDesc =
 u"""
 Part of the "NO2 decomposition" subset
-T range: 700-2500 K
-Review and reccomendation, p. 660, 14,4
+calculated at the (CCSD(T) and QCISD(T)) and multireference CASPT2 and CAS + 1 + 2 + QC electronic structure calculations level
+
+Also available from [Herron1991]:
+    kinetics = Arrhenius(A=(9.6e+13, 'cm^3/(mol*s)'), n=0, Ea=(15100, 'cal/mol'), T0=(1, 'K')),
+T range: 700-2500 K, Review and reccomendation, p. 660, 14,4
 """,
 )
 
@@ -3407,36 +3477,6 @@ Part of the "NOx" subset
 T range: 300-3300 K
 k4
 BAC-MP4
-""",
-)
-
-entry(
-    index = 187,
-    label = "N2O + H <=> NNH + O",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(5.5e+18, 'cm^3/(mol*s)'), n=-1.06, Ea=(47300, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Bozzelli1994]""",
-    longDesc =
-u"""
-Part of the "NOx" subset
-T range: 300-4000 K
-k1d
-QRRK
-""",
-)
-
-entry(
-    index = 188,
-    label = "NH + NO <=> N2 + OH",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(6.1e+13, 'cm^3/(mol*s)'), n=-0.50, Ea=(120, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Bozzelli1994]""",
-    longDesc =
-u"""
-Part of the "NOx" subset
-T range: 300-4000 K
-k2a
-QRRK
 """,
 )
 
