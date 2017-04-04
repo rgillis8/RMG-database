@@ -105,7 +105,8 @@ Reference legend:
 [Lin2010b] R.S. Zhu, S.C. Xu, M.C. Lin, Chem. Phys. Letters, 2010, 488(4-6), 121-125, doi: 10.1016/j.cplett.2010.02.003
 [Lin2010c] S. Xu, M.C. Lin, Int. J. Chem. Kin., 2010, 42(2), 69-78, doi: 10.1002/kin.20463
 [Lin2012] R.S. Zhu, K-Y. Lai, M.C. Lin, J. Phys. Chem. A, 2012, 116, 4466-4472, doi: 10.1021/jp302247k
-[Lin2013] R.S. Zhu, P. Raghunath, M.C. Lin, J. Phys. Chem. A, 2013, 117, 7308-7313, doi: 10.1021/jp401148q
+[Lin2013a] R.S. Zhu, P. Raghunath, M.C. Lin, J. Phys. Chem. A, 2013, 117, 7308-7313, doi: 10.1021/jp401148q
+[Lin2013b] W.-S. Teng, L.V. Moskaleva, H.-L. Chen, M.C. Lin, J. Phys. Chem. A, 2013, 117(28), 5775–5784, doi: 10.1021/jp402903t
 [Lin2014a] P. Raghunath, Y.H. Lin, M.C. Lin, Computational and Theoretical Chemistry, 2014, 1046, 73-80, doi: 10.1016/j.comptc.2014.07.011
 [Lin2014b] P. Raghunath, N.T. Nghia, M.C. Lin, Advances in Quantum Chemistry, 2014, 69, 253-301, doi: 10.1016/B978-0-12-800345-9.00007-6
 [Marshall1999a] A. Goumri, J-D.R. Rocha, D. Laakso, C.E. Smith, P. Marshall, J. Phys. Chem. A, 1999, 103(51), 11328–11335 doi: 10.1021/jp9924070
@@ -233,15 +234,16 @@ entry(
     index = 4,
     label = "CH + N2 <=> NCN + H",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(4.10e+08, 'cm^3/(mol*s)'), n=1.122, Ea=(17525, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Miller2008]""",
+    kinetics = Arrhenius(A=(2.41e+09, 'cm^3/(mol*s)'), n=0.90, Ea=(17420, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Lin2013b]""",
     longDesc =
 u"""
 Part of the "Prompt NO" mechanism. This is the MAIN Prompt NO reaction
 
-calculated at the CASPT2,CAS+1+2+QC,CCSD-(T)/aug-cc-pvtz levels of theory
+calculated at the CCSD(T)/CBS//B3LYP/6-311++G(3df,2p) level of theory
+k_A&B on p. 5782
 
-T range: 400-3000
+T range: 800-4000 K, 1 atm
 
 This mechanism was first suggested by Fenimore in 1971 (C.P. Fenimore, Symposium (International) on Combustion 13(1) 1971, 373-380)
 He found that 'post-flame' NO profiles extrapolated to zero at the burner surface
@@ -274,6 +276,10 @@ More info available in Miller & Troe 2005 (J.A. Miller, M.J. Pillingb, J. Troe, 
 Also available from [Lin2000a]:
     kinetics = Arrhenius(A=(2.22e+07, 'cm^3/(mol*s)'), n=1.48, Ea=(23367, 'cal/mol'), T0=(1, 'K')),
 k3 in [Lin2000a], also first on p. 2397, T range: 1500-4000 K, Done at the G2M(RCC2)//B3LYP/6-311G(d,p) level of theory
+
+Also available from [Miller2008]:
+    kinetics = Arrhenius(A=(4.10e+08, 'cm^3/(mol*s)'), n=1.122, Ea=(17525, 'cal/mol'), T0=(1, 'K')),
+calculated at the CASPT2,CAS+1+2+QC,CCSD-(T)/aug-cc-pvtz levels of theory, T range: 400-3000
 """,
 )
 
@@ -2372,7 +2378,7 @@ entry(
     label = "CH3NO2 <=> CH3 + NO2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(5.88e+24, 's^-1'), n=-2.35, Ea=(62398, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Lin2013]""",
+    shortDesc = u"""[Lin2013a]""",
     longDesc =
 u"""
 Part of the "CH3NO2" subset
@@ -2391,7 +2397,7 @@ entry(
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(A=(7.05e+54, 'cm^3/(mol*s)'), n=-10.94, Ea=(64344, 'cal/mol'), T0=(1, 'K'))),
-    shortDesc = u"""[Lin2013]""",
+    shortDesc = u"""[Lin2013a]""",
     longDesc =
 u"""
 Part of the "CH3NO2" subset
@@ -2405,7 +2411,7 @@ entry(
     label = "CH3NO2 <=> CH3O + NO",
     degeneracy = 1,
     kinetics = Arrhenius(A=(8.91e+19, 's^-1'), n=-1.84, Ea=(60809, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Lin2013]""",
+    shortDesc = u"""[Lin2013a]""",
     longDesc =
 u"""
 Part of the "CH3NO2" subset
@@ -2420,7 +2426,7 @@ entry(
     label = "CH3NO2 <=> CH2O + HNO",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.15e+17, 's^-1'), n=-0.75, Ea=(60014, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Lin2013]""",
+    shortDesc = u"""[Lin2013a]""",
     longDesc =
 u"""
 Part of the "CH3NO2" subset
@@ -2435,7 +2441,7 @@ entry(
     label = "CH3ONO <=> CH3O + NO",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.58e+23, 's^-1'), n=-2.18, Ea=(41930, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Lin2013]""",
+    shortDesc = u"""[Lin2013a]""",
     longDesc =
 u"""
 Part of the "CH3NO2" subset
