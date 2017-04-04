@@ -1754,21 +1754,6 @@ Train!
 )
 
 entry(
-    index = 89,
-    label = "NH2 + NH <=> N2H2 + H",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(1.50e+15, 'cm^3/(mol*s)'), n=-0.5, Ea=(0, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Hanson1990a]""",
-    longDesc =
-u"""
-Part of the "NHx" subset
-R11 in Table 1, p. 521
-T range: 2200-2800 K
-Shock Tube
-""",
-)
-
-entry(
     index = 90,
     label = "HNCO <=> NH + CO",
     degeneracy = 1,
@@ -2596,8 +2581,8 @@ entry(
     label = "NH2OH <=> NH2 + OH",
     degeneracy = 1,
     kinetics = Troe(
-        arrheniusHigh = Arrhenius(A=(1.40e+20, 's^-1'), n=-1.31, Ea=(32250, 'cal/mol'), T0=(1, 'K')),
-        arrheniusLow = Arrhenius(A=(9.05e+13, 'cm^3/(mol*s)'), n=-5.96, Ea=(33610, 'cal/mol'), T0=(1, 'K')),
+        arrheniusHigh = Arrhenius(A=(8.43e+43, 's^-1'), n=-1.31, Ea=(64087, 'cal/mol'), T0=(1, 'K')),
+        arrheniusLow = Arrhenius(A=(5.45e+37, 'cm^3/(mol*s)'), n=-5.96, Ea=(66790, 'cal/mol'), T0=(1, 'K')),
         alpha=0.35, T3=(1e-30, 'K'), T1=(1e+30, 'K'), efficiencies={}),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
@@ -2615,7 +2600,7 @@ entry(
     index = 139,
     label = "NH2 + OH <=> NH + H2O",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(4.71e-18, 'cm^3/(mol*s)'), n=1.97, Ea=(-1130, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(2.84e+06, 'cm^3/(mol*s)'), n=1.97, Ea=(-2246, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2632,7 +2617,7 @@ entry(
     index = 140,
     label = "NH2 + OH <=> NH3 + O",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(6.18e-24, 'cm^3/(mol*s)'), n=3.50, Ea=(-102, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(3.72e+00, 'cm^3/(mol*s)'), n=3.50, Ea=(-203, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2653,7 +2638,7 @@ entry(
     index = 141,
     label = "NH2OH + OH <=> HNOH + H2O",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(2.55e-20, 'cm^3/(mol*s)'), n=2.61, Ea=(-1780, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(1.54e+04, 'cm^3/(mol*s)'), n=2.61, Ea=(-3537, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2670,7 +2655,7 @@ entry(
     index = 142,
     label = "NH2OH + OH <=> H2NO + H2O",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(2.54e-19, 'cm^3/(mol*s)'), n=2.28, Ea=(-652, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(1.53e+05, 'cm^3/(mol*s)'), n=2.28, Ea=(-1296, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2687,7 +2672,7 @@ entry(
     index = 143,
     label = "NH2OH + NH2 <=> HNOH + NH3",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(1.80e-25, 'cm^3/(mol*s)'), n=4.00, Ea=(-49, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(1.08e-01, 'cm^3/(mol*s)'), n=4.00, Ea=(-97, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2704,7 +2689,7 @@ entry(
     index = 144,
     label = "NH2OH + NH2 <=> H2NO + NH3",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(1.57e-23, 'cm^3/(mol*s)'), n=3.42, Ea=(-510, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(9.45e+00, 'cm^3/(mol*s)'), n=3.42, Ea=(-1013, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2721,7 +2706,7 @@ entry(
     index = 145,
     label = "NH2OH + NH <=> HNOH + NH2",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(4.84e-27, 'cm^3/(mol*s)'), n=4.40, Ea=(787, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(2.91e-03, 'cm^3/(mol*s)'), n=4.40, Ea=(1564, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2738,7 +2723,7 @@ entry(
     index = 146,
     label = "NH2OH + NH <=> H2NO + NH2",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(2.43e-27, 'cm^3/(mol*s)'), n=4.60, Ea=(1220, 'cal/mol'), T0=(1, 'K')),
+   kinetics = Arrhenius(A=(1.46e-03, 'cm^3/(mol*s)'), n=4.60, Ea=(2424, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2756,7 +2741,7 @@ entry(
     label = "NH + OH <=> H2O + N",
     degeneracy = 1,
     kinetics = ThirdBody(
-        arrheniusLow = Arrhenius(A=(2.64e-17, 'cm^6/(mol^2*s)'), n=1.737, Ea=(-290, 'cal/mol'), T0 = (1, 'K'))),
+        arrheniusLow = Arrhenius(A=(1.59e+07, 'cm^6/(mol^2*s)'), n=1.737, Ea=(-576, 'cal/mol'), T0 = (1, 'K'))),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2774,7 +2759,7 @@ entry(
     label = "NH + OH <=> HNO + H",
     degeneracy = 1,
     kinetics = ThirdBody(
-        arrheniusLow = Arrhenius(A=(5.39e-10, 'cm^6/(mol^2*s)'), n=-0.376, Ea=(-23, 'cal/mol'), T0 = (1, 'K'))),
+        arrheniusLow = Arrhenius(A=(3.25e+14, 'cm^6/(mol^2*s)'), n=-0.376, Ea=(-46, 'cal/mol'), T0 = (1, 'K'))),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2787,9 +2772,9 @@ calculated at the (CCSD(T) and CAS+1+2+QC level
 
 entry(
     index = 149,
-    label = "NH + NH <=> HNNH",
+    label = "NH + NH <=> N2H2",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(1.04e-10, 'cm^3/(mol*s)'), n=-0.036, Ea=(-81, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(6.26e+13, 'cm^3/(mol*s)'), n=-0.036, Ea=(-161, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2806,7 +2791,7 @@ entry(
     index = 150,
     label = "NH + NH <=> NH2 + N",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(9.40e-25, 'cm^3/(mol*s)'), n=3.88, Ea=(172, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(5.66e-01, 'cm^3/(mol*s)'), n=3.88, Ea=(342, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2824,7 +2809,7 @@ entry(
     label = "NH2 + NH <=> N2H2 + H",
     degeneracy = 1,
     kinetics = ThirdBody(
-        arrheniusLow = Arrhenius(A=(7.07e-10, 'cm^6/(mol^2*s)'), n=-0.272, Ea=(-39, 'cal/mol'), T0 = (1, 'K'))),
+        arrheniusLow = Arrhenius(A=(4.26e+14, 'cm^6/(mol^2*s)'), n=-0.272, Ea=(-78, 'cal/mol'), T0 = (1, 'K'))),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2832,6 +2817,10 @@ Part of the "Thermal de-NOx" mechanism
 Table 3, p. 10245
 T range: 200-2500 K
 calculated at the (CCSD(T) and CAS+1+2+QC level
+
+Also available from [Hanson1990a]:
+    kinetics = Arrhenius(A=(1.50e+15, 'cm^3/(mol*s)'), n=-0.5, Ea=(0, 'cal/mol'), T0=(1, 'K')),
+R11 in Table 1, p. 521, T range: 2200-2800 K, Shock Tube
 """,
 )
 
@@ -2839,7 +2828,7 @@ entry(
     index = 152,
     label = "NH2 + NH <=> NH3 + N",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(1.59e-20, 'cm^3/(mol*s)'), n=2.46, Ea=(54, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(9.58e+03, 'cm^3/(mol*s)'), n=2.46, Ea=(107, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2857,7 +2846,7 @@ entry(
     label = "NH2 + NH2 <=> N2H2 + H2",
     degeneracy = 1,
     kinetics = ThirdBody(
-        arrheniusLow = Arrhenius(A=(2.89e-16, 'cm^6/(mol^2*s)'), n=1.02, Ea=(5930, 'cal/mol'), T0 = (1, 'K'))),
+        arrheniusLow = Arrhenius(A=(1.74e+08, 'cm^6/(mol^2*s)'), n=1.02, Ea=(11784, 'cal/mol'), T0 = (1, 'K'))),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2873,7 +2862,7 @@ entry(
     label = "NH2 + NH2 <=> H2NN + H2",
     degeneracy = 1,
     kinetics = ThirdBody(
-        arrheniusLow = Arrhenius(A=(1.19e-19, 'cm^6/(mol^2*s)'), n=1.88, Ea=(4430, 'cal/mol'), T0 = (1, 'K'))),
+        arrheniusLow = Arrhenius(A=(7.17e+04, 'cm^6/(mol^2*s)'), n=1.88, Ea=(8803, 'cal/mol'), T0 = (1, 'K'))),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2886,9 +2875,9 @@ calculated at the (CCSD(T) and CAS+1+2+QC level
 
 entry(
     index = 155,
-    label = "NH2 + NH2 <=> NH3 + N",
+    label = "NH2 + NH2 <=> NH3 + NH",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(9.36e-24, 'cm^3/(mol*s)'), n=3.53, Ea=(278, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(5.64e+00, 'cm^3/(mol*s)'), n=3.53, Ea=(552, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2903,22 +2892,10 @@ R12 in Table 1, p. 521, T range: 2200-2800 K, Shock Tube
 
 Train!
 """,
-)
+Also available from [Klippenstein2009] in reverse direction:
+    kinetics = Arrhenius(A=(5.14e+01, 'cm^3/(mol*s)'), n=3.41, Ea=(14606, 'cal/mol'), T0=(1, 'K')),
 
-entry(
-    index = 156,
-    label = "NH3 + NH <=> NH2 + NH2",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(8.53e-23, 'cm^3/(mol*s)'), n=3.41, Ea=(7350, 'cal/mol'), T0=(1, 'K')),
-    shortDesc = u"""[Klippenstein2009]""",
-    longDesc =
-u"""
-Part of the "Thermal de-NOx" mechanism
-Table 3, p. 10245
-T range: 300-2500 K
-calculated at the (CCSD(T) and CAS+1+2+QC level
-
-Train!
+Train both!!!
 """,
 )
 

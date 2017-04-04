@@ -18,7 +18,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-Taken from the SOxNOx library, Part of the "N2O Pathway"
+Taken from the SOxNOx library
 Anthony M. Dean, Joseph W. Bozzelli, Combustion Chemistry of Nitrogen, in: Gas-Phase Combustion Chemistry, Editor: W.C. Gardiner, 2000, 125-341, doi: 10.1007/978-1-4612-1310-9_2
 2.6.3, p. 158, and Table 2.6 on p. 163
 """,
