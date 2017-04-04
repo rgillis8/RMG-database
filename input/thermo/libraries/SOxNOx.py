@@ -437,6 +437,9 @@ check Burcat?
 
 Add:
 
+HOSO2
+
+
 N2H3NO
 HNNO2 - bad
 H2NONO

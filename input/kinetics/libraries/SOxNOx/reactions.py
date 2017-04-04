@@ -68,6 +68,7 @@ Reference legend:
 [Hanson1997] M. Rohrig, E.L. Petersen, D.F. Davidson, R.K. Hanson, Int. J. Chem. Kin., 1997, 29(7), 483-493, doi: 10.1002/(SICI)1097-4601(1997)29:7<483::AID-KIN2>3.0.CO;2-Q
 [Herron1991] W. Tsang, J.T. Herron, Journal of Physical and Chemical Reference Data, 1991, 20, 609, doi: 10.1063/1.555890
 [Hindelang1993] M.L. Thoma, F.J. Hindelang in: R. Burn, L.Z. Dumitrescu (Ed.) Shock Waves @ Marseille II (Proceedings Marseille France), 1993, 59-64, doi: 10.1007/978-3-642-78832-1
+[Howard1988] J.F. Gleason, C.J. Howard, J. Phys. Chem., 1988, 92(12), 3414–3417, doi: 10.1021/j100323a021
 [Klemm1985] J.V. Michael, J.W. Sutherland, R.B. Klemm, Int. J. Chem. Kin., 1985, 17(3), 315-326, doi: 10.1002/kin.550170308
 [Klemm1990] J.W. Sutherland, P.M. Patterson, R.B. Klemm, J. Phys. Chem., 1990, 94(6), 2471-2475, doi: 10.1021/j100369a049
 [Klippenstein2009] S.J. Klippenstein, L.B. Harding, B. Ruscic, R. Sivaramakrishnan, N.K. Srinivasan, M.-C. Su†, J.V. Michael, J. Phys. Chem. A, 2009, 113(38), 10241–10259, doi: 10.1021/jp905454k
@@ -143,6 +144,7 @@ Reference legend:
 [Roth1996b] D. Woiki, P. Roth, Symposium (International) on Combustion, 1996, 26(1), 583-588, doi: 10.1016/S0082-0784(96)80263-3
 [Sendt2002] K. Sendt, M. Jazbec, B.S. Haynes, Proceedings of the Combustion Institute, 2002, 29, 2439-2446, doi: 10.1016/S1540-7489(02)80297-8
 [Sendt2008] C.R. Zhou, K. Sendt, B.S. Haynes, J. Phys. Chem. A, 2008, 112, 3239-3247, doi: 10.1021/jp710488d
+[Somnitz2004] H. Somnitz, Phys. Chem. Chem. Phys., 2004, 6(14), 3844-3851, doi: 10.1039/B317055A
 [Troe1984] H.J. Plach, J. Troe, Int. J. Chem. Kin., 1984, 16(12), 1531-1542, doi: 10.1002/kin.550161207
 [Tezaki2003] N. Isshiki, Y. Murakami, K. Tsuchiya, A. Tezaki, H. Matsui, J. Phys. Chem. A, 2003, 107(14), 2464–2469, doi: 10.1021/jp0200829
 [Varandas2005] P.J.S.B. Caridade, S.P.J. Rodrigues, F. Sousa, A.J.C. Varandas, J. Phys. Chem. A ,2005, 109, 2356-2363, doi: 10.1021/jp045102g
@@ -153,7 +155,7 @@ entry(
     index = 1,
     label = "N + NO <=> O + N2",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(4.29e+13, 'cm^3/(mol*s)'), n=0, Ea=(1564, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(4.29e+13, 'cm^3/(mol*s)','*|/',1.2), n=0, Ea=(1564, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Hanson1990b]""",
     longDesc =
 u"""
@@ -402,7 +404,7 @@ entry(
     index = 11,
     label = "C(T) + N2 <=> CN + N",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(5.24e+13, 'cm^3/(mol*s)'), n=0, Ea=(44900, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(5.24e+13, 'cm^3/(mol*s)','*|/',1.2), n=0, Ea=(44900, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Baulch2009]""",
     longDesc =
 u"""
@@ -460,7 +462,7 @@ entry(
     index = 15,
     label = "CH3 + N <=> H2CN + H",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(7.1e+13, 'cm^3/(mol*s)'), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(7.1e+13, 'cm^3/(mol*s)','*|/',1.35), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Hanson1991b]""",
     longDesc =
 u"""
@@ -522,8 +524,6 @@ Part of the "Prompt NO, NCN subset" mechanism
 See Table 1 on p. 2397 in [Lin2000a]
 T range: 2000-4000 K
 Done at the G2M(RCC2)//B3LYP/6-311G(d,p) level of theory
-
-Added as a training reaction to R_Recombination
 """,
 )
 
@@ -888,7 +888,7 @@ entry(
     index = 41,
     label = "NCN + NO <=> CN + N2O",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(1.89e+12, 'cm^3/(mol*s)'), n=0, Ea=(6286, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(1.89e+12, 'cm^3/(mol*s)','*|/',1.07), n=0, Ea=(6286, 'cal/mol','+|-',380), T0=(1, 'K')),
     shortDesc = u"""[Friedrichs2011]""",
     longDesc =
 u"""
@@ -904,7 +904,7 @@ entry(
     index = 42,
     label = "NCN + NO2 <=> NCNO + NO",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(4.7e+12, 'cm^3/(mol*s)'), n=0, Ea=(9082, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(4.7e+12, 'cm^3/(mol*s)','*|/',1.19), n=0, Ea=(9082, 'cal/mol','+|-',910), T0=(1, 'K')),
     shortDesc = u"""[Friedrichs2011]""",
     longDesc =
 u"""
@@ -996,8 +996,6 @@ Part of the "Prompt NO, NCN subset" mechanism
 k4 (see reactions on p. 6735, and rates on p. 6738)
 T range: 300-3000 K
 Done at the CCSD(T)/6-311+G(3df,2p)//B3LYP/6-311+G(3df,2p) level of theory
-
-Added as a training reaction to R_Recombination
 """,
 )
 
@@ -1084,8 +1082,6 @@ Part of the "Prompt NO, NCN subset" mechanism
 k8 (see reactions on p. 6735, and rates on p. 6738)
 T range: 300-3000 K
 Done at the CCSD(T)/6-311+G(3df,2p)//B3LYP/6-311+G(3df,2p) level of theory
-
-Added as a training reaction to R_AdditionMultipleBond
 """,
 )
 
@@ -1375,7 +1371,7 @@ entry(
     index = 65,
     label = "NCO + H2 <=> HNCO + H",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(8.61e+12, 'cm^3/(mol*s)'), n=0, Ea=(9000, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(8.61e+12, 'cm^3/(mol*s)','*|/',1.17), n=0, Ea=(9000, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Perry1985]""",
     longDesc =
 u"""
@@ -1547,8 +1543,6 @@ entry(
 u"""
 Part of the "NNH Pathway"
 See [DeanBozz2000] 2.6.3, p. 158, and Table 2.6 on p. 163
-
-Added as a training reaction to Birad_R_Recombination
 """,
 )
 
@@ -1586,7 +1580,7 @@ entry(
     index = 79,
     label = "NNH + O <=> NH + NO",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(5.2e+11, 'cm^3/(mol*s)'), n=0.388, Ea=(-409, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(5.2e+11, 'cm^3/(mol*s)','*|/',1.5), n=0.388, Ea=(-409, 'cal/mol','*|/',1.25), T0=(1, 'K')),
     shortDesc = u"""[Miller2011]""",
     longDesc =
 u"""
@@ -1671,7 +1665,7 @@ entry(
     index = 84,
     label = "NNH + O2 <=> N2 + HO2",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(5.55e+13, 'cm^3/(mol*s)'), n=-0.385, Ea=(-13.4, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(5.55e+13, 'cm^3/(mol*s)','*|/',1.5), n=-0.385, Ea=(-13.4, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Miller2011]""",
     longDesc =
 u"""
@@ -2073,7 +2067,7 @@ entry(
     index = 107,
     label = "N2H4 + ONONO2 <=> HNO3 + NH2NHNO",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(4.7e+14, 'cm^3/(mol*s)'), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(4.7e+14, 'cm^3/(mol*s)','*|/',1.13), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Lin2014b]""",
     longDesc =
 u"""
@@ -2396,15 +2390,13 @@ entry(
     label = "CH3NO2 <=> CH3ONO",
     degeneracy = 1,
     kinetics = ThirdBody(
-        arrheniusLow = Arrhenius(A=(7.05e+54, 'cm^3/(mol*s)'), n=-2.35, Ea=(62398, 'kcal/mol'), T0=(1, 'K'))),
+        arrheniusLow = Arrhenius(A=(7.05e+54, 'cm^3/(mol*s)'), n=-10.94, Ea=(64344, 'cal/mol'), T0=(1, 'K'))),
     shortDesc = u"""[Lin2013]""",
     longDesc =
 u"""
 Part of the "CH3NO2" subset
 p. 7311
 calculations done at the UCCSD(T)/CBS//UB3LYP/6-311+G(3df,2p) level of theory
-
-Added as a training reaction to intra_NO2_ONO_conversion
 """,
 )
 
@@ -2505,7 +2497,7 @@ entry(
     index = 133,
     label = "NH2 + NO <=> N2O + H2",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(7e+13, 'cm^3/(mol*s)'), n=0, Ea=(15700, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(7e+13, 'cm^3/(mol*s)','*|/',2), n=0, Ea=(15700, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Hanson1981]""",
     longDesc =
 u"""
@@ -2521,7 +2513,7 @@ entry(
     index = 134,
     label = "NH + NO <=> N2O + H",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(1.8e+14, 'cm^3/(mol*s)'), n=-0.351, Ea=(-244, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(1.8e+14, 'cm^3/(mol*s)','*|/',3), n=-0.351, Ea=(-244, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Miller2011]""",
     longDesc =
 u"""
@@ -2617,7 +2609,7 @@ entry(
     index = 140,
     label = "NH2 + OH <=> NH3 + O",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(3.72e+00, 'cm^3/(mol*s)'), n=3.50, Ea=(-203, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(3.72e+00, 'cm^3/(mol*s)','*|/',1.25), n=3.50, Ea=(-203, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Klippenstein2009]""",
     longDesc =
 u"""
@@ -2890,8 +2882,6 @@ Also available from [Hanson1990a]:
     kinetics = Arrhenius(A=(5.00e+13, 'cm^3/(mol*s)'), n=0, Ea=(10000, 'cal/mol'), T0=(1, 'K')),
 R12 in Table 1, p. 521, T range: 2200-2800 K, Shock Tube
 
-Train!
-""",
 Also available from [Klippenstein2009] in reverse direction:
     kinetics = Arrhenius(A=(5.14e+01, 'cm^3/(mol*s)'), n=3.41, Ea=(14606, 'cal/mol'), T0=(1, 'K')),
 
@@ -2988,8 +2978,6 @@ calculations done at the UMP2/6-311G-(d,p)//UMP2/6-311G(d,p) level of theory
 NH3+NO2 can give (2a) NH2 + HNO2 (see above), (2b) NH2 + cis-HONO, (2c) NH2 + trans-HONO.
 k2c has tunneling correction
 conformer-dup: cis/trans-HONO
-
-Added as a training reaction to H_Abstraction
 """,
 )
 
@@ -3016,8 +3004,6 @@ k-1 p. 76
 T range 200-3000 K
 calculations done at the CCSD(T)/6-311+G(3df,2p)//B3LYP/6-311+G(3df,2p) level of theory
 k-1 was addopted here due to the strange T dependence of k+1
-
-Added as a training reaction to H_Abstraction
 """,
 )
 
@@ -3696,8 +3682,6 @@ u"""
 Part of the "NOx" subset
 k_inf_a on p. 44
 T range: 200-2000 K
-
-Added as a training reaction to R_Recombination
 """,
 )
 
@@ -4014,22 +3998,6 @@ Complementary to the reaction above for N2 as the main bath gas
 )
 
 entry(
-    index = 223,
-    label = "SO2 + OH <=> HOSO2",
-    degeneracy = 1,
-    kinetics = Troe(
-        arrheniusHigh = Arrhenius(A=(1.23e+12, 'cm^3/(mol*s)'), n=-0.27, Ea=(0, 'cal/mol'), T0=(300, 'K')),
-        arrheniusLow = Arrhenius(A=(1.25e+17, 'cm^6/(mol^2*s)'), n=-4.09, Ea=(0, 'cal/mol'), T0=(300, 'K')),
-        alpha=1.0, T3=(1e-30, 'K'), T1=(412, 'K'), efficiencies={'O=S=O': 5, 'O': 5, 'O=C=O': 2.5}),
-    shortDesc = u"""[Pilling2003]""",
-    longDesc =
-u"""
-Part of the "SOx" mechanism
-Collider efficiencies taken from: Gimenez-Lopez, M. Martinez, A. Millera, R. Bilbao, M.U. Alzueta, Comb. Flame 2011, 158(1), 48-56, doi: 10.1016/j.combustflame.2010.07.017
-""",
-)
-
-entry(
     index = 224,
     label = "HOSO2 + O2 <=> SO3 + HO2",
     degeneracy = 1,
@@ -4038,9 +4006,13 @@ entry(
     longDesc =
 u"""
 Part of the "SOx" mechanism
-Data from: R. Atkinson, D.L. Baulch, R.A. Cox, R.F. Hampson, J. Kerr, J. Phys. Chem. Ref. Data 1992, 21, 1125-1568: Evaluated kinetic and photochemical data for atmospheric chemistry
-
+Data from: R. Atkinson, D.L. Baulch, R.A. Cox, R.F. Hampson, J. Kerr, J. Phys. Chem. Ref. Data 1992, 21, 1125-1568: Evaluated kinetic and photochemical data for atmospheric chemistry, http://doi.org/10.1063/1.555918
+T range: 290-420 (LOW! T range!)
 Added as a training reaction to Disproportionation
+
+Also available from [Howard1988]:
+    kinetics = Arrhenius(A=(8.07e+11, 'cm^3/(mol*s)','*|/',1.2), n=0, Ea=(656, 'cal/mol','+|-',140), T0=(1, 'K')),
+T range: 297-423 K, Experimentally measured
 """,
 )
 
@@ -4323,7 +4295,7 @@ entry(
     index = 242,
     label = "H2S + O <=> HSO + H",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(4.0e+13, 'cm^3/(mol*s)'), n=0, Ea=(7650, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(4.0e+13, 'cm^3/(mol*s)','*|/',1.38), n=0, Ea=(7650, 'cal/mol','*|/',1.063), T0=(1, 'K')),
     shortDesc = u"""[Dupre1993]""",
     longDesc =
 u"""
@@ -4338,7 +4310,7 @@ entry(
     index = 243,
     label = "SO3 + H2O + H2O <=> H2SO4 + H2O",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(3.90e-41, 'cm^6/(mol^2*s)'), n=0, Ea=(-13500, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(3.90e-41, 'cm^6/(mol^2*s)','*|/',1.2), n=0, Ea=(-13500, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u"""[Molina1997]""",
     longDesc =
 u"""
@@ -4352,6 +4324,28 @@ Measured in 100-760 torr N2
 
 entry(
     index = 244,
+    label = "HOSO2 <=> SO2 + OH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(4.34e+14, 's^-1'), n=0, Ea=(25832, 'cal/mol'), T0=(1, 'K')),
+    shortDesc = u"""[Somnitz2004]""",
+    longDesc =
+u"""
+Part of the "SOx" subset
+T range: 150-1500 K
+k_dec_inf, p. 3847 in Fig. 2
+calculated at the B3LYP/apVTZþ1//UB3LYP/apVTZþ1 level of theory
+
+Also available in reverse from [Pilling2003], but for a relatively low T range (up to 673):
+    kinetics = Troe(
+        arrheniusHigh = Arrhenius(A=(1.23e+12, 'cm^3/(mol*s)'), n=-0.27, Ea=(0, 'cal/mol'), T0=(300, 'K')),
+        arrheniusLow = Arrhenius(A=(1.25e+17, 'cm^6/(mol^2*s)'), n=-4.09, Ea=(0, 'cal/mol'), T0=(300, 'K')),
+        alpha=1.0, T3=(1e-30, 'K'), T1=(412, 'K'), efficiencies={'O=S=O': 5, 'O': 5, 'O=C=O': 2.5}),
+    Collider efficiencies taken from: Gimenez-Lopez, M. Martinez, A. Millera, R. Bilbao, M.U. Alzueta, Comb. Flame 2011, 158(1), 48-56, doi: 10.1016/j.combustflame.2010.07.017
+""",
+)
+
+entry(
+    index = 246,
     label = "COS + O <=> SO + CO",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.43e+13, 'cm^3/(mol*s)'), n=0, Ea=(4830, 'cal/mol'), T0=(1, 'K')),
@@ -4367,7 +4361,7 @@ Calculated by a branching ratio givin in the paper
 )
 
 entry(
-    index = 245,
+    index = 247,
     label = "COS + O <=> S + CO2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.73e+13, 'cm^3/(mol*s)'), n=0, Ea=(6900, 'cal/mol'), T0=(1, 'K')),
@@ -4383,7 +4377,7 @@ Calculated by a branching ratio givin in the paper
 )
 
 entry(
-    index = 246,
+    index = 248,
     label = "COS + H <=> CO + SH",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.4e+14, 'cm^3/(mol*s)'), n=0, Ea=(6786, 'cal/mol'), T0=(1, 'K')),
@@ -4397,7 +4391,7 @@ T range: 1170-1830 K
 )
 
 entry(
-    index = 247,
+    index = 249,
     label = "CS2 + H <=> CS + SH",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.4e+15, 'cm^3/(mol*s)'), n=0, Ea=(18380, 'cal/mol'), T0=(1, 'K')),
@@ -4411,7 +4405,7 @@ T range: 1170-1830 K
 )
 
 entry(
-    index = 248,
+    index = 250,
     label = "COS <=> CO + S",
     degeneracy = 1,
     kinetics = ThirdBody(
@@ -4428,7 +4422,7 @@ Available from [Roth1993] as well, T range: 1830-3020 K (Sock Tube)
 )
 
 entry(
-    index = 249,
+    index = 251,
     label = "COS + S <=> CO + S2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.35e+13, 'cm^3/(mol*s)'), n=0, Ea=(6764, 'cal/mol'), T0=(1, 'K')),
@@ -4443,7 +4437,7 @@ T range: 1140-3230 K
 )
 
 entry(
-    index = 250,
+    index = 252,
     label = "COS <=> CO + Sa",
     degeneracy = 1,
     kinetics = ThirdBody(
@@ -4459,7 +4453,7 @@ Measured in Ar
 )
 
 entry(
-    index = 251,
+    index = 253,
     label = "H2S + H <=> SH + H2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.5e+07, 'cm^3/(mol*s)'), n=1.94, Ea=(904, 'cal/mol'), T0=(1, 'K')),
@@ -4476,7 +4470,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 252,
+    index = 254,
     label = "H2S + S <=> SH + SH",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.7e+06, 'cm^3/(mol*s)'), n=2.297, Ea=(9010, 'cal/mol'), T0=(1, 'K')),
@@ -4493,7 +4487,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 253,
+    index = 255,
     label = "S + H2 <=> SH + H",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.58e+14, 'cm^3/(mol*s)'), n=0, Ea=(19700, 'cal/mol'), T0=(1, 'K')),
@@ -4509,7 +4503,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 254,
+    index = 256,
     label = "S + CH4 <=> SH + CH3",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.04e+14, 'cm^3/(mol*s)'), n=0, Ea=(19910, 'cal/mol'), T0=(1, 'K')),
@@ -4526,7 +4520,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 255,
+    index = 257,
     label = "S + C2H6 <=> SH + C2H5",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.23e+14, 'cm^3/(mol*s)'), n=0, Ea=(14750, 'cal/mol'), T0=(1, 'K')),
@@ -4544,7 +4538,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 256,
+    index = 258,
     label = "H2S <=> H2 + S",
     degeneracy = 1,
     kinetics = ThirdBody(
@@ -4560,11 +4554,11 @@ T range: 900-3600 K
 )
 
 entry(
-    index = 257,
+    index = 259,
     label = "H + S2 <=> HSS",
     degeneracy = 1,
     kinetics = ThirdBody(
-        arrheniusLow = Arrhenius(A=(1.60e+24, 'cm^3/(mol*s)'), n=-2.613, Ea=(89173, 'cal/mol'), T0 = (1, 'K')),
+        arrheniusLow = Arrhenius(A=(1.60e+24, 'cm^6/(mol^2*s)'), n=-2.613, Ea=(89173, 'cal/mol'), T0 = (1, 'K')),
         efficiencies={'N#N': 1, 'S': 1.1, '[Ar]': 0.88, '[He]': 1.39}),
     shortDesc = u"""[Sendt2002]""",
     longDesc =
@@ -4573,13 +4567,11 @@ Part of the "HxSy" subset
 k6
 UNIMOL calculation
 Validated in T range: 873-1423 K
-
-Added as a training reaction to R_Recombination
 """,
 )
 
 entry(
-    index = 258,
+    index = 260,
     label = "H + HSS <=> SH + SH",
     degeneracy = 1,
     duplicate = True,
@@ -4600,7 +4592,7 @@ Validated in T range: 873-1423 K
 )
 
 entry(
-    index = 259,
+    index = 261,
     label = "HSSH <=> SH + SH",
     degeneracy = 1,
     kinetics = ThirdBody(
@@ -4613,13 +4605,11 @@ Part of the "HxSy" subset
 k9
 UNIMOL calculation
 Validated in T range: 873-1423 K
-
-Added as a training reaction to R_Recombination
 """,
 )
 
 entry(
-    index = 260,
+    index = 262,
     label = "SH + HSS <=> H2S + S2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(6.27e+03, 'cm^3/(mol*s)'), n=3.050, Ea=(-1105, 'cal/mol'), T0 = (1, 'K')),
@@ -4634,7 +4624,7 @@ Validated in T range: 873-1423 K
 )
 
 entry(
-    index = 261,
+    index = 263,
     label = "H + HSS <=> H2 + S2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.23e+08, 'cm^3/(mol*s)'), n=1.653, Ea=(-1105, 'cal/mol'), T0 = (1, 'K')),
@@ -4651,7 +4641,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 262,
+    index = 264,
     label = "H + HSS <=> H2S + S",
     degeneracy = 1,
     kinetics = Arrhenius(A=(4.41e+13, 'cm^3/(mol*s)'), n=0, Ea=(6326, 'cal/mol'), T0 = (1, 'K')),
@@ -4666,7 +4656,7 @@ Validated in T range: 873-1423 K
 )
 
 entry(
-    index = 263,
+    index = 265,
     label = "S + HSS <=> S2 + SH",
     degeneracy = 1,
     kinetics = Arrhenius(A=(4.17e+06, 'cm^3/(mol*s)'), n=2.200, Ea=(-600, 'cal/mol'), T0 = (1, 'K')),
@@ -4683,7 +4673,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 264,
+    index = 266,
     label = "HSS + HSS <=> HSSH + S2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(9.56e+00, 'cm^3/(mol*s)'), n=3.370, Ea=(-1672, 'cal/mol'), T0 = (1, 'K')),
@@ -4700,7 +4690,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 265,
+    index = 267,
     label = "HSSH + H <=> HSS + H2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(4.99e+07, 'cm^3/(mol*s)'), n=1.933, Ea=(-1408, 'cal/mol'), T0 = (1, 'K')),
@@ -4717,7 +4707,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 266,
+    index = 268,
     label = "HSSH + H <=> H2S + SH",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.66e+08, 'cm^3/(mol*s)'), n=1.724, Ea=(467, 'cal/mol'), T0 = (1, 'K')),
@@ -4732,7 +4722,7 @@ Validated in T range: 873-1423 K
 )
 
 entry(
-    index = 267,
+    index = 269,
     label = "HSSH + SH <=> H2S + HSS",
     degeneracy = 1,
     kinetics = Arrhenius(A=(6.40e+03, 'cm^3/(mol*s)'), n=2.980, Ea=(-1480, 'cal/mol'), T0 = (1, 'K')),
@@ -4749,7 +4739,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 268,
+    index = 270,
     label = "HSSH + S <=> HSS + SH",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.85e+06, 'cm^3/(mol*s)'), n=2.310, Ea=(-1204, 'cal/mol'), T0 = (1, 'K')),
@@ -4766,7 +4756,7 @@ Added as a training reaction to H_Abstraction
 )
 
 entry(
-    index = 269,
+    index = 271,
     label = "CH3SH + H <=> CH3S + H2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.39e+08, 'cm^3/(mol*s)'), n=1.729, Ea=(986, 'cal/mol'), T0 = (1, 'K')),
@@ -4783,7 +4773,7 @@ Train!
 )
 
 entry(
-    index = 270,
+    index = 272,
     label = "CH3SH + H <=> CH2SH + H2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(4.16e+03, 'cm^3/(mol*s)'), n=2.925, Ea=(4747, 'cal/mol'), T0 = (1, 'K')),
@@ -4798,7 +4788,7 @@ calculations done at the QCISD/6-311G(d,p) level
 )
 
 entry(
-    index = 271,
+    index = 273,
     label = "CH3SH + H <=> CH3 + H2S",
     degeneracy = 1,
     kinetics = Arrhenius(A=(7.17e+10, 'cm^3/(mol*s)'), n=0.766, Ea=(3225, 'cal/mol'), T0 = (1, 'K')),
@@ -4813,7 +4803,7 @@ calculations done at the QCISD/6-311G(d,p) level
 )
 
 entry(
-    index = 272,
+    index = 274,
     label = "CH3SH + H <=> CH4 + SH",
     degeneracy = 1,
     kinetics = Arrhenius(A=(6.99e+06, 'cm^3/(mol*s)'), n=1.983, Ea=(16536, 'cal/mol'), T0 = (1, 'K')),
@@ -4828,7 +4818,7 @@ calculations done at the QCISD/6-311G(d,p) level
 )
 
 entry(
-    index = 273,
+    index = 275,
     label = "S + C2H2 <=> HCCS + H",
     degeneracy = 1,
     kinetics = Troe(
@@ -4844,7 +4834,7 @@ T range: 300-1000 K
 )
 
 entry(
-    index = 274,
+    index = 276,
     label = "S + CS2 <=> CS + S2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(6.87e+13, 'cm^3/(mol*s)'), n=0.00, Ea=(8843, 'cal/mol'), T0=(1, 'K')),
@@ -4857,7 +4847,7 @@ T range: 690-1040 K
 )
 
 entry(
-    index = 275,
+    index = 277,
     label = "NS + NO2 <=> N2 + SO2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.55e+13, 'cm^3/(mol*s)'), n=-1.10, Ea=(0, 'cal/mol'), T0=(295, 'K')),
@@ -4870,7 +4860,7 @@ calculations done at the BD-(T)//B3LYP/6-31G++ level of theory
 )
 
 entry(
-    index = 276,
+    index = 278,
     label = "NO2 + SO2 <=> NO + SO3",
     degeneracy = 1,
     kinetics = Arrhenius(A=(6.31e+12, 'cm^3/(mol*s)'), n=0, Ea=(53700, 'cal/mol'), T0=(1, 'K')),
@@ -4885,7 +4875,7 @@ Also given by [doi: 10.1016/S0010-2180(71)80077-9] for 700-1200 K
 )
 
 entry(
-    index = 277,
+    index = 279,
     label = "NO2 + S <=> SO + NO",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.14e+13, 'cm^3/(mol*s)'), n=0, Ea=(-980, 'cal/mol'), T0=(1, 'K')),
@@ -4899,7 +4889,7 @@ Experimentally measured, and PES verified using QCISD/6-311G(d,p)
 )
 
 entry(
-    index = 278,
+    index = 280,
     label = "S + NO <=> SNO",
     degeneracy = 1,
     kinetics = Troe(
@@ -4913,12 +4903,12 @@ Part of the "SOx-NOx" direct interactions subset
 T range: 300-800 K
 Experimentally measured, and PES verified using CBS-QB3
 
-Added as a training reaction to R_Recombination
+Added as a training reaction to Birad_R_Recombination
 """,
 )
 
 entry(
-    index = 279,
+    index = 281,
     label = "S + NO <=> SO + N",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.08e+14, 'cm^3/(mol*s)'), n=0, Ea=(40100, 'cal/mol'), T0=(1, 'K')),
@@ -4934,7 +4924,7 @@ A branching ratio of 90% was ASSUMED here.
 )
 
 entry(
-    index = 280,
+    index = 282,
     label = "S + NO <=> NS + O",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.2e+13, 'cm^3/(mol*s)'), n=0, Ea=(40100, 'cal/mol'), T0=(1, 'K')),
