@@ -110,11 +110,11 @@ multiplicity 2
 14   H u0 p0 c0 {5,S}
 
 HNO3
-1 N u0 p0 c+1 {2,S} {3,D} {4,S}
-2 O u0 p2 c0 {1,S} {5,S}
-3 O u0 p2 c0 {1,D}
-4 O u0 p3 c-1 {1,S}
-5 H u0 p0 c0 {2,S}
+1 * N u0 p0 c+1 {2,S} {3,D} {4,S}
+2 * O u0 p2 c0 {1,S} {5,S}
+3   O u0 p2 c0 {1,D}
+4   O u0 p3 c-1 {1,S}
+5   H u0 p0 c0 {2,S}
 
 O2
 multiplicity 3
@@ -156,12 +156,6 @@ multiplicity 2
 9    H u0 p0 c0 {4,S}
 10   H u0 p0 c0 {5,S}
 
-NO2-2
-multiplicity 2
-1   N u0 p1 c0 {2,D} {3,S}
-2   O u0 p2 c0 {1,D}
-3 * O u1 p2 c0 {1,S}
-
 C2H5
 multiplicity 2
 1   C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
@@ -172,6 +166,13 @@ multiplicity 2
 6   H u0 p0 c0 {2,S}
 7   H u0 p0 c0 {2,S}
 
+NO3
+multiplicity 2
+1 N u0 p1 c0 {2,S} {3,D}
+2 O u0 p2 c0 {1,S} {4,S}
+3 O u0 p2 c0 {1,D}
+4 O u1 p2 c0 {2,S}
+
 NO3-2
 multiplicity 2
 1   N u0 p0 c+1 {2,D} {3,S} {4,S}
@@ -181,8 +182,8 @@ multiplicity 2
 
 OH
 multiplicity 2
-1 * O u1 p2 c0 {2,S}
-2   H u0 p0 c0 {1,S}
+1 *1 O u1 p2 c0 {2,S}
+2    H u0 p0 c0 {1,S}
 
 NO2
 multiplicity 2
@@ -190,12 +191,11 @@ multiplicity 2
 2   O u0 p3 c-1 {1,S}
 3   O u0 p2 c0 {1,D}
 
-NO3
+NO2-2
 multiplicity 2
-1 N u0 p1 c0 {2,S} {3,D}
-2 O u0 p2 c0 {1,S} {4,S}
-3 O u0 p2 c0 {1,D}
-4 O u1 p2 c0 {2,S}
+1    N u0 p1 c0 {2,D} {3,S}
+2    O u0 p2 c0 {1,D}
+3 *2 O u1 p2 c0 {1,S}
 
 CH3NO2
 1 C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
@@ -238,6 +238,13 @@ multiplicity 2
 3 * N u1 p1 c0 {2,D}
 4   H u0 p0 c0 {1,S}
 
+HNCN_p
+multiplicity 2
+1 *2 N u0 p1 c0 {2,D} {4,S}
+2    C u0 p0 c0 {1,D} {3,D}
+3    N u1 p1 c0 {2,D}
+4 *1 H u0 p0 c0 {1,S}
+
 HONCNH
 1 O u0 p2 c0 {2,S} {5,S}
 2 N u0 p1 c0 {1,S} {3,D}
@@ -245,13 +252,6 @@ HONCNH
 4 N u0 p1 c0 {3,D} {6,S}
 5 H u0 p0 c0 {1,S}
 6 H u0 p0 c0 {4,S}
-
-HNCN_p
-multiplicity 2
-1 *2 N u0 p1 c0 {2,D} {4,S}
-2    C u0 p0 c0 {1,D} {3,D}
-3    N u1 p1 c0 {2,D}
-4 *1 H u0 p0 c0 {1,S}
 
 H
 multiplicity 2
@@ -348,9 +348,9 @@ HSSH
 4    H u0 p0 c0 {2,S}
 
 HOONO
-1 *1 O u0 p2 c0 {2,S} {5,S}
-2    O u0 p2 c0 {1,S} {3,S}
-3 *2 N u0 p1 c0 {2,S} {4,D}
+1 *  O u0 p2 c0 {2,S} {5,S}
+2 *2 O u0 p2 c0 {1,S} {3,S}
+3    N u0 p1 c0 {2,S} {4,D}
 4    O u0 p2 c0 {3,D}
 5    H u0 p0 c0 {1,S}
 
