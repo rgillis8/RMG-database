@@ -305,110 +305,31 @@ J. Phys. Chem. A, 1999, 103, 11328-11335, doi: 10.1021/jp9924070
 
 entry(
     index = 4,
-    label = "TrinitroMethane",
-    molecule = 
-"""
-1  C u0 p0 c0 {2,S} {5,S} {8,S} {11,S}
-2  N u0 p0 c+1 {1,S} {3,D} {4,S}
-3  O u0 p2 c0 {2,D}
-4  O u0 p3 c-1 {2,S}
-5  N u0 p0 c+1 {1,S} {6,D} {7,S}
-6  O u0 p2 c0 {5,D}
-7  O u0 p3 c-1 {5,S}
-8  N u0 p0 c+1 {1,S} {9,D} {10,S}
-9  O u0 p2 c0 {8,D}
-10 O u0 p3 c-1 {8,S}
-11 H u0 p0 c0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([44.27,45.71,47.02,48.21,50.27,51.92,54.65],'cal/(mol*K)'),
-        H298 = (-5.69,'kcal/mol'),
-        S298 = (98.34,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-517-25-9 CH(NO2)3 Tri-Nitro Methane
-REF= A.BURCAT PM3 JPCRD 28,(1999),63
-Moments=Melius HF298=-3.2 kcal  REF=Carpenter et. al. JCED 15,(1970),535
-Max Lst Sq Error Cp @ 1300 K 0.50%
-
-Alexander Burcat and Branko Ruscic
-"Third Millennium Ideal Gas and Condensed Phase Thermochemical Database for
-Combustion with updates from Active Thermochemical Tables" TAE # 960; ANL-50/20
-Technion-IIT, Aerospace Engineering, and Argonne National Laboratory, Chemistry
-Division, 2005.
-""",
-)
-
-entry(
-    index = 4,
-    label = "CNH2",
-    molecule = 
-"""
-multiplicity 4
-1 C u3 p0 c0 {2,S}
-2 N u0 p1 c0 {1,S} {3,S} {4,S}
-3 H u0 p0 c0 {2,S}
-4 H u0 p0 c0 {2,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([10.42,11.22,11.96,12.65,13.87,14.89,16.79],'cal/(mol*K)'),
-        H298 = (87.84,'kcal/mol'),
-        S298 = (52.93,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-35430-17-2
-CNH2  triradical  SIGMA=2.  STATWT=2.  IA=0.2456  IB=2.2408  IC=2.4865
-Nu=3331.5,3304,1652,1438,1029,718  HF298=368.7+/-1.45 kJ  REF=ATcT C 2011
-{HF298=366.7+/-8. kJ  REF=Burcat G3B3}  Max Lst Sq Error Cp @ 6000 K 0.40%.
-
-Alexander Burcat and Branko Ruscic
-"Third Millennium Ideal Gas and Condensed Phase Thermochemical Database for
-Combustion with updates from Active Thermochemical Tables" TAE # 960; ANL-50/20
-Technion-IIT, Aerospace Engineering, and Argonne National Laboratory, Chemistry
-Division, 2005.
-""",
-)
-
-entry(
-    index = 4,
-    label = "NH2CO",
+    label = "NS",
     molecule = 
 """
 multiplicity 2
-1 N u0 p1 c0 {2,S} {4,S} {5,S}
-2 C u1 p0 c0 {1,S} {3,D}
-3 O u0 p2 c0 {2,D}
-4 H u0 p0 c0 {1,S}
-5 H u0 p0 c0 {1,S}
+1 N u1 p1 c0 {2,D}
+2 S u0 p2 c0 {1,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([12.49,14.04,15.42,16.60,18.46,19.86,22.10],'cal/(mol*K)'),
-        H298 = (-3.23,'kcal/mol'),
-        S298 = (62.53,'cal/(mol*K)'),
+        Cpdata = ([8.07,8.17,8.26,8.35,8.50,8.62,8.84],'cal/(mol*K)'),
+        H298 = (66.4,'kcal/mol','+|-',0.5),
+        S298 = (52.76,'cal/(mol*K)'),
     ),
     shortDesc = u"""""",
     longDesc = 
 u"""
-3858-51-7
-CH2NO  H2N-C(*)=O RADICAL   STATWT=2  SIGMA=2  IA=0.6788  IB=7.7562  IC=8.4350
-NU=3695,3484,1871,1626,1233,1090,641,521,211.  HF298=-3.225+/-2. kcal REF=Burcat
-G3B3   {HF298=-5.57 +/-2.37 kcal  REF= C. Melius Database BAC/MP4 C37;
-HF298=-15.1+/-4. kJ  REF=Luo Comprehensive Handbook Chem. Bond Energ. CRC press
-2007; HF298=-15.7 kJ REF=Morochkin & Dorofeeva Comp.& Theo Chem. 991,(2012),182}
-Max Lst Sq Error Cp @ 6000 K 0.36%.
+Enthalpy is taken from Marshall2002:
+L.R. Peebles, P. Marshall, Chem. Phys. Letters, 2002, 366(5-6), 520-524, doi: 10.1016/S0009-2614(02)01619-6
 
+Entropy and Cp are taken from Burcat2005:
 Alexander Burcat and Branko Ruscic
 "Third Millennium Ideal Gas and Condensed Phase Thermochemical Database for
 Combustion with updates from Active Thermochemical Tables" TAE # 960; ANL-50/20
 Technion-IIT, Aerospace Engineering, and Argonne National Laboratory, Chemistry
-Division, 2005.
+Division, 2005. http://garfield.chem.elte.hu/Burcat/burcat.html
 """,
 )
 
@@ -433,6 +354,7 @@ Division, 2005.
 """
 
 check Burcat?
+check GlarborgNS?
 
 
 Add:
@@ -466,10 +388,13 @@ HNC(O)N
 
 
 HOOS
-NS
 SNO
 
 
+
+
+
+H298 for NCN from Lin2013b: http://pubs.acs.org/doi/abs/10.1021/jp402903t
 
 
 """
