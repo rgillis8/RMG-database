@@ -63,7 +63,7 @@ entry(
     group = 
 """
 1 * S2s u1 {2,S}
-2   H  u0 {1,S}
+2   H   u0 {1,S}
 """,
     kinetics = None,
 )
@@ -74,7 +74,7 @@ entry(
     group = 
 """
 1 * S2s u1 {2,S}
-2   C  u0 {1,S}
+2   C   u0 {1,S}
 """,
     kinetics = None,
 )
@@ -1422,8 +1422,8 @@ entry(
     label = "N3d-Cdd",
     group = 
 """
-1 * N3d u1 {2,D}
-2   Cdd u0 {1,D}
+1 * N3d u1 p1 {2,D}
+2   Cdd u0    {1,D}
 """,
     kinetics = None,
 )
