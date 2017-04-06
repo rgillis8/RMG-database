@@ -396,6 +396,9 @@ SNO
 
 H298 for NCN from Lin2013b: http://pubs.acs.org/doi/abs/10.1021/jp402903t
 
+I can derive thermo for S, SNO, NSO, SON, SNO excited, NOS excited, SON excited in Cantherm with assistance from Table II in http://aip.scitation.org/doi/abs/10.1063/1.1806419
+
+
 
 """
 
