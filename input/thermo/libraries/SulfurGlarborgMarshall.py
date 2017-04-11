@@ -736,13 +736,11 @@ entry(
 4 H u0 p0 c0 {2,S}
 5 H u0 p0 c0 {3,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[1.72253,0.025308,-3.0865e-05,1.86147e-08,-4.28728e-12,-39295.8,16.5369], Tmin=(298,'K'), Tmax=(1500,'K')),
-            NASAPolynomial(coeffs=[1.72253,0.025308,-3.0865e-05,1.86147e-08,-4.28728e-12,-39295.8,16.5369], Tmin=(1500,'K'), Tmax=(1500,'K')),
-        ],
-        Tmin = (298,'K'),
-        Tmax = (1500,'K'),
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([13.92,15.88,17.33,18.40,19.85,20.85,22.57],'cal/(mol*K)'),
+        H298 = (-75.31,'kcal/mol'),
+        S298 = (64.94,'cal/(mol*K)'),
     ),
     shortDesc = u"""HO-S-OH""",
     longDesc = 
