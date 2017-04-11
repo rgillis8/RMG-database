@@ -4004,25 +4004,6 @@ Complementary to the reaction above for N2 as the main bath gas
 )
 
 entry(
-    index = 224,
-    label = "HOSO2 + O2 <=> SO3 + HO2",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(7.8e+11, 'cm^3/(mol*s)'), n=0.00, Ea=(655, 'cal/mol'), T0=(1, 'K'), Tmin=(290, 'K'), Tmax=(420, 'K')),
-    shortDesc = u"""[Marshall2006],[Marshall2007a]""",
-    longDesc =
-u"""
-Part of the "SOx" mechanism
-Data from: R. Atkinson, D.L. Baulch, R.A. Cox, R.F. Hampson, J. Kerr, J. Phys. Chem. Ref. Data 1992, 21, 1125-1568: Evaluated kinetic and photochemical data for atmospheric chemistry, http://doi.org/10.1063/1.555918
-T range: 290-420 (LOW! T range!)
-Added as a training reaction to Disproportionation
-
-Also available from [Howard1988]:
-    kinetics = Arrhenius(A=(8.07e+11, 'cm^3/(mol*s)','*|/',1.2), n=0, Ea=(656, 'cal/mol','+|-',140), T0=(1, 'K'), Tmin=(297, 'K'), Tmax=(423, 'K')),
-T range: 297-423 K, Experimentally measured
-""",
-)
-
-entry(
     index = 225,
     label = "SO2 + H <=> HOSO",
     degeneracy = 1,
