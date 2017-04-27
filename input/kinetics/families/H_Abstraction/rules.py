@@ -37007,15 +37007,15 @@ entry(
     index = 5633,
     label = "C/H2/CbS;C_rad/H2/Cd",
     kinetics = ArrheniusEP(
-        A = (0.00178, 'cm^3/(mol*s)'),
+        A = (0.00165, 'cm^3/(mol*s)'),
         n = 4.34,
         alpha = 0,
-        E0 = (9.8, 'kcal/mol'),
+        E0 = (7.7, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 4,
-    shortDesc = u"""Group additivity method for C--H--C abstractions, Aaron Vandeputte""",
+    shortDesc = u"""Ryan Gillis edited to be the C/H2/Cbs;C_rad/H2/Cb value (RMG is currently incorrectly matching those groups to this node)""",
 )
 
 entry(
@@ -42422,15 +42422,15 @@ entry(
     index = 6051,
     label = "S/H/NonDeC;C_rad/H2/Cd",
     kinetics = ArrheniusEP(
-        A = (217, 'cm^3/(mol*s)'),
+        A = (150, 'cm^3/(mol*s)'),
         n = 3.06,
         alpha = 0,
-        E0 = (5.6, 'kcal/mol'),
+        E0 = (2.8, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 4,
-    shortDesc = u"""Group additivity method for C--H--S abstractions, Aaron Vandeputte""",
+    shortDesc = u"""Edited by Ryan Gillis to be the S/H/NonDeC;C_rad/H2/Cb because RMG is incorrectly hitting this node in cases with benzyl bonds""",
 )
 
 entry(
@@ -45407,15 +45407,15 @@ entry(
     index = 6250,
     label = "S/H/NonDeS;C_rad/H2/Cd",
     kinetics = ArrheniusEP(
-        A = (144, 'cm^3/(mol*s)'),
+        A = (99.4, 'cm^3/(mol*s)'),
         n = 3.06,
         alpha = 0,
-        E0 = (1.4, 'kcal/mol'),
+        E0 = (-1.4, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 4,
-    shortDesc = u"""Group additivity method for C--H--S abstractions, Aaron Vandeputte""",
+    shortDesc = u"""Edited by Ryan Gillis to match the value of S/H/NonDeS;C_rad/H2/Cb. RMG is incorrectly matching this node to those species""",
 )
 
 entry(

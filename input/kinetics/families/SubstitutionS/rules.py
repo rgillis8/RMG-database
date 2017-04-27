@@ -2466,3 +2466,18 @@ entry(
     shortDesc = u"""based on reverse rate and thermo""",
 )
 
+entry(
+    index = 163,
+    label = "S-Ss(Cs)Ss(Ss);CsJ-CdHH",
+    kinetics = ArrheniusEP(
+        A = (5967, 'cm^3/(mol*s)'),
+        n = 2.663,
+        alpha = 0,
+        E0 = (4.45, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""Matched to S-Ss(Cs)Ss(Ss);CsJ-CbHH because of RMG matching difficulties. Based on reverse rate and thermo""",
+)
+
