@@ -8462,13 +8462,13 @@ entry(
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
         Cpdata = ([-0.510000,-1.200000,-1.930000,-2.590000,-3.600000,-4.270000,-5.100000],'cal/(mol*K)'),
-        H298 = (5.900000,'kcal/mol'),
+        H298 = (58.000000,'kcal/mol'),
         S298 = (0.540000,'cal/(mol*K)'),
     ),
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
     longDesc =
 u""""
-From comparison with the saturated closed-shell species, mostly calculated at cbsqb3, 4/2017, Ryan Gillis
+From comparison with the saturated closed-shell species, mostly calculated at cbsqb3 with the hydrogen value take from BurcatH2O2 library, 4/2017, Ryan Gillis
 """,
 )
 
@@ -8483,13 +8483,13 @@ entry(
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
         Cpdata = ([-3.159038,-4.009747,-4.361871,-4.910916,-5.320592,-5.530248,-5.757974],'cal/(mol*K)'),
-        H298 = (56.477118,'kcal/mol'),
+        H298 = (108.577118,'kcal/mol'),
         S298 = (-7.477222,'cal/(mol*K)'),
     ),
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
     longDesc =
 u""""
-From comparison with the saturated closed-shell species, mostly calculated at cbsqb3, 4/2017, Ryan Gillis
+From comparison with the saturated closed-shell species, mostly calculated at cbsqb3 with the hydrogen value take from BurcatH2O2 library, 4/2017, Ryan Gillis
 """,
 )
 
@@ -8505,13 +8505,13 @@ entry(
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
         Cpdata = ([-1.710000,-2.410000,-3.090000,-3.650000,-4.420000,-4.890000,-5.450000],'cal/(mol*K)'),
-        H298 = (6.800000,'kcal/mol'),
+        H298 = (58.900000,'kcal/mol'),
         S298 = (0.140000,'cal/(mol*K)'),
     ),
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
     longDesc =
 u""""
-From comparison with the saturated closed-shell species, mostly calculated at cbsqb3, 4/2017, Ryan Gillis
+From comparison with the saturated closed-shell species, mostly calculated at cbsqb3 with the hydrogen value take from BurcatH2O2 library, 4/2017, Ryan Gillis
 """,
 )
 
@@ -8528,13 +8528,13 @@ entry(
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
         Cpdata = ([0.977000,0.640000,-0.027000,-0.741000,-1.913000,-2.873000,-4.269000],'cal/(mol*K)'),
-        H298 = (23.848000,'kcal/mol'),
+        H298 = (75.948000,'kcal/mol'),
         S298 = (3.331000,'cal/(mol*K)'),
     ),
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
     longDesc =
 u""""
-From comparison with the saturated closed-shell species, mostly calculated at cbsqb3, 4/2017, Ryan Gillis
+From comparison with the saturated closed-shell species, mostly calculated at cbsqb3 with the hydrogen value take from BurcatH2O2 library, 4/2017, Ryan Gillis
 """,
 )
 
@@ -8551,13 +8551,13 @@ entry(
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
         Cpdata = ([-0.539000,-1.537000,-2.332000,-2.933000,-4.010000,-4.785000,-5.701000],'cal/(mol*K)'),
-        H298 = (34.094000,'kcal/mol'),
+        H298 = (86.194000,'kcal/mol'),
         S298 = (4.146000,'cal/(mol*K)'),
     ),
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
     longDesc =
 u""""
-From comparison with the saturated closed-shell species, mostly calculated at cbsqb3, 4/2017, Ryan Gillis
+From comparison with the saturated closed-shell species, mostly calculated at cbsqb3 with the hydrogen value take from BurcatH2O2 library, 4/2017, Ryan Gillis
 """,
 )
 
@@ -8572,15 +8572,16 @@ entry(
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
         Cpdata = ([0.621000,-0.066000,-0.612000,-0.929000,-1.545000,-2.001000,-2.488000],'cal/(mol*K)'),
-        H298 = (-23.966000,'kcal/mol'),
+        H298 = (28.134000,'kcal/mol'),
         S298 = (2.635000,'cal/(mol*K)'),
     ),
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
     longDesc =
 u""""
-From comparison with the saturated closed-shell species, mostly calculated at cbsqb3, 4/2017, Ryan Gillis
+From comparison with the saturated closed-shell species, mostly calculated at cbsqb3 with the hydrogen value take from BurcatH2O2 library, 4/2017, Ryan Gillis
 """,
 )
+
 
 entry(
     index = 2007,
