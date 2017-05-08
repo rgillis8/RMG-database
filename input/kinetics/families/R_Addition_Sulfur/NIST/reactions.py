@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-name = "R_Addition_CSm/NIST"
+name = "R_Addition_Sulfur/NIST"
 shortDesc = u""
 longDesc = u"""
 
