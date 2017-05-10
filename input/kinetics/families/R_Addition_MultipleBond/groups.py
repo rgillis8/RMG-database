@@ -1856,10 +1856,10 @@ entry(
     label = "Cds_Sd",
     group = 
 """
-1 *1 CS u0 {2,D} {3,S} {4,S}
+1 *1 CS  u0    {2,D} {3,S} {4,S}
 2 *2 S2d u0 p2 {1,D}
-3    R  ux {1,S}
-4    R  ux {1,S}
+3    R   ux    {1,S}
+4    R   ux    {1,S}
 """,
     kinetics = None,
 )
@@ -1960,10 +1960,10 @@ entry(
     label = "Cds-OneDeH_Sd",
     group = 
 """
-1 *1 CS                       u0 {2,D} {3,S} {4,S}
-2 *2 S2d                      u0 {1,D}
-3    [Cd,Ct,Cb,CO,CS,N3d,N5d] u0 {1,S}
-4    H                        u0 {1,S}
+1 *1 CS                       u0    {2,D} {3,S} {4,S}
+2 *2 S2d                      u0 p2 {1,D}
+3    [Cd,Ct,Cb,CO,CS,N3d,N5d] u0    {1,S}
+4    H                        u0    {1,S}
 """,
     kinetics = None,
 )
@@ -1973,10 +1973,10 @@ entry(
     label = "Cds-CtH_Sd",
     group = 
 """
-1 *1 CS u0 {2,D} {3,S} {4,S}
+1 *1 CS  u0    {2,D} {3,S} {4,S}
 2 *2 S2d u0 p2 {1,D}
-3    Ct u0 {1,S}
-4    H  u0 {1,S}
+3    Ct  u0    {1,S}
+4    H   u0    {1,S}
 """,
     kinetics = None,
 )
@@ -2039,10 +2039,10 @@ entry(
     label = "Cds-OneDeCs_Sd",
     group = 
 """
-1 *1 CS                       u0 {2,D} {3,S} {4,S}
-2 *2 S2d                      u0 {1,D}
-3    [Cd,Ct,Cb,CO,CS,N3d,N5d] u0 {1,S}
-4    Cs                       u0 {1,S}
+1 *1 CS                       u0    {2,D} {3,S} {4,S}
+2 *2 S2d                      u0 p2 {1,D}
+3    [Cd,Ct,Cb,CO,CS,N3d,N5d] u0    {1,S}
+4    Cs                       u0    {1,S}
 """,
     kinetics = None,
 )
@@ -2052,10 +2052,10 @@ entry(
     label = "Cds-CtCs_Sd",
     group = 
 """
-1 *1 CS u0 {2,D} {3,S} {4,S}
+1 *1 CS  u0    {2,D} {3,S} {4,S}
 2 *2 S2d u0 p2 {1,D}
-3    Ct u0 {1,S}
-4    Cs u0 {1,S}
+3    Ct  u0    {1,S}
+4    Cs  u0    {1,S}
 """,
     kinetics = None,
 )
@@ -2118,10 +2118,10 @@ entry(
     label = "Cds-TwoDe_Sd",
     group = 
 """
-1 *1 CS                       u0 {2,D} {3,S} {4,S}
-2 *2 S2d                      u0 {1,D}
-3    [Cd,Ct,Cb,CO,CS,N3d,N5d] u0 {1,S}
-4    [Cd,Ct,Cb,CO,CS,N3d,N5d] u0 {1,S}
+1 *1 CS                       u0    {2,D} {3,S} {4,S}
+2 *2 S2d                      u0 p2 {1,D}
+3    [Cd,Ct,Cb,CO,CS,N3d,N5d] u0    {1,S}
+4    [Cd,Ct,Cb,CO,CS,N3d,N5d] u0    {1,S}
 """,
     kinetics = None,
 )
