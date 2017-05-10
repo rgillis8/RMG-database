@@ -7470,7 +7470,7 @@ entry(
     group = 
 """
 1 * S2s u1 p2 {2,S}
-2   H  u0 {1,S}
+2   H  u0 (1,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -8604,7 +8604,7 @@ entry(
     label = "S2J",
     group =
 """
-1 * S2s   u1 p2 c0
+1 * S2s   u1 p2
 """,
     thermo = u'S2J-C',
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
@@ -8618,7 +8618,7 @@ entry(
     label = "S4dJ",
     group =
 """
-1 * S4d   u1 p1 c0
+1 * S4d   u1 p1
 """,
     thermo = u'S4dj-OdO',
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
@@ -8632,7 +8632,7 @@ entry(
     label = "S6ddJ",
     group =
 """
-1 * S6dd   u1 p0 c0
+1 * S6dd   u1 p0
 """,
     thermo = u'S6ddJ-OdOdO',
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
