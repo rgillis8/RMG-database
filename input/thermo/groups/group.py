@@ -44873,8 +44873,8 @@ entry(
     group =
 """
 1 * S4dd  u0 p1 {2,D} {3,D}
-2   O     ux {1,D}
-3   O     ux (1,D)
+2   O     ux p2 {1,D}
+3   O     ux p2 (1,D)
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
