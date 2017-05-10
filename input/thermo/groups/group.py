@@ -45276,9 +45276,7 @@ entry(
     label = "S4dd",
     group =
 """
-1 * S4dd  u0 {2,D} {3,D}
-2   R     ux {1,D}
-3   R     ux {1,D}
+1 * S4dd  u0
 """,
     thermo = u'S4dd-OdOd',
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
@@ -45292,10 +45290,7 @@ entry(
     label = "S4d",
     group =
 """
-1 * S4d  u0 {2,D} {3,S} {4,S}
-2   R     ux {1,D}
-3   R     ux {1,S}
-4   R     ux {1,S}
+1 * S4d  u0
 """,
     thermo = u'S4d-OdCC',
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
@@ -45309,10 +45304,7 @@ entry(
     label = "S6ddd",
     group =
 """
-1 * S6ddd  u0 {2,D} {3,D} {4,D}
-2   R      ux {1,D}
-3   R      ux {1,D}
-4   R      ux {1,D}
+1 * S6ddd  u0
 """,
     thermo = u'S6ddd-OdOdOd',
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
@@ -45326,11 +45318,7 @@ entry(
     label = "S6dd",
     group =
 """
-1 * S6dd   u0 {2,D} {3,D} {4,S} {5,S}
-2   R      ux {1,D}
-3   R      ux {1,D}
-4   R      ux {1,S}
-5   R      ux {1,S}
+1 * S6dd   u0
 """,
     thermo = u'S6dd-OdOdCC',
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
