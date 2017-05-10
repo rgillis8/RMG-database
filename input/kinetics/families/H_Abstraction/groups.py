@@ -504,7 +504,7 @@ entry(
     label = "S/H/double_val6",
     group = 
 """
-1 *1 S   u0 p0 {2,S} {3,D}
+1 *1 S6d u0 p0 {2,S} {3,D}
 2 *2 H   u0    {1,S}
 3    R!H u0    {1,D}
 """,
@@ -516,7 +516,7 @@ entry(
     label = "S/H/double_val6C",
     group = 
 """
-1 *1 S   u0 p0 {2,S} {3,D}
+1 *1 S6d u0 p0 {2,S} {3,D}
 2 *2 H   u0    {1,S}
 3    C   u0    {1,D}
 """,
@@ -528,7 +528,7 @@ entry(
     label = "S/H/double_val6N",
     group = 
 """
-1 *1 S   u0 p0 {2,S} {3,D}
+1 *1 S6d u0 p0 {2,S} {3,D}
 2 *2 H   u0    {1,S}
 3    N   u0    {1,D}
 """,
@@ -540,7 +540,7 @@ entry(
     label = "S/H/double_val6S",
     group = 
 """
-1 *1 S   u0 p0 {2,S} {3,D}
+1 *1 S6d u0 p0 {2,S} {3,D}
 2 *2 H   u0    {1,S}
 3    S   u0    {1,D}
 """,
@@ -552,7 +552,7 @@ entry(
     label = "S/H/double_val6O",
     group = 
 """
-1 *1 S   u0 p0 {2,S} {3,D}
+1 *1 S6d u0 p0 {2,S} {3,D}
 2 *2 H   u0    {1,S}
 3    O   u0    {1,D}
 """,
@@ -564,10 +564,10 @@ entry(
     label = "S/H/twoDoubles",
     group = 
 """
-1 *1 S   u0 p0 {2,S} {3,D} {4,D}
-2 *2 H   u0    {1,S}
-3    R!H u0    {1,D}
-4    R!H u0    {1,D}
+1 *1 S6dd u0 p0 {2,S} {3,D} {4,D}
+2 *2 H    u0    {1,S}
+3    R!H  u0    {1,D}
+4    R!H  u0    {1,D}
 """,
     kinetics = None,
 )
@@ -577,10 +577,10 @@ entry(
     label = "S/H/twoDoublesOO",
     group = 
 """
-1 *1 S   u0 p0 {2,S} {3,D} {4,D}
-2 *2 H   u0    {1,S}
-3    O   u0    {1,D}
-4    O   u0    {1,D}
+1 *1 S6dd u0 p0 {2,S} {3,D} {4,D}
+2 *2 H    u0    {1,S}
+3    O    u0    {1,D}
+4    O    u0    {1,D}
 """,
     kinetics = None,
 )
@@ -4132,7 +4132,7 @@ entry(
     label = "S_sec_rad",
     group = 
 """
-1 *3 S   u1 p2 {2,S}
+1 *3 S   u1 px {2,S}
 2    R!H u0    {1,S}
 """,
     kinetics = None,
