@@ -1464,10 +1464,10 @@ entry(
     label = "O_SradOd",
     group = 
 """
-1 *2 O  u0 {2,S} {3,S}
-2 *3 S  u1 {1,S} {4,D}
-3 *4 H  u0 {1,S}
-4    Od u0 {2,D}
+1 *2 O  u0        {2,S} {3,S}
+2 *3 S  u1 p[0,1] {1,S} {4,D}
+3 *4 H  u0        {1,S}
+4    Od u0        {2,D}
 """,
     kinetics = None,
 )
@@ -1477,11 +1477,11 @@ entry(
     label = "O_SradOdOd",
     group = 
 """
-1 *2 O     u0 {2,S} {3,S}
-2 *3 S6dd  u1 {1,S} {4,D} {5,D}
-3 *4 H     u0 {1,S}
-4    Od    u0 {2,D}
-5    Od    u0 {2,D}
+1 *2 O     u0    {2,S} {3,S}
+2 *3 S6dd  u1 p0 {1,S} {4,D} {5,D}
+3 *4 H     u0    {1,S}
+4    Od    u0    {2,D}
+5    Od    u0    {2,D}
 """,
     kinetics = None,
 )
