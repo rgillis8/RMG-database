@@ -1785,7 +1785,7 @@ Added as a training reaction to H_Abstraction
 
 entry(
     index = 95,
-    label = "N2H3 + HNO <=> N2H3NO + H",
+    label = "N2H3 + HNO <=> NH2NHNO + H",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.65e-02, 'cm^3/(mol*s)'), n=3.82, Ea=(17780, 'cal/mol'), T0=(1, 'K'), Tmin=(300, 'K'), Tmax=(2000, 'K')),
     shortDesc = u"""[Lin2014a]""",
@@ -1817,7 +1817,7 @@ and the moment of inertia and harmonic vibrational frequencies were obtained by 
 
 entry(
     index = 97,
-    label = "N2H3 + HONO <=> N2H3NO + OH",
+    label = "N2H3 + HONO <=> NH2NHNO + OH",
     degeneracy = 1,
     kinetics = Arrhenius(A=(4.69e+00, 'cm^3/(mol*s)'), n=2.94, Ea=(15379, 'cal/mol'), T0=(1, 'K'), Tmin=(300, 'K'), Tmax=(2000, 'K')),
     shortDesc = u"""[Lin2014a]""",
@@ -4808,16 +4808,27 @@ Train!
 )
 
 
+# entry(
+    # index = 700,
+    # label = "HOSO2 + O2 <=> SO3 + HO2",
+    # degeneracy = 1,
+    # kinetics = Arrhenius(A=(1.85e-06, 'cm^3/(mol*s)'), n=5.4, Ea=(22472, 'cal/mol'), T0=(1, 'K'), Tmin=(300, 'K'), Tmax=(2500, 'K')),
+    # shortDesc = u""" """,
+    # longDesc =
+# u"""
+# Calculated by Yi-Peii, May 2017
+# CBS-QB3
+# """,
+# )
 entry(
     index = 700,
     label = "HOSO2 + O2 <=> SO3 + HO2",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(1.85e-06, 'cm^3/(mol*s)'), n=5.4, Ea=(22472, 'cal/mol'), T0=(1, 'K'), Tmin=(300, 'K'), Tmax=(2500, 'K')),
+    kinetics = Arrhenius(A=(2.288e+13, 'cm^3/(mol*s)'), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K')),
     shortDesc = u""" """,
     longDesc =
 u"""
-Calculated by Yi-Peii, May 2017
-CBS-QB3
+generate reactions script (15)
 """,
 )
 
