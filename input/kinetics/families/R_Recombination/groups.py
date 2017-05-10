@@ -162,8 +162,8 @@ entry(
     label = "S2_birad",
     group = 
 """
-1 * S u1 p2 {2,S}
-2   S u1 p2 {1,S}
+1 * S2s u1 p2 {2,S}
+2   S2s u1 p2 {1,S}
 """,
     kinetics = None,
 )
