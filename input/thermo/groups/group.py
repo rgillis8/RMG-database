@@ -45197,6 +45197,28 @@ Inferred from a least squares fit from 40 species mostly calculated at cbsqb3, 4
 
 entry(
     index = 2025,
+    label = "Os-CsS6dd",
+    group =
+"""
+1 * Os    u0 {2,S} {3,S}
+2   S6dd   ux {1,S}
+3   Cs    ux {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([3.631054,4.453556,5.049900,5.572096,6.211867,6.618059,6.828744],'cal/(mol*K)'),
+        H298 = (-22.450406,'kcal/mol'),
+        S298 = (0.891093,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
+    longDesc =
+u""""
+Inferred from a least squares fit from 40 species mostly calculated at cbsqb3, 4/2017, Ryan Gillis
+""",
+)
+
+entry(
+    index = 2032,
     label = "Os-CsS4d",
     group =
 """
@@ -45206,9 +45228,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([3.631054,4.453556,5.049900,5.572096,6.211867,6.618059,6.828744],'cal/(mol*K)'),
-        H298 = (-22.450406,'kcal/mol'),
-        S298 = (0.891093,'cal/(mol*K)'),
+        Cpdata = ([5.238,5.483,5.734,6.092,6.521,6.794,7.037],'cal/(mol*K)'),
+        H298 = (-49.470,'kcal/mol'),
+        S298 = (3.776,'cal/(mol*K)'),
     ),
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
     longDesc =
@@ -45264,7 +45286,7 @@ entry(
 2   S     ux {1,S}
 3   C     ux {1,S}
 """,
-    thermo = u'Os-CsS4d',
+    thermo = u'Os-CsS6dd',
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
     longDesc =
 u""""
@@ -47303,6 +47325,7 @@ L1: R
                 L5: Os-Cs(Cds-S2d)
             L4: Os-CS
                 L5: Os-CsS4d
+		L5: Os-CsS6dd
             L4: Os-SH
                 L5: Os-S4dH
     L2: Si
