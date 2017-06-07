@@ -363,7 +363,7 @@ entry(
     label = "!O_rad",
     group =
 """
-1 *2 [C,S,H] u1
+1 *2 [C,S,N,H] u1
 """,
     kinetics = None,
 )
