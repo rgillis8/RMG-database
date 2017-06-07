@@ -1016,7 +1016,7 @@ entry(
     label = "S",
     group = 
 """
-1 * [S,S2s,S2d,Sa] u0
+1 * S u0
 """,
     solute = SoluteData(
         S = 0.643,
@@ -1101,12 +1101,10 @@ u"""
 
 entry(
     index = 34,
-    label = "Sds",
+    label = "S4d",
     group = 
 """
-1 * S2d u0 p1 {2,S} {3,S}
-2   R   u0 {1,S}
-3   R   u0 {1,S}
+1 * S4d u0
 """,
     solute = SoluteData(
         S = 1.065,
@@ -1124,7 +1122,7 @@ u"""
 
 entry(
     index = 35,
-    label = "SdsOsOdOd",
+    label = "S6dd-OdOdOR",
     group = 
 """
 1 * S6dd u0 {2,D} {3,D} {4,S} {5,S}
@@ -1200,8 +1198,8 @@ L1: R
         L3: S2s
             L4: S2s-aromatic
         L3: S2d
-            L4: Sds
-            L4: SdsOsOdOd
+        L3: S4d
+        L3: S6dd-OdOdOR
 """
 )
 
