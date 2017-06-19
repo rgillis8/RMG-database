@@ -8620,7 +8620,7 @@ entry(
 """
 1 * S4d   u1 p1
 """,
-    thermo = u'S4dj-OdO',
+    thermo = u'S4dJ-OdO',
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
     longDesc =
 u""""
