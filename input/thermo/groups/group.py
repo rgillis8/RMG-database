@@ -45349,6 +45349,85 @@ u""""
 """,
 )
 
+entry(
+    index = 2032,
+    label = "S4s",
+    group =
+"""
+1 * S4s   u0
+""",
+    thermo = u'S4s-CCCH',
+    shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
+    longDesc =
+u""""
+Couldn't converge these geometries to calculate values and so I copied the S6s values that seem similarly unfavorable
+""",
+)
+
+entry(
+    index = 2033,
+    label = "S4s-CCCH",
+    group =
+"""
+1 * S4s   u0 p1 {2,S} {3,S} {4,S} {5,S}
+2   C     ux {1,S}
+3   C     ux {1,S}
+4   C     ux {1,S}
+5   H     u0 {1,S}
+""",
+        thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([8.483,10.309,11.463,12.376,13.821,14.62,15.158],'cal/(mol*K)'),
+        H298 = (126.031,'kcal/mol'),
+        S298 = (-63.166,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
+    longDesc =
+u""""
+Couldn't converge these geometries to calculate values and so I copied the S6s values that seem similarly unfavorable
+""",
+)
+
+entry(
+    index = 2034,
+    label = "S6s",
+    group =
+"""
+1 * S6s   u0
+""",
+    thermo = u'S6s-CCCCCH',
+    shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
+    longDesc =
+u""""
+""",
+)
+
+entry(
+    index = 2033,
+    label = "S6s-CCCCCH",
+    group =
+"""
+1 * S6s   u0 p0 {2,S} {3,S} {4,S} {5,S} {6,S} {7,S}
+2   C     ux {1,S}
+3   C     ux {1,S}
+4   C     ux {1,S}
+5   C     ux {1,S}
+6   C     ux {1,S}
+7   H     u0 {1,S}
+""",
+        thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([8.483,10.309,11.463,12.376,13.821,14.62,15.158],'cal/(mol*K)'),
+        H298 = (126.031,'kcal/mol'),
+        S298 = (-63.166,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
+    longDesc =
+u""""
+Calculated at CBS-QB3, June 2017
+""",
+)
+
 
 tree(
 """
@@ -47373,6 +47452,10 @@ L1: R
             L4: S4d-OdOS
             L4: S4d-OdSS
             L4: S4d-OdSH
+        L3: S4s
+            L4: S4s-CCCH
+        L3: S6s
+            L4: S6s-CCCCCH
         L3: S6ddd
             L4: S6ddd-OdOdOd
         L3: S6dd
