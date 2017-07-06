@@ -8649,7 +8649,7 @@ entry(
 1 * S4s   u1 p1
 """,
     thermo = u'S4sJ-CCC',
-    shortDesc = u"""Copied value of S6sJ-CCCCC""",
+    shortDesc = u"""Sulfur Oxygen Extension""",
     longDesc =
 u""""
 """,
@@ -8681,14 +8681,14 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([4.815,3.48,2.34,1.364,-0.161,-1.233,-2.644],'cal/(mol*K)'),
-        H298 = (60.164,'kcal/mol'),
-        S298 = (9.723,'cal/(mol*K)'),
+        Cpdata = ([-2.055,-3.801,4.696,-5.408,-6.524,-7.325,-8.52],'cal/(mol*K)'),
+        H298 = (63.249,'kcal/mol'),
+        S298 = (12.849,'cal/(mol*K)'),
     ),
     shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
     longDesc =
 u""""
-Copied from S6sJ, likely overestimates the stability of the radical, the closed shell species isn't stable
+Calculated at CBS-QB3
 """,
 )
 
