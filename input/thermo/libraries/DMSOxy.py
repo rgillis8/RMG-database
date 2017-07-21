@@ -696,3 +696,36 @@ multiplicity 2
     ),
 )
 
+entry(
+    index = 26,
+    label = "C=S=C",
+    molecule =
+"""
+1 C u0 p0 c0 {3,D} {4,S} {5,S}
+2 C u0 p0 c0 {3,D} {6,S} {7,S}
+3 S u0 p1 c0 {1,D} {2,D}
+4 H u0 p0 c0 {1,S}
+5 H u0 p0 c0 {1,S}
+6 H u0 p0 c0 {2,S}
+7 H u0 p0 c0 {2,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.9432, 0.00330695, 6.73601e-05, -1.30025e-07, 7.56087e-11, 25508.3, 6.65103],
+                Tmin = (10, 'K'),
+                Tmax = (573.43, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [3.30981, 0.0209777, -1.35302e-05, 4.32035e-09, -5.33479e-13, 25363.1, 7.45466],
+                Tmin = (573.43, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (212.064, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (157.975, 'J/(mol*K)'),
+    ),
+)
