@@ -72,12 +72,12 @@ entry(
     degeneracy = 1,
     kinetics = Arrhenius(A=(675.891, 'cm^3/(mol*s)'),
                          n= 2.96536,
-                         Ea=(-1.5, 'kcal/mol'),
+                         Ea=(0.5, 'kcal/mol'),
                          T0=(1, 'K')
                          ),
     longDesc =
 u"""
-Based on thioldiene + propyl radical rxn similar to index 1 rxn; barrier adjusted down from 0.5 -> -1.5 to account for the Cd to Cb change from the comparison rxn.
+Based on thioldiene + propyl radical rxn similar to index 1 rxn; barrier adjusted down from 0.5 -> -1.5 to account for the Cd to Cb change from the comparison rxn. Reverted this change.
 """,
 )
 

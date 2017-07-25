@@ -1709,23 +1709,23 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 """,
 )
 
-entry(
-    index = 480,
-    label = "SsJ-Ss;C_methyl",
-    kinetics = ArrheniusEP(
-        A = (3.94e+09, 'cm^3/(mol*s)'),
-        n = 1.25,
-        alpha = 0,
-        E0 = (-0.74, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 1,
-    shortDesc = u"""A.G. Vandeputte""",
-    longDesc = 
-u"""
-""",
-)
+#entry(
+#    index = 480,
+#    label = "SsJ-Ss;C_methyl",
+#    kinetics = ArrheniusEP(
+#        A = (3.94e+09, 'cm^3/(mol*s)'),
+#        n = 1.25,
+#        alpha = 0,
+#        E0 = (-0.74, 'kcal/mol'),
+#        Tmin = (300, 'K'),
+#        Tmax = (1500, 'K'),
+#    ),
+#   rank = 1,
+#    shortDesc = u"""A.G. Vandeputte""",
+#    longDesc = 
+#u"""
+#""",
+#)
 
 entry(
     index = 481,
@@ -2440,10 +2440,10 @@ entry(
     index = 3001,
     label = "SsJ-Ss;C_rad/H2/Cb",
     kinetics = ArrheniusEP(
-        A = (3.94e+09, 'cm^3/(mol*s)'),
-        n = 1.25,
+        A = (6.44e+09, 'cm^3/(mol*s)'),
+        n = 1.19,
         alpha = 0,
-        E0 = (-0.74, 'kcal/mol'),
+        E0 = (0.51, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
