@@ -8642,6 +8642,47 @@ From comparison with the saturated closed-shell species, mostly calculated at cb
 """,
 )
 
+entry(
+    index = 2011,
+    label = "CsJ-SO",
+    group =
+"""
+1 * Cs    u1 p0 c0 {2,S} {3,S} {4,S}
+2   S     ux {1,S}
+3   O     ux {1,S}
+4   R     ux {1,S}
+""",
+    thermo = u'CsJ-SsOsH',
+    shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
+    longDesc =
+u""""
+From comparison with the saturated closed-shell species, mostly calculated at cbsqb3 with the hydrogen value take from BurcatH2O2 library, 4/2017, Ryan Gillis
+""",
+)
+
+entry(
+    index = 2012,
+    label = "CsJ-SsOsH",
+    group =
+"""
+1 * Cs    u1 p0 c0 {2,S} {3,S} {4,S}
+2   S2s    ux {1,S}
+3   O2s    ux {1,S}
+4   H     u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0.473,-0.178,-0.851,-1.451,-2.455,-3.233,-4.435],'cal/(mol*K)'),
+        H298 = (92.958,'kcal/mol'),
+        S298 = (0.271,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
+    longDesc =
+u""""
+From comparison with the saturated closed-shell species, mostly calculated at cbsqb3 with the hydrogen value take from BurcatH2O2 library, 4/2017, Ryan Gillis
+""",
+)
+
 tree(
 """
 L1: Radical
@@ -8853,6 +8894,8 @@ L1: Radical
                             L8: CsJ-CdSsSs
                             L8: CsJ-C=SSsSs
                         L7: CsJ-SsSsSs
+                    L6: CsJ-SO
+                        L7: CsJ-SsOsH
                     L6: CCsJOS
                         L7: CCsJOHSH
                 L5: CsJN
