@@ -11,7 +11,7 @@ entry(
     index = 1,
     label = "O2 + DMSOH <=> DMSO + HO2",
     degeneracy = 2,
-    kinetics = Arrhenius(A=(3.01e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(298, 'K')),
+    kinetics = Arrhenius(A=(3.01e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
     longDesc = 
 u"""
 Value at 298K reported by Ravishankara et al in "Reaction of OH with Dimethyl Sulfide. 2. Products and Mechanisms
@@ -22,10 +22,32 @@ entry(
     index = 2,
     label = "OH + DMS  <=> DMSOH",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(298, 'K')),
+    kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
     longDesc =
 u"""
 Experimentally observed by Atkinson at 298K
+""",
+)
+
+entry(
+    index = 3,
+    label = "CSOOrad  <=> CS(=O)Orad",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(4.67589e+10, 's^-1'), n=0.510239, Ea=(65.5504, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Calculated at CBS-QB3 by Ryan Gillis
+""",
+)
+
+entry(
+    index = 4,
+    label = "CSCOOrad + DMS  <=> DMSO + CSCOrad",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(0.45722, 'cm^3/(mol*s)'), n=3.45093, Ea=(84.1291, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Calculated at b3lyp/6-31g** by Ryan Gillis
 """,
 )
 
