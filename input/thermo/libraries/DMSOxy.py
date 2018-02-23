@@ -729,3 +729,42 @@ entry(
         CpInf = (157.975, 'J/(mol*K)'),
     ),
 )
+
+entry(
+    index = 27,
+    label = "CSCOOO",
+    molecule =
+"""
+1  C u0 p0 c0 {2,S} {7,S} {8,S} {9,S}
+2  S u0 p2 c0 {1,S} {3,S}
+3  C u0 p0 c0 {2,S} {4,S} {10,S} {11,S}
+4  O u0 p2 c0 {3,S} {5,S}
+5  O u0 p2 c0 {4,S} {6,S}
+6  O u0 p2 c0 {5,S} {12,S}
+7  H u0 p0 c0 {1,S}
+8  H u0 p0 c0 {1,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {3,S}
+11 H u0 p0 c0 {3,S}
+12 H u0 p0 c0 {6,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.83721, 0.0194302, 0.000339273, -2.04557e-06, 3.91122e-09, -11955.2, 10.9547],
+                Tmin = (10, 'K'),
+                Tmax = (171.082, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [3.60492, 0.0430939, -2.80626e-05, 8.78574e-09, -1.05321e-12, -11974, 10.8854],
+                Tmin = (171.082, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-98.843, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (282.692, 'J/(mol*K)'),
+    ),
+)
