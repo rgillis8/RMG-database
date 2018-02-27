@@ -179,50 +179,50 @@ u"""
 # """,
 # )
 
-entry(
-    label = "O3",
-    group = 
-"""
-1 O u0 {2,S}
-2 O u0 {1,S} {3,S}
-3 O u0 {2,S}
-""",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+#entry(
+#    label = "O3",
+#    group =
+#"""
+#1 O u0 {2,S}
+#2 O u0 {1,S} {3,S}
+#3 O u0 {2,S}
+#""",
+#    shortDesc = u"""""",
+#    longDesc =
+#u"""
+#
+#""",
+#)
 
-""",
-)
+#entry(
+#    label = "O3.",
+#    group =
+#"""
+#1 O u0 {2,S}
+#2 O u0 {1,S} {3,S}
+#3 O u1 {2,S}
+#""",
+#    shortDesc = u"""""",
+#    longDesc =
+#u"""
+#
+#""",
+#)
 
-entry(
-    label = "O3.",
-    group = 
-"""
-1 O u0 {2,S}
-2 O u0 {1,S} {3,S}
-3 O u1 {2,S}
-""",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    label = "O3..",
-    group = 
-"""
-1 O u1 {2,S}
-2 O u0 {1,S} {3,S}
-3 O u1 {2,S}
-""",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
+#entry(
+#    label = "O3..",
+#    group =
+#"""
+#1 O u1 {2,S}
+#2 O u0 {1,S} {3,S}
+#3 O u1 {2,S}
+#""",
+#    shortDesc = u"""""",
+#    longDesc =
+#u"""
+#
+#""",
+#)
 
 entry(
     label = "O4",
