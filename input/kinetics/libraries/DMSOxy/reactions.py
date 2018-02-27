@@ -51,6 +51,30 @@ Calculated at b3lyp/6-31g** by Ryan Gillis
 """,
 )
 
+entry(
+    index = 5,
+    label = "CSCOOrad + CSCOOrad  <=> CSCOrad + CSCOrad + O2",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(7.4e-13, 'cm^3/(mol*s)'), n=0, Ea=(4.324, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+by comparison to Atkinson, R.; Baulch, D.L.; Cox, R.A.; Crowley, J.N.; Hampson, R.F, Jr.; Kerr, J.A.; Rossi, M.J.; Troe, J.
+Title: Summary of Evaluated Kinetic and Photochemical Data for Atmospheric Chemistry reaction for COOrad + COOrad -> COrad + COrad + O2
+""",
+)
+
+entry(
+    index = 6,
+    label = "CSCOOrad + CSCOOrad  <=> CSCOH + MTF + O2",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(25, 'cm^3/(mol*s)'), n=0, Ea=(9.728, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+by comparison to Baulch, D.L.; Cobos, C.J.; Cox, R.A.; Frank, P.; Hayman, G.; Just, Th.; Kerr, J.A.; Murrells, T.; Pilling, M.J.; Troe, J.; Walker, R.W.; Warnatz, J.
+Title: Evaluated kinetic data for combusion modelling. Supplement I reaction for COOrad + COOrad -> C=O + COH + O2
+""",
+)
+
 #entry(
 #    index = 3,
 #    label = "OH + DMSO  <=> DMSO2H",
