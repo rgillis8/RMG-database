@@ -30,6 +30,39 @@ Experimentally observed by Atkinson at 298K
 )
 
 entry(
+    index = 2,
+    label = "OH + DMSO  <=> DMSO2H",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+From comparison to the experimentally observed by Atkinson at 298K for OH + DMSO
+""",
+)
+
+entry(
+    index = 2,
+    label = "OH + CSOrad  <=> CS(=O)OH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+From comparison to the experimentally observed by Atkinson at 298K for OH + DMSO
+""",
+)
+
+entry(
+    index = 2,
+    label = "OH + CSOOH  <=> CS(OH)OOH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+From comparison to the experimentally observed by Atkinson at 298K for OH + DMSO
+""",
+)
+
+entry(
     index = 3,
     label = "CSOOrad  <=> CS(=O)Orad",
     degeneracy = 1,
@@ -72,6 +105,17 @@ entry(
 u"""
 by comparison to Baulch, D.L.; Cobos, C.J.; Cox, R.A.; Frank, P.; Hayman, G.; Just, Th.; Kerr, J.A.; Murrells, T.; Pilling, M.J.; Troe, J.; Walker, R.W.; Warnatz, J.
 Title: Evaluated kinetic data for combusion modelling. Supplement I reaction for COOrad + COOrad -> C=O + COH + O2
+""",
+)
+
+entry(
+    index = 7,
+    label = "HOOH  <=> OH + OH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(3.125e-5, 's^-1'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Fitted to the degradation rate.
 """,
 )
 

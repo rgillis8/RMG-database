@@ -120,6 +120,48 @@ multiplicity 2
 6 H u0 p0 c0 {1,S}
 7 H u0 p0 c0 {1,S}
 
+CSOrad
+multiplicity 2
+1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
+2 S u0 p2 c0 {1,S} {3,S}
+3 O u1 p2 c0 {2,S}
+4 H u0 p0 c0 {1,S}
+5 H u0 p0 c0 {1,S}
+6 H u0 p0 c0 {1,S}
+
+CS(=O)OH
+1 C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
+2 S u0 p1 c0 {1,S} {3,D} {4,S}
+3 O u0 p2 c0 {2,D}
+4 O u0 p2 c0 {2,S} {8,S}
+5 H u0 p0 c0 {1,S}
+6 H u0 p0 c0 {1,S}
+7 H u0 p0 c0 {1,S}
+8 H u0 p0 c0 {4,S}
+
+CSOOH
+1 C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
+2 S u0 p2 c0 {1,S} {3,S}
+3 O u0 p2 c0 {2,S} {4,S}
+4 O u0 p2 c0 {3,S} {8,S}
+5 H u0 p0 c0 {1,S}
+6 H u0 p0 c0 {1,S}
+7 H u0 p0 c0 {1,S}
+8 H u0 p0 c0 {4,S}
+
+CS(OH)OOH
+multiplicity 2
+1  C u0 p0 c0 {2,S} {6,S} {7,S} {8,S}
+2  S u1 p1 c0 {1,S} {3,S} {4,S}
+3  O u0 p2 c0 {2,S} {9,S}
+4  O u0 p2 c0 {2,S} {5,S}
+5  O u0 p2 c0 {4,S} {10,S}
+6  H u0 p0 c0 {1,S}
+7  H u0 p0 c0 {1,S}
+8  H u0 p0 c0 {1,S}
+9  H u0 p0 c0 {3,S}
+10 H u0 p0 c0 {5,S}
+
 
 CS(=O)Orad
 multiplicity 2
@@ -177,3 +219,15 @@ MTF
 6 H u0 p0 c0 {1,S}
 7 H u0 p0 c0 {1,S}
 8 H u0 p0 c0 {3,S}
+
+HOOH
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {4,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {2,S}
+
+OH
+multiplicity 2
+1 O u1 p2 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+
