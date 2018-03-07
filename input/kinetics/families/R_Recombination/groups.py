@@ -240,7 +240,7 @@ entry(
     group = 
 """
 1 * O                           u1 {2,S}
-2   [Cs,N3s,N5sc,O2s,S2s,S4s,S6s] u0 {1,S}
+2   [Cs,N3s,N5sc,O2s,S6s,S6d,S6dd,S6t,S6td] u0 {1,S}
 """,
     kinetics = None,
 )
@@ -251,7 +251,7 @@ entry(
     group = 
 """
 1 * O u1 {2,S}
-2   [Cd,Ct,CO,CS,Cb,Cbf,N3d,N5dc,N5tc,N5b,S4d,S4t,S6d,S6dd,S6t,S6td] u0 {1,S}
+2   [Cd,Ct,CO,CS,Cb,Cbf,N3d,N5dc,N5tc,N5b,S4d,S4t,S2s,S4s] u0 {1,S}
 """,
     kinetics = None,
 )
