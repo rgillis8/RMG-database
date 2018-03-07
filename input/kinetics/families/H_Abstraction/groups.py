@@ -228,7 +228,7 @@ entry(
 """
 1 *1 O                        u0 {2,S} {3,S}
 2 *2 H                        u0 {1,S}
-3    [Cd,Ct,Cb,CO,CS,N3d,N5dc] u0 {1,S}
+3    [Cd,Ct,Cb,CO,CS,N3d,N5dc,S4d,S6dd,S6d] u0 {1,S}
 """,
     kinetics = None,
 )
@@ -253,6 +253,18 @@ entry(
 1 *1 O         u0 {2,S} {3,S}
 2 *2 H         u0 {1,S}
 3    [N3d,N5dc] u0 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 456,
+   label = "O/H/OneDeS",
+    group =
+"""
+1 *1 O         u0 {2,S} {3,S}
+2 *2 H         u0 {1,S}
+3    [S4d,S6d,S6dd] u0 {1,S}
 """,
     kinetics = None,
 )
@@ -7094,6 +7106,7 @@ L1: X_H_or_Xrad_H_Xbirad_H_Xtrirad_H
                 L5: O/H/OneDe
                     L6: O/H/OneDeC
                     L6: O/H/OneDeN
+                    L6: O/H/OneDeS
         L3: OSrad_O_H
             L4: Orad_O_H
             L4: Srad_O_H
