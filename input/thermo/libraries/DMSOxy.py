@@ -104,25 +104,24 @@ multiplicity 2
     thermo = NASA(
         polynomials = [
             NASAPolynomial(
-                coeffs = [3.63192, 0.0367425, -0.000103907, 1.97034e-07, -1.43355e-10, 8778.46, 9.18041],
+                coeffs = [3.63192, 0.0367425, -0.000103907, 1.97034e-07, -1.43355e-10, 8778.46, 10.5667],
                 Tmin = (10, 'K'),
                 Tmax = (424.086, 'K'),
             ),
             NASAPolynomial(
-                coeffs = [4.51856, 0.0195672, -1.19878e-05, 3.53562e-09, -4.02249e-13, 8782.51, 6.5978],
+                coeffs = [4.51856, 0.0195672, -1.19878e-05, 3.53562e-09, -4.02249e-13, 8782.51, 7.9841],
                 Tmin = (424.086, 'K'),
                 Tmax = (3000, 'K'),
             ),
         ],
         Tmin = (10, 'K'),
         Tmax = (3000, 'K'),
+        E0 = (72.9793, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (157.975, 'J/(mol*K)'),
     ),
-    shortDesc = u"""""",
-    longDesc =
-u"""
-CBS-QB3 Calculation, Ryan Gillis 5/2017
-""",
 )
+
 
 entry(
     index = 4,
@@ -766,5 +765,289 @@ entry(
         E0 = (-98.843, 'kJ/mol'),
         Cp0 = (33.2579, 'J/(mol*K)'),
         CpInf = (282.692, 'J/(mol*K)'),
+    ),
+)
+
+entry(
+    index = 28,
+    label = "CSOC",
+    molecule =
+"""
+1  C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
+2  S u0 p2 c0 {1,S} {3,S}
+3  O u0 p2 c0 {2,S} {4,S}
+4  C u0 p0 c0 {3,S} {8,S} {9,S} {10,S}
+5  H u0 p0 c0 {1,S}
+6  H u0 p0 c0 {1,S}
+7  H u0 p0 c0 {1,S}
+8  H u0 p0 c0 {4,S}
+9  H u0 p0 c0 {4,S}
+10 H u0 p0 c0 {4,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.78704, 0.0175339, 1.24907e-05, -2.30791e-08, 8.86528e-12, -15550.2, 9.38601],
+                Tmin = (10, 'K'),
+                Tmax = (905.112, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [2.3451, 0.0291955, -1.56012e-05, 4.0685e-09, -4.16424e-13, -15505.8, 15.0019],
+                Tmin = (905.112, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-129.311, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (224.491, 'J/(mol*K)'),
+    ),
+)
+
+entry(
+    index = 28,
+    label = "CSCOrad",
+    molecule =
+"""
+multiplicity 2
+1 C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
+2 S u0 p2 c0 {1,S} {3,S}
+3 C u0 p0 c0 {2,S} {4,S} {8,S} {9,S}
+4 O u1 p2 c0 {3,S}
+5 H u0 p0 c0 {1,S}
+6 H u0 p0 c0 {1,S}
+7 H u0 p0 c0 {1,S}
+8 H u0 p0 c0 {3,S}
+9 H u0 p0 c0 {3,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.63738, 0.0359084, -7.85075e-05, 1.53425e-07, -1.16623e-10, 3102.87, 10.5193],
+                Tmin = (10, 'K'),
+                Tmax = (438.068, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [3.29985, 0.0284618, -1.69582e-05, 4.89316e-09, -5.47361e-13, 3233.47, 13.0222],
+                Tmin = (438.068, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (25.7889, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (207.862, 'J/(mol*K)'),
+    ),
+)
+
+entry(
+    index = 28,
+    label = "CSOOH",
+    molecule =
+"""
+1 C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
+2 S u0 p2 c0 {1,S} {3,S}
+3 O u0 p2 c0 {2,S} {4,S}
+4 O u0 p2 c0 {3,S} {8,S}
+5 H u0 p0 c0 {1,S}
+6 H u0 p0 c0 {1,S}
+7 H u0 p0 c0 {1,S}
+8 H u0 p0 c0 {4,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.80926, 0.0183388, 0.000115892, -5.6455e-07, 7.44462e-10, -11219.6, 9.56715],
+                Tmin = (10, 'K'),
+                Tmax = (276.442, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [4.8415, 0.0228752, -1.43819e-05, 4.4271e-09, -5.26755e-13, -11351.1, 4.56863],
+                Tmin = (276.442, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-93.2646, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (182.918, 'J/(mol*K)'),
+    ),
+)
+
+entry(
+    index = 29,
+    label = "CSOH",
+    molecule =
+"""
+1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
+2 S u0 p2 c0 {1,S} {3,S}
+3 O u0 p2 c0 {2,S} {7,S}
+4 H u0 p0 c0 {1,S}
+5 H u0 p0 c0 {1,S}
+6 H u0 p0 c0 {1,S}
+7 H u0 p0 c0 {3,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.97221, 0.00197535, 6.79005e-05, -1.5612e-07, 1.17147e-10, -17184, 8.29951],
+                Tmin = (10, 'K'),
+                Tmax = (396.386, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [2.76058, 0.0184629, -1.06156e-05, 3.05187e-09, -3.45934e-13, -17121.5, 12.6015],
+                Tmin = (396.386, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-142.875, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (149.66, 'J/(mol*K)'),
+    ),
+)
+
+entry(
+    index = 21,
+    label = "OSrad=O",
+    molecule =
+"""
+multiplicity 2
+1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
+2 S u1 p1 c0 {1,S} {3,D}
+3 O u0 p2 c0 {2,D}
+4 H u0 p0 c0 {1,S}
+5 H u0 p0 c0 {1,S}
+6 H u0 p0 c0 {1,S}
+""",
+    thermo = NASA(
+       polynomials = [
+            NASAPolynomial(
+                coeffs = [3.89857, 0.00877916, 1.32559e-05, -2.51593e-08, 1.18525e-11, -10548.6, 8.814],
+                Tmin = (10, 'K'),
+                Tmax = (703.398, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [3.15581, 0.016169, -9.25458e-06, 2.57471e-09, -2.78966e-13, -10522.5, 11.5793],
+                Tmin = (703.398, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-87.7171, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (133.032, 'J/(mol*K)'),
+    ),
+)
+
+entry(
+    index = 21,
+    label = "CS=OOOH",
+    molecule =
+"""
+1 C u0 p0 c0 {2,S} {6,S} {7,S} {8,S}
+2 S u0 p1 c0 {1,S} {3,D} {4,S}
+3 O u0 p2 c0 {2,D}
+4 O u0 p2 c0 {2,S} {5,S}
+5 O u0 p2 c0 {4,S} {9,S}
+6 H u0 p0 c0 {1,S}
+7 H u0 p0 c0 {1,S}
+8 H u0 p0 c0 {1,S}
+9 H u0 p0 c0 {5,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.7838, 0.0169979, 0.000137784, -4.68603e-07, 4.43361e-10, -29999.6, 10.2455],
+                Tmin = (10, 'K'),
+                Tmax = (380.316, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [5.56092, 0.027407, -1.80428e-05, 5.73903e-09, -6.97956e-13, -30345.3, 0.623152],
+                Tmin = (380.316, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-249.414, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (207.862, 'J/(mol*K)'),
+    ),
+)
+
+entry(
+    index = 21,
+    label = "S6ddd-OdOdCd",
+    molecule =
+"""
+1 C u0 p0 c0 {2,D} {5,S} {6,S}
+2 S u0 p0 c0 {1,D} {3,D} {4,D}
+3 O u0 p2 c0 {2,D}
+4 O u0 p2 c0 {2,D}
+5 H u0 p0 c0 {1,S}
+6 H u0 p0 c0 {1,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.94543, 0.00311211, 6.05764e-05, -1.15814e-07, 6.56678e-11, -19088.8, 8.49158],
+                Tmin = (10, 'K'),
+                Tmax = (593.934, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [3.45685, 0.0194573, -1.36739e-05, 4.5367e-09, -5.67612e-13, -19261, 8.65573],
+                Tmin = (593.934, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-158.737, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (133.032, 'J/(mol*K)'),
+    ),
+)
+
+entry(
+    index = 21,
+    label = "CSOOC",
+    molecule =
+"""
+1  C u0 p0 c0 {2,S} {6,S} {7,S} {8,S}
+2  S u0 p2 c0 {1,S} {3,S}
+3  O u0 p2 c0 {2,S} {4,S}
+4  O u0 p2 c0 {3,S} {5,S}
+5  C u0 p0 c0 {4,S} {9,S} {10,S} {11,S}
+6  H u0 p0 c0 {1,S}
+7  H u0 p0 c0 {1,S}
+8  H u0 p0 c0 {1,S}
+9  H u0 p0 c0 {5,S}
+10 H u0 p0 c0 {5,S}
+11 H u0 p0 c0 {5,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.50097, 0.047325, -8.83228e-05, 1.42709e-07, -9.51965e-11, -11351.1, 11.4932],
+                Tmin = (10, 'K'),
+                Tmax = (470.347, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [3.84555, 0.0352917, -2.09167e-05, 6.02085e-09, -6.72927e-13, -11282.8, 11.1611],
+                Tmin = (470.347, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-94.3968, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (257.749, 'J/(mol*K)'),
     ),
 )
