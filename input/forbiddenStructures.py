@@ -179,50 +179,66 @@ u"""
 # """,
 # )
 
-#entry(
-#    label = "O3",
-#    group =
-#"""
-#1 O u0 {2,S}
-#2 O u0 {1,S} {3,S}
-#3 O u0 {2,S}
-#""",
-#    shortDesc = u"""""",
-#    longDesc =
-#u"""
-#
-#""",
-#)
+entry(
+    label = "O3",
+    group =
+"""
+1 O u0 {2,S}
+2 O u0 {1,S} {3,S}
+3 O u0 {2,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
 
-#entry(
-#    label = "O3.",
-#    group =
-#"""
-#1 O u0 {2,S}
-#2 O u0 {1,S} {3,S}
-#3 O u1 {2,S}
-#""",
-#    shortDesc = u"""""",
-#    longDesc =
-#u"""
-#
-#""",
-#)
+""",
+)
 
-#entry(
-#    label = "O3..",
-#    group =
-#"""
-#1 O u1 {2,S}
-#2 O u0 {1,S} {3,S}
-#3 O u1 {2,S}
-#""",
-#    shortDesc = u"""""",
-#    longDesc =
-#u"""
-#
-#""",
-#)
+entry(
+    label = "O3.",
+    group =
+"""
+1 O u0 {2,S}
+2 O u0 {1,S} {3,S}
+3 O u1 {2,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    label = "S=CH2",
+   group =
+"""
+1 C u0 p0 c0 {2,D} {3,S} {4,S}
+2 S u0 p2 c0 {1,D}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {1,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    label = "O3..",
+    group =
+"""
+1 O u1 {2,S}
+2 O u0 {1,S} {3,S}
+3 O u1 {2,S}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+
+""",
+)
 
 entry(
     label = "O4",
