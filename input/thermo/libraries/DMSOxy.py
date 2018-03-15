@@ -1051,3 +1051,77 @@ entry(
         CpInf = (257.749, 'J/(mol*K)'),
     ),
 )
+
+entry(
+    index = 21,
+    label = "OOCHO",
+    molecule =
+"""
+multiplicity 2
+1 O u1 p2 c0 {2,S}
+2 O u0 p2 c0 {1,S} {3,S}
+3 C u0 p0 c0 {2,S} {4,D} {5,S}
+4 O u0 p2 c0 {3,D}
+5 H u0 p0 c0 {3,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.93884, 0.00485263, 3.26685e-05, -6.75266e-08, 4.04253e-11, -14359.9, 8.68038],
+                Tmin = (10, 'K'),
+                Tmax = (552.383, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [3.45659, 0.014342, -9.38537e-06, 2.88285e-09, -3.36471e-13, -14398.1, 9.89254],
+                Tmin = (552.383, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-119.407, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (108.088, 'J/(mol*K)'),
+    ),
+)
+
+entry(
+    index = 21,
+    label = "DMSOHOOH",
+    molecule =
+"""
+1  C u0 p0 c0 {2,S} {7,S} {8,S} {9,S}
+2  S u0 p1 c0 {1,S} {3,S} {4,S} {6,S}
+3  O u0 p2 c0 {2,S} {10,S}
+4  O u0 p2 c0 {2,S} {5,S}
+5  O u0 p2 c0 {4,S} {11,S}
+6  C u0 p0 c0 {2,S} {12,S} {13,S} {14,S}
+7  H u0 p0 c0 {1,S}
+8  H u0 p0 c0 {1,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {3,S}
+11 H u0 p0 c0 {5,S}
+12 H u0 p0 c0 {6,S}
+13 H u0 p0 c0 {6,S}
+14 H u0 p0 c0 {6,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.57345, 0.0395532, 0.000226343, -1.08789e-06, 1.36938e-09, -31815.8, 11.3864],
+                Tmin = (10, 'K'),
+                Tmax = (295.665, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [6.65528, 0.0437024, -2.72813e-05, 8.39412e-09, -1.00095e-12, -32198.4, -3.11485],
+                Tmin = (295.665, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-264.48, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (332.579, 'J/(mol*K)'),
+    ),
+)
