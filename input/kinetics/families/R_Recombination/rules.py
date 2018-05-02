@@ -2512,3 +2512,17 @@ entry(
     shortDesc = u"""GA Jonas x 3 for spinorbit""",
 )
 
+entry(
+    index = 3001,
+    label = "O_rad/NonDe;SsJ-Cs",
+    kinetics = ArrheniusEP(
+        A = (1.8e+6, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (0, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""Experimental rate of OO + CSrad at 298. Demore 1997, JPL Publications""",
+)

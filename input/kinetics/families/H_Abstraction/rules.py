@@ -46593,3 +46593,49 @@ Kinetics of Hydrogen Abstraction Reactions of Butene Isomers by OH Radical
 p-allylic site of iso-butene ref: DOI: 10.1021/jp1062786""",
 )
 
+entry(
+    index = 7046,
+    label = "CO/H/NonDeO;O_pri_rad",
+    kinetics = ArrheniusEP(
+        A = (6.99e+10, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (.11, 'kJ/mol'),
+        Tmin = (298, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""""",
+    longDesc = """
+Analogous to Habs from Author(s):   Thynne, J.C.J.; Gray, P.
+Title:   The reactions of methoxyl radicals with methyl formate; comparisons between alkoxyl and alkyl
+Journal:   Proc. Chem. Soc. London
+
+Author(s):   Good, D.A.; Francisco, LJ.S.
+Title:   A Computational Study of the Reaction of Methyl Formate with H and CH3 Radicals
+Journal:   J. Phys. Chem. A
+""",
+)
+
+
+
+entry(
+    index = 7047,
+    label = "O/H/OneDeS;O_pri_rad",
+    kinetics = ArrheniusEP(
+        A = (9.03e+09, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (0, 'kJ/mol'),
+        Tmin = (298, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""""",
+    longDesc = """
+Author(s):   Anglada, J.M.;Olivella, S.;Sole, A.
+Title:   Hydrogen transfer between sulfuric acid and hydroxyl radical in the gas phase: Competition among hydrogen atom transfer, proton-coupled electron-transfer, and double proton transfer
+Journal:   J. Phys. Chem. A
+""",
+)
+
