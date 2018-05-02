@@ -51,3 +51,23 @@ entry(
     shortDesc = u"""Estimated value, AG Vandeputte""",
 )
 
+entry(
+    index = 658,
+    label = "O_rad/NonDeO;Cmethyl_Srad",
+    kinetics = ArrheniusEP(
+        A = (5.91E10, 'cm^3/(mol*s)'),
+        n = 2.93,
+        alpha = 0,
+        E0 = (102926, 'kJ/mol'),
+        Tmin = (298, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Added by Ryan Gillis, 2018""",
+    longDesc =
+"""
+Author(s):   Zhu, L.; Bozzelli, J.W.
+Title:   Kinetics of the multichannel reaction of methanethiyl radical (CH3S center dot) with O-3(2) - Pressure Independent
+Journal:   J. Phys. Chem. A
+"""
+)
