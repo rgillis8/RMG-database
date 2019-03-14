@@ -2898,3 +2898,75 @@ Phys. Chem. Chem. Phys., 2001,3, 3732-3736
 DOI: 10.1039/B104682A 
 """,
 )
+
+entry(
+    index = 153,
+    label = "SO2",
+    molecule = 'O=S=O',
+    solute = SoluteData(
+        S = 0.66,
+        B = 0.10,
+        E = 0.37,
+        L = 0.778,
+        A = 0.28,
+        V = 0.3465
+    ),
+    shortDesc = u"""""",
+    longDesc =
+u"""
+Correlation and prediction of partition coefficient between the gas phase and
+water, and the solvents dry methyl acetate, dry and wet ethyl acetate,
+and dry and wet butyl acetate
+Laura M. Sprunger a, Amy Proctor a, William E. Acree Jr. a,∗, Michael H. Abrahamb,
+Nora Benjelloun-Dakhama
+Fluid Phase Equilibria 270 (2008) 30–44
+""",
+)
+
+entry(
+    index = 154,
+    label = "CO",
+    molecule = '[C-]#[O+]',
+    solute = SoluteData(
+        S = 0.00,
+        B = 0.04,
+        E = 0.00,
+        L = -0.836,
+        A = 0.00,
+        V = 0.222
+    ),
+    shortDesc = u"""""",
+    longDesc =
+u"""
+Correlation and prediction of partition coefficient between the gas phase and
+water, and the solvents dry methyl acetate, dry and wet ethyl acetate,
+and dry and wet butyl acetate
+Laura M. Sprunger a, Amy Proctor a, William E. Acree Jr. a,∗, Michael H. Abrahamb,
+Nora Benjelloun-Dakhama
+Fluid Phase Equilibria 270 (2008) 30–44
+""",
+)
+
+entry(
+    index = 154,
+    label = "CO2",
+    molecule = 'O=C=O',
+    solute = SoluteData(
+        S = 0.28,
+        B = 0.1,
+        E = 0.00,
+        L = 0.058,
+        A = 0.05,
+        V = 0.2809
+    ),
+    shortDesc = u"""""",
+    longDesc =
+u"""
+Correlation and prediction of partition coefficient between the gas phase and
+water, and the solvents dry methyl acetate, dry and wet ethyl acetate,
+and dry and wet butyl acetate
+Laura M. Sprunger a, Amy Proctor a, William E. Acree Jr. a,∗, Michael H. Abrahamb,
+Nora Benjelloun-Dakhama
+Fluid Phase Equilibria 270 (2008) 30–44
+""",
+)
