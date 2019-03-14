@@ -13140,7 +13140,7 @@ entry(
     group =
 """
 1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
-2   [S4s,S4d]  u0 {1,S}
+2   [S4s,S4d,S4b,S4t]  u0 {1,S}
 3   H  u0 {1,S}
 4   H  u0 {1,S}
 5   H  u0 {1,S}
@@ -13164,7 +13164,7 @@ entry(
     group =
 """
 1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
-2   [S6dd,S6d,S6s]  u0 {1,S}
+2   [S6s,S6d,S6dd,S6t,S6td]  u0 {1,S}
 3   H  u0 {1,S}
 4   H  u0 {1,S}
 5   H  u0 {1,S}
@@ -40125,7 +40125,7 @@ entry(
 4   S  u0 {1,S}
 5   H  u0 {1,S}
 """,
-    thermo = None,
+    thermo = u'Cs-CsCsSH',
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -40235,7 +40235,7 @@ entry(
 4   S u0 {1,S}
 5   H  u0 {1,S}
 """,
-    thermo = u'Cs-CdsCsS2H',
+    thermo = u'Cs-(Cds-Cd)CsSsH',
     shortDesc = u"""RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2018""",
     longDesc =
 u""""
@@ -40279,7 +40279,7 @@ entry(
 5   H  u0 {1,S}
 6   C  u0 {2,D}
 """,
-    thermo = None,
+    thermo = u'Cs-(Cds-Cds)CsSsH',
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -40299,7 +40299,12 @@ entry(
 5   H  u0 {1,S}
 6   Cd u0 {2,D}
 """,
-    thermo = None,
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([6.83,8.46,9.25,9.59,9.81,10.16,10.83],'cal/(mol*K)'),
+        H298 = (-3.06,'kcal/mol'),
+        S298 = (-12.86,'cal/(mol*K)'),
+    ),
     shortDesc = u"""""",
     longDesc = 
 u"""
