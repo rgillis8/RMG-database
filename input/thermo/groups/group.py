@@ -39767,13 +39767,13 @@ u"""
 
 entry(
     index = -1,
-    label = "Cs-CCSsH",
+    label = "Cs-CCSH",
     group = 
 """
 1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
 2   C  u0 {1,S}
 3   C  u0 {1,S}
-4   S2s u0 {1,S}
+4   S  u0 {1,S}
 5   H  u0 {1,S}
 """,
     thermo = None,
@@ -42696,7 +42696,7 @@ entry(
 2   S  ux {1,S}
 3   H  u0 {1,S}
 """,
-    thermo = u'S2s-SsH',
+    thermo = u'S2s-S2sH',
     shortDesc = u"""""",
     longDesc =
 u"""
@@ -49053,7 +49053,7 @@ L1: R
                 L5: Cs-CtSsSsH
                 L5: Cs-CbSsSsH
                 L5: Cs-C=SSsSsH
-            L4: Cs-CCSsH
+            L4: Cs-CCSH
                 L5: Cs-CsCsSsH
                 L5: Cs-CdsCsSsH
                     L6: Cs-(Cds-Cd)CsSsH
