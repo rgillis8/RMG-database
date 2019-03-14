@@ -40701,7 +40701,7 @@ entry(
 4   H  u0 {1,S}
 5   H  u0 {1,S}
 """,
-    thermo = u'Cs-CsSsHH',
+    thermo = u'Cs-CsSHH',
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -40711,12 +40711,79 @@ u"""
 
 entry(
     index = 1163,
-    label = "Cs-CsSsHH",
-    group = 
+    label = "Cs-CsSHH",
+    group =
 """
 1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
 2   Cs u0 {1,S}
 3   S  u0 {1,S}
+4   H  u0 {1,S}
+5   H  u0 {1,S}
+""",
+    thermo = u'Cs-CsS2HH',
+    shortDesc = u"""""",
+    longDesc =
+u""""
+
+""",
+)
+
+entry(
+    index = 1163,
+    label = "Cs-CsS2HH",
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S}
+3   S2s u0 {1,S}
+4   H  u0 {1,S}
+5   H  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([4.66,5.69,6.83,7.92,9.75,11.18,13.36],'cal/(mol*K)'),
+        H298 = (-6.17,'kcal/mol'),
+        S298 = (11.94,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2018""",
+    longDesc =
+u""""
+
+""",
+)
+
+entry(
+    index = 1163,
+    label = "Cs-CsS4HH",
+    group =
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S}
+3   [S4s,S4d,S4b,S4t] u0 {1,S}
+4   H  u0 {1,S}
+5   H  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([4.66,5.69,6.83,7.92,9.75,11.18,13.36],'cal/(mol*K)'),
+        H298 = (-6.17,'kcal/mol'),
+        S298 = (11.94,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2018""",
+    longDesc =
+u""""
+
+""",
+)
+
+entry(
+    index = 1163,
+    label = "Cs-CsS6HH",
+    group =
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S}
+3   [S6s,S6d,S6dd,S6t,S6td] u0 {1,S}
 4   H  u0 {1,S}
 5   H  u0 {1,S}
 """,
@@ -45741,7 +45808,7 @@ u""""
 
 entry(
     index = 2024,
-    label = "O2d-S2d",
+    label = "O2d-Sd",
     group =
 """
 1 * O2d   u0 {2,D}
@@ -45760,47 +45827,6 @@ Inferred from a least squares fit from 40 species mostly calculated at cbsqb3, 4
 """,
 )
 
-entry(
-    index = 2024,
-    label = "O2d-S_OneDe",
-    group =
-"""
-1 * O2d   u0 {2,D}
-2   [S4d,S6d]     ux {1,D}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([5.593395,6.357902,6.933688,7.438219,8.149984,8.617243,9.137806],'cal/(mol*K)'),
-        H298 = (-32.487699,'kcal/mol'),
-        S298 = (17.815926,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""O2d-S2d comparison, used as constant in fit""",
-    longDesc =
-u""""
-Inferred from a least squares fit from 40 species mostly calculated at cbsqb3, 4/2017, Ryan Gillis
-""",
-)
-
-entry(
-    index = 2024,
-    label = "O2d-S_MultDe",
-    group =
-"""
-1 * O2d   u0 {2,D}
-2   [S4dd,S6dd,S6ddd]     ux {1,D}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([5.593395,6.357902,6.933688,7.438219,8.149984,8.617243,9.137806],'cal/(mol*K)'),
-        H298 = (-32.487699,'kcal/mol'),
-        S298 = (17.815926,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""O2d-S2d comparison, used as constant in fit""",
-    longDesc =
-u""""
-Inferred from a least squares fit from 40 species mostly calculated at cbsqb3, 4/2017, Ryan Gillis
-""",
-)
 
 entry(
     index = 2025,
@@ -49098,7 +49124,10 @@ L1: R
                         L7: Cs-C=S(Cds-Cdd-S2d)SsH
                     L6: Cs-C=S(Cds-Cds)SsH
             L4: Cs-CSHH
-                L5: Cs-CsSsHH
+                L5: Cs-CsSHH
+                    L6: Cs-CsS2HH
+                    L6: Cs-CsS4HH
+                    L6: Cs-CsS6HH
                 L5: Cs-CdsSsHH
                     L6: Cs-(Cds-Cd)SsHH
                         L7: Cs-(Cds-Cds)SsHH
@@ -49115,9 +49144,7 @@ L1: R
             L4: O2d-O2d
             L4: O2d-N3d
             L4: O2d-N5dc
-            L4: O2d-S2d
-            L4: O2d-S_OneDe
-            L4: O2d-S_MultDe
+            L4: O2d-Sd
         L3: O2s
             L4: O2s-N
                 L5: O2s-CN
