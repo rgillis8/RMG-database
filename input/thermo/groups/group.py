@@ -42922,11 +42922,11 @@ Singlet sulfur, thermo data copied from triplet sulfur, likely very incorrect (t
 
 entry(
     index = 1160,
-    label = "S2d-Cd",
+    label = "S2d-C",
     group = 
 """
 1 * S2d u0 {2,D}
-2   CS u0 {1,D}
+2   C u0 {1,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -42943,11 +42943,11 @@ u"""
 
 entry(
     index = 1161,
-    label = "S2d-S2d",
+    label = "S2d-S",
     group = 
 """
 1 * S2d u0 {2,D}
-2   S2d u0 {1,D}
+2   S u0 {1,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -42957,6 +42957,27 @@ entry(
     ),
     shortDesc = u"""CBS-QB3 GA 1D-HR Aaron Vandeputte 2009""",
     longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1161,
+    label = "S2d-O",
+    group =
+"""
+1 * S2d u0 {2,D}
+2   O u0 {1,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([3.9,4.08,4.2,4.27,4.35,4.39,4.43],'cal/(mol*K)'),
+        H298 = (22.82,'kcal/mol'),
+        S298 = (26.89,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""CBS-QB3 GA 1D-HR Aaron Vandeputte 2009""",
+    longDesc =
 u"""
 
 """,
@@ -43243,6 +43264,89 @@ entry(
 3   S ux {1,S}
 """,
     thermo = u'S2s-SsSs',
+    shortDesc = u""" """,
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 1152,
+    label = "S2s-SO",
+    group =
+"""
+1 * S2s u0 {2,S} {3,S}
+2   S ux {1,S}
+3   O ux {1,S}
+""",
+    thermo = u'S2s-S2O',
+    shortDesc = u""" """,
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 1152,
+    label = "S2s-S2O",
+    group =
+"""
+1 * S2s u0 {2,S} {3,S}
+2   S2s ux {1,S}
+3   O ux {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([6.47,6.61,6.63,6.65,6.71,6.81,6.42],'cal/(mol*K)'),
+        H298 = (2.13,'kcal/mol'),
+        S298 = (11.79,'cal/(mol*K)'),
+    ),
+    shortDesc = u""" """,
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 1152,
+    label = "S2s-S4O",
+    group =
+"""
+1 * S2s u0 {2,S} {3,S}
+2   [S4s,S4d,S4b,S4t] ux {1,S}
+3   O ux {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([6.47,6.61,6.63,6.65,6.71,6.81,6.42],'cal/(mol*K)'),
+        H298 = (2.13,'kcal/mol'),
+        S298 = (11.79,'cal/(mol*K)'),
+    ),
+    shortDesc = u""" """,
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 1152,
+    label = "S2s-S6O",
+    group =
+"""
+1 * S2s u0 {2,S} {3,S}
+2   [S6s,S6d,S6dd,S6t,S6td] ux {1,S}
+3   O ux {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([6.47,6.61,6.63,6.65,6.71,6.81,6.42],'cal/(mol*K)'),
+        H298 = (2.13,'kcal/mol'),
+        S298 = (11.79,'cal/(mol*K)'),
+    ),
     shortDesc = u""" """,
     longDesc =
 u"""
@@ -49678,8 +49782,9 @@ L1: R
     L2: S
         L3: Sa(S)
         L3: S2d
-            L4: S2d-Cd
-            L4: S2d-S2d
+            L4: S2d-C
+            L4: S2d-S
+            L4: S2d-O
         L3: S2s
             L4: S2s-HH
             L4: S2s-CH
@@ -49694,6 +49799,10 @@ L1: R
                 L5: S2s-S_DeH
             L4: S2s-SS
                 L5: S2s-SsSs
+            L4: S2s-SO
+                L5: S2s-S2O
+                L5: S2s-S4O
+                L5: S2s-S6O
             L4: S2s-SC
                 L5: S2s-S2sC
                     L6: S2s-S2sCs
