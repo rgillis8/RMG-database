@@ -256,7 +256,7 @@ entry(
     group = 
 """
 1 * Cb      u0 {2,S}
-2   [Cd,CO] u0 {1,S}
+2   [Cd,CO,CS] u0 {1,S}
 """,
     thermo = u'Cb-(Cds-Cds)',
     shortDesc = u"""""",
@@ -479,28 +479,6 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
-
-""",
-)
-
-entry(
-    index = 1198,
-    label = "Cb-C=S",
-    group = 
-"""
-1 * Cb u0 {2,S}
-2   CS u0 {1,S} {3,D}
-3   S2d u0 {2,D}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([2.55,3.31,3.99,4.47,5.11,5.37,5.60],'cal/(mol*K)'),
-        H298 = (5.83,'kcal/mol'),
-        S298 = (-7.98,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2018""",
-    longDesc =
-u""""
 
 """,
 )
@@ -781,7 +759,7 @@ entry(
 """
 1 * Ct      u0 {2,T} {3,S}
 2   Ct      u0 {1,T}
-3   [Cd,CO] u0 {1,S}
+3   [Cd,CO,CS] u0 {1,S}
 """,
     thermo = u'Ct-Ct(Cds-Cds)',
     shortDesc = u"""""",
@@ -992,28 +970,6 @@ u"""
 """,
 )
 
-entry(
-    index = 1196,
-    label = "Ct-CtC=S",
-    group = 
-"""
-1 * Ct u0 {2,T} {3,S}
-2   Ct u0 {1,T}
-3   CS u0 {1,S} {4,D}
-4   S2d u0 {3,D}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([3.05,3.44,3.79,4.06,4.55,4.88,5.34],'cal/(mol*K)'),
-        H298 = (27.80,'kcal/mol'),
-        S298 = (6.21,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2018""",
-    longDesc =
-u""""
-
-""",
-)
 
 entry(
     index = 34,
@@ -10258,7 +10214,7 @@ entry(
 """
 1 * CS u0 {2,D} {3,S} {4,S}
 2   S2d u0 {1,D}
-3   Cd u0 {1,S}
+3   [Cd,Cb] u0 {1,S}
 4   H  u0 {1,S}
 """,
     thermo = ThermoData(
@@ -10394,28 +10350,6 @@ u""""
 """,
 )
 
-entry(
-    index = 1187,
-    label = "C=S-CbH",
-    group = 
-"""
-1 * CS u0 {2,D} {3,S} {4,S}
-2   S2d u0 {1,D}
-3   Cb u0 {1,S}
-4   H  u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([8.45,9.84,10.94,11.78,12.97,13.76,14.77],'cal/(mol*K)'),
-        H298 = (24.71,'kcal/mol'),
-        S298 = (34.15,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""CBS-QB3 GA 1D-HR Aaron Vandeputte 2010""",
-    longDesc = 
-u"""
-
-""",
-)
 
 entry(
     index = 1188,
@@ -43417,7 +43351,7 @@ entry(
 """
 1 * S2s u0 {2,S} {3,S}
 2   S2s u0 {1,S}
-3   Cd u0 {1,S}
+3   [Cd,CO,CS] u0 {1,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -43468,29 +43402,6 @@ entry(
         Cpdata = ([8.15,9.21,9.99,10.44,10.92,11.02,10.78],'cal/(mol*K)'),
         H298 = (13.60,'kcal/mol'),
         S298 = (3.99,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2018""",
-    longDesc =
-u""""
-
-""",
-)
-
-entry(
-    index = 1159,
-    label = "S2s-(C=S2d)S2s",
-    group = 
-"""
-1 * S2s u0 {2,S} {3,S}
-2   S2s u0 {1,S}
-3   CS u0 {1,S} {4,D}
-4   S2d u0 {3,D}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([5.14,5.29,5.41,5.47,5.48,5.44,5.21],'cal/(mol*K)'),
-        H298 = (7.71,'kcal/mol'),
-        S298 = (13.51,'cal/(mol*K)'),
     ),
     shortDesc = u"""RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2018""",
     longDesc =
@@ -43783,28 +43694,6 @@ u""""
 )
 
 
-entry(
-    index = 1156,
-    label = "S2s-(C=S2d)Ct",
-    group = 
-"""
-1 * S2s u0 {2,S} {3,S}
-2   CS u0 {1,S} {4,D}
-3   Ct u0 {1,S}
-4   S2d u0 {2,D}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([4.15,4.65,4.89,4.97,5.05,5.09,5.02],'cal/(mol*K)'),
-        H298 = (15.29,'kcal/mol'),
-        S298 = (14.14,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2018""",
-    longDesc =
-u""""
-
-""",
-)
 
 entry(
     index = 1158,
@@ -43832,11 +43721,11 @@ u""""
 
 entry(
     index = 1155,
-    label = "S2s-(C=S2d)Cd",
+    label = "S2s-(C=S2d)Cmb",
     group = 
 """
 1 * S2s u0 {2,S} {3,S}
-2   Cd u0 {1,S}
+2   [Cd,Cb,Ct,CO] u0 {1,S}
 3   CS u0 {1,S} {4,D}
 4   S2d u0 {3,D}
 """,
@@ -43853,28 +43742,6 @@ u""""
 """,
 )
 
-entry(
-    index = 1157,
-    label = "S2s-(C=S2d)Cb",
-    group = 
-"""
-1 * S2s u0 {2,S} {3,S}
-2   CS u0 {1,S} {4,D}
-3   Cb u0 {1,S}
-4   S2d u0 {2,D}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([7.01,8.57,9.48,9.70,9.78,9.70,9.08],'cal/(mol*K)'),
-        H298 = (17.98,'kcal/mol'),
-        S298 = (9.04,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2018""",
-    longDesc =
-u""""
-
-""",
-)
 
 entry(
     index = 1887,
@@ -47805,7 +47672,6 @@ L1: R
                 L5: Cb-Ct
                     L6: Cb-(CtN3t)
                 L5: Cb-Cb
-                L5: Cb-C=S
         L3: Ct
             L4: Ct-CtN3s
             L4: Ct-N3tN3s
@@ -47830,7 +47696,6 @@ L1: R
                 L5: Ct-CtCt
                     L6: Ct-Ct(CtN3t)
                 L5: Ct-CtCb
-                L5: Ct-CtC=S
         L3: Cdd
             L4: Cdd-N3dCd
             L4: Cdd-OdOd
@@ -48288,7 +48153,6 @@ L1: R
                             L8: C=S-(Cds-Cdd-S2d)H
                         L7: C=S-(Cds-Cds)H
                 L5: C=S-CtH
-                L5: C=S-CbH
                 L5: C=S-C=SH
             L4: C=S-CC
                 L5: C=S-CbCds
@@ -49809,7 +49673,6 @@ L1: R
                     L6: S2s-S2sCd
                     L6: S2s-S2sCt
                     L6: S2s-S2sCb
-                    L6: S2s-(C=S2d)S2s
             L4: S2s-CC
                 L5: S2s-CsCs
                 L5: S2s-CsCd
@@ -49823,10 +49686,8 @@ L1: R
                 L5: S2s-CtCb
                 L5: S2s-CbCb
                 L5: S2s-(C=S2d)Cs
-                L5: S2s-(C=S2d)Ct
                 L5: S2s-(C=S2d)(C=S2d)
-                L5: S2s-(C=S2d)Cd
-                L5: S2s-(C=S2d)Cb
+                L5: S2s-(C=S2d)Cmb
             L4: S2s-OH
             L4: S2s-OO
             L4: S2s-OC
