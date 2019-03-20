@@ -174,7 +174,7 @@ u"""
 
 entry(
     index = 6,
-    label = "octane",
+    label = "n-Octane",
     molecule = "CCCCCCCC",
     solvent = SolventData(
         s_g = 0,
@@ -439,7 +439,7 @@ adjacency list with the solvent name or its correct SMILES representation
 
 entry(
     index = 14,
-    label = "dodecane",
+    label = "n-Dodecane",
     molecule = "CCCCCCCCCCCC",
     solvent = SolventData(
         s_g = 0,
