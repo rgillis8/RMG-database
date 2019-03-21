@@ -423,15 +423,6 @@ entry(
 )
 
 entry(
-<<<<<<< HEAD
-    index = 35,
-    label = "O/H/OneDe",
-    group = 
-"""
-1 *1 O                         u0 {2,S} {3,S}
-2 *2 H                         u0 {1,S}
-3    [Cd,Ct,Cb,CO,CS,N3d,N5dc] u0 {1,S}
-=======
     index = 471,
     label = "O/H/OneDeS",
     group =
@@ -452,7 +443,6 @@ entry(
 1 *1 O                        u0 {2,S} {3,S}
 2 *2 H                        u0 {1,S}
 3    [Cd,Ct,Cb,CO,CS,N3d,N5dc,S4d,S6d,S6dd] u0 {1,S}
->>>>>>> 2771dafc... Adds several experimental reaction rates to the Disproportionation, H_Abstraction, and R_Recombination trees concerning sulfur oxidation. Also slightly reorganizes the sulfur/oxygen section of the H_abstraction tree grouping.
 """,
     kinetics = None,
 )
@@ -1438,17 +1428,10 @@ entry(
     label = "CO/H/OneDe",
     group = 
 """
-<<<<<<< HEAD
-1 *1 C                u0 {2,D} {3,S} {4,S}
-2    O                u0 {1,D}
-3 *2 H                u0 {1,S}
-4    [Cd,Ct,Cb,CO,CS] u0 {1,S}
-=======
 1 *1 C             u0 {2,D} {3,S} {4,S}
 2    O             u0 {1,D}
 3 *2 H             u0 {1,S}
 4    [Cd,Ct,Cb,CO,CS,S4d,S6d,S6dd,S4t,S6t,S6td] u0 {1,S}
->>>>>>> 2771dafc... Adds several experimental reaction rates to the Disproportionation, H_Abstraction, and R_Recombination trees concerning sulfur oxidation. Also slightly reorganizes the sulfur/oxygen section of the H_abstraction tree grouping.
 """,
     kinetics = None,
 )
