@@ -92,7 +92,7 @@ entry(
     index = 8,
     label = "CSrad + O2  <=> CS(=O)Orad",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(6.081e+8, 's^-1'), n=0, Ea=(35.65, 'kJ/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(6.081e+14, 'cm^3/(mol*s)'), n=0, Ea=(35.65, 'kJ/mol'), T0=(1, 'K')),
     longDesc =
 u"""
 Pdep System - CSrad + OO - Rxn #3
@@ -172,3 +172,14 @@ Calculated at CBS-QB3 by Ryan Gillis
 """,
 )
 
+#Test reaction
+entry(
+    index = 15,
+    label = "SO2 + CH3 <=> CS(=O)Orad",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(3.11975e+3, 'cm^3/(mol*s)'), n=2.94, Ea=(5.69, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Previous RMG estimate for the rate of this reaction
+""",
+)

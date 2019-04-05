@@ -213,6 +213,19 @@ COOH
 6 H u0 p0 c0 {1,S}
 7 H u0 p0 c0 {3,S}
 
+SO2
+1 O u0 p2 c0 {2,D}
+2 S u0 p1 c0 {1,D} {3,D}
+3 O u0 p2 c0 {2,D}
+
+CH3
+multiplicity 2
+1 C u1 p0 c0 {2,S} {3,S} {4,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {1,S}
+
+
 
 
 
