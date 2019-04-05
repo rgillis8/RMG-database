@@ -32,7 +32,6 @@ default = {
     'H_Abstraction',
     'Intra_Retro_Diels_alder_bicyclic',
     'Intra_Disproportionation',
-    'Intra_R_Add_Endocyclic',
     'Intra_R_Add_Exocyclic',
     'R_Addition_COm',
     'R_Addition_MultipleBond',
@@ -57,6 +56,8 @@ default = {
     'Intra_R_Add_Exo_scission',
     '1,2_shiftC',
 }
+
+#'Intra_R_Add_Endocyclic', I removed this...
 
 # Peroxide chemistry families that are likely relevant in liquid-phase
 # hydrocarbon oxidation systems
