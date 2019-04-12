@@ -19,12 +19,100 @@ Value at 298K reported by Ravishankara et al in "Reaction of OH with Dimethyl Su
 
 entry(
     index = 2,
+    label = "O2 + DMSO2H <=> DMSO2 + OOH",
+    degeneracy = 2,
+    kinetics = Arrhenius(A=(3.01e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogous to value at 298K reported by Ravishankara et al in "Reaction of OH with Dimethyl Sulfide. 2. Products and Mechanisms
+""",
+)
+
+entry(
+    index = 3,
+    label = "O2 + CS(OH)OH <=> CS(=O)OH + OOH",
+    degeneracy = 2,
+    kinetics = Arrhenius(A=(3.01e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogous to value at 298K reported by Ravishankara et al in "Reaction of OH with Dimethyl Sulfide. 2. Products and Mechanisms
+""",
+)
+
+entry(
+    index = 4,
+    label = "O2 + CS(OH)OOH <=> CS(=O)OOH + OOH",
+    degeneracy = 2,
+    kinetics = Arrhenius(A=(3.01e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogous to value at 298K reported by Ravishankara et al in "Reaction of OH with Dimethyl Sulfide. 2. Products and Mechanisms
+""",
+)
+
+entry(
+    index = 5,
+    label = "O2 + CS(OH)OO <=> CS(=O)OO + OOH",
+    degeneracy = 2,
+    kinetics = Arrhenius(A=(3.01e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogous to value at 298K reported by Ravishankara et al in "Reaction of OH with Dimethyl Sulfide. 2. Products and Mechanisms
+""",
+)
+
+entry(
+    index = 6,
     label = "OH + DMS  <=> DMSOH",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
     longDesc =
 u"""
 Experimentally observed by Atkinson at 298K
+""",
+)
+
+entry(
+    index = 7,
+    label = "OH + DMSO  <=> DMSO2H",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogous to experimentally observed by Atkinson at 298K
+""",
+)
+
+entry(
+    index = 8,
+    label = "OH + CSOH  <=> CS(OH)OH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogous to experimentally observed by Atkinson at 298K
+""",
+)
+
+entry(
+    index = 9,
+    label = "OH + CSOOH  <=> CS(OH)OOH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogous to experimentally observed by Atkinson at 298K
+""",
+)
+
+entry(
+    index = 10,
+    label = "OH + CSOOrad  <=> CS(OH)OO",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogous to experimentally observed by Atkinson at 298K
 """,
 )
 
@@ -101,7 +189,7 @@ Experimentally observed by Atkinson at 298K
 #)
 
 entry(
-    index = 9,
+    index = 11,
     label = "CSCOOrad + CSCOOrad  <=> CSCOrad + CSCOrad + O2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.312e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
@@ -113,7 +201,7 @@ Title: Summary of Evaluated Kinetic and Photochemical Data for Atmospheric Chemi
 )
 
 entry(
-    index = 10,
+    index = 12,
     label = "CSCOOrad + CSCOOrad  <=> CSCOH + MTF + O2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.43E+10, 'cm^3/(mol*s)'), n=0, Ea=(-6.236, 'kJ/mol'), T0=(1, 'K')),
