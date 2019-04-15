@@ -2178,24 +2178,24 @@ Converted to training reaction from rate rule: O_rad/NonDeO;O_Csrad
 """,
 )
 
-entry(
-    index = 68,
-    label = "CH3S + CH3S-3 <=> CH4S + CH2S-2",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(
-        A = (2.937e+12, 'cm^3/(mol*s)'),
-        n = 0,
-        Ea = (0, 'kJ/mol'),
-        T0 = (1, 'K'),
-        Tmin = (298, 'K'),
-    ),
-    rank = 10,
-    shortDesc = u"""Tycholiz et al [A].""",
-    longDesc = 
-u"""
-Converted to training reaction from rate rule: S_rad/NonDeC;Cmethyl_Srad
-""",
-)
+#entry(
+#    index = 68,
+#    label = "CH3S + CH3S-3 <=> CH4S + CH2S-2",
+#    degeneracy = 3.0,
+#    kinetics = Arrhenius(
+#        A = (2.937e+12, 'cm^3/(mol*s)'),
+#        n = 0,
+#        Ea = (0, 'kJ/mol'),
+#        T0 = (1, 'K'),
+#        Tmin = (298, 'K'),
+#    ),
+#    rank = 10,
+#    shortDesc = u"""Tycholiz et al [A].""",
+#    longDesc = 
+#u"""
+#Converted to training reaction from rate rule: S_rad/NonDeC;Cmethyl_Srad
+#""",
+#)
 
 entry(
     index = 69,
