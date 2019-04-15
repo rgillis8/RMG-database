@@ -116,6 +116,50 @@ Analogous to experimentally observed by Atkinson at 298K
 """,
 )
 
+entry(
+    index = 11,
+    label = "OH + CSOrad  <=> CS(=O)OH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogous to experimentally observed by Atkinson at 298K
+""",
+)
+
+entry(
+    index = 20,
+    label = "CSrad + CradS(=O)OOH  <=> CH2=S + CS(=O)OOH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(5.91e+12, 'cm^3/(mol*s)'), n=2.93, Ea=(100.3, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogous to experimentally observed by Atkinson at 298K
+""",
+)
+
+entry(
+    index = 21,
+    label = "CS(=O)OOH <=> CS(=O)Orad + OH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.6e+13, 's^-1'), n=0, Ea=(42.9, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogous to experimentally observed by Atkinson at 298K
+""",
+)
+
+#entry(
+#    index = 11,
+#    label = "O2 + CSrad  <=> OOH + CH2=S",
+#    degeneracy = 1,
+#    kinetics = Arrhenius(A=(5.91e+12, 'cm^3/(mol*s)'), n=2.93, Ea=(100.3, 'kJ/mol'), T0=(1, 'K')),
+#    longDesc =
+#u"""
+#From Bozelli and Zhu, 2006
+#""",
+#)
+
 #entry(
 #    index = 3,
 #    label = "CSrad + OOH  <=> CSOOH",
@@ -189,7 +233,7 @@ Analogous to experimentally observed by Atkinson at 298K
 #)
 
 entry(
-    index = 11,
+    index = 12,
     label = "CSCOOrad + CSCOOrad  <=> CSCOrad + CSCOrad + O2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.312e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
@@ -201,7 +245,7 @@ Title: Summary of Evaluated Kinetic and Photochemical Data for Atmospheric Chemi
 )
 
 entry(
-    index = 12,
+    index = 13,
     label = "CSCOOrad + CSCOOrad  <=> CSCOH + MTF + O2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.43E+10, 'cm^3/(mol*s)'), n=0, Ea=(-6.236, 'kJ/mol'), T0=(1, 'K')),
