@@ -358,4 +358,34 @@ CBS-QB3 Calculation, Ryan Gillis 5/2017
 """,
 )
 
+entry(
+    index = 1,
+    label = "CS(=O)C",
+    molecule =
+"""
+1  C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
+2  S u0 p1 c0 {1,S} {3,D} {4,S}
+3  O u0 p2 c0 {2,D}
+4  C u0 p0 c0 {2,S} {8,S} {9,S} {10,S}
+5  H u0 p0 c0 {1,S}
+6  H u0 p0 c0 {1,S}
+7  H u0 p0 c0 {1,S}
+8  H u0 p0 c0 {4,S}
+9  H u0 p0 c0 {4,S}
+10 H u0 p0 c0 {4,S}
+""",
+
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([21.453,25.626,29.273,32.448,37.58,41.393,41.393],'cal/(mol*K)'),
+        H298 = (-35.37,'kcal/mol'),
+        S298 = (67.64,'cal/(mol*K)','+|-',0.0007),
+    ),
+   shortDesc = u"""""",
+    longDesc =
+u"""
+CBS-QB3 Calculation, Ryan Gillis 5/2017
+""",
+)
+
 
