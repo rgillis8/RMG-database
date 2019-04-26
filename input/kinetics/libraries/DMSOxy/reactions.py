@@ -153,10 +153,10 @@ entry(
     index = 22,
     label = "MTF + CH3 <=> MTFrad + CH4",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(1.09e+10, 'cm^3/(mol*s)'), n=3.32, Ea=(41.87, 'kJ/mol'), T0=(298, 'K')),
+    kinetics = Arrhenius(A=(7.949e+10, 'cm^3/(mol*s)'), n=0, Ea=(37.66, 'kJ/mol'), T0=(1, 'K')),
     longDesc =
 u"""
-Experiment by Donovan, Dorko and Harrison 1971
+Thynne, J.C.j.; Reaction of alkyl radicals. Part 1. - Methyl radical photosensitized decomposition of ethyl formate, analogy from COC=O
 """,
 )
 
@@ -181,6 +181,30 @@ u"""
 Analogy to calculation by Good and Jeong, 1999
 """,
 )
+
+entry(
+    index = 25,
+    label = "MTF + COOrad <=> MTFrad + COOH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(9.69e+10, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogy to calculation by Good and Jeong, 1999
+""",
+)
+
+entry(
+    index = 26,
+    label = "MTFrad <=> COS + CH3",
+    degeneracy = 1,
+    #kinetics = Arrhenius(A=(0.94e+14, 's^-1'), n=0, Ea=(48.5, 'kJ/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(1.9e+14, 's^-1'), n=0, Ea=(60.2, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogy for CO2 formation from Mereau, R.; Rayez, M.-T; Rayez, J.-C.; Caralp, F.; Lesclaux, R., Theoretical Study on the Atmospheric Fate of Carbonyl Radicals: Kinetics of Decomposition Reactions, 2001 
+""",
+)
+
 ########################
 #entry(
 #    index = 25,
@@ -382,6 +406,17 @@ Bozelli high pressure number... seems way to fast at low temperatures ambient pr
 )
 
 entry(
+    index = 37,
+    label = "CSrad + COOrad <=> CH2=S + COOH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1, 'cm^3/(mol*s)'), n=2.02, Ea=(-5.02, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Current main rmg number
+""",
+)
+
+entry(
     index = 33,
     label = "CSrad + O2 <=> CSOrad + O",
     degeneracy = 1,
@@ -412,5 +447,16 @@ entry(
     longDesc =
 u"""
 Frank, A.J.; Turecek, F., Methylsulfonyl and Methoxysulfinyl Radicals and Cations in the Gas Phase. A Variable-Time and Photoexcitation Neutralization-Reionization Mass Spectrometric and ab Initio/RRKM Study, 
+""",
+)
+
+entry(
+    index = 36,
+    label = "HOOC=O <=> H2O + CO2",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(2.14e+11, 's^-1'), n=0, Ea=(118.9, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Devush, S.S.; Prisyazhnyuk, Z.P.; Koval'skaya, A.M., Kinetics of the thermal gas phase decomposition of C1-C4 organic peracids, 1983 
 """,
 )
