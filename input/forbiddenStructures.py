@@ -349,3 +349,19 @@ The geometry of SO3(T) could not be stabilized at either B3LYP/6-311G(2d,d,p) no
 without getting negative frequency/ies.
 """,
 )
+
+entry(
+    label = "SOO",
+    group = 
+"""
+1 S u[0,1] {2,S}
+2 O u0     {1,S} {3,S}
+3 O u[0,1] {2,S}
+""",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
