@@ -3696,3 +3696,30 @@ CASPT2(2e,2o)/cc-pvdz (VRC-TST)
 """,
 )
 
+entry(
+    index = 137,
+    label = "O2 + CH3S-3 <=> HO2 + CH2S-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.33E+3, 'cm^3/(mol*s)'), n=2.93, Ea=(24.6, 'kcal/mol'), T0=(1, 'K')),
+    referenceType = "theory",
+    rank = 3,
+    longDesc = 
+u"""
+Bozelli, CBS-QB3, 2006, J. Phys. Chem. A. Vol 110, No. 21, Table 4
+""",
+)
+
+entry(
+    index = 138,
+    label = "HO2-2 + CH3S-3 <=> H2O2 + CH2S-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.33E+3, 'cm^3/(mol*s)'), n=2.93, Ea=(24.6, 'kcal/mol'), T0=(1, 'K')),
+    referenceType = "theory",
+    rank = 3,
+    longDesc = 
+u"""
+Analogy to Bozelli, CBS-QB3, 2006, J. Phys. Chem. A. Vol 110, No. 21, Table 4
+""",
+)
+
+
