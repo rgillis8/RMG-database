@@ -64028,3 +64028,49 @@ Converted to training reaction manually from rate rule: N5dc/H/NonDeOO;NH2_rad
 """,
 )
 
+entry(
+    index = 3079,
+    label = "COCdOd + CH3O-2 <=> COCdradOd + CH3OH_p2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(
+        A = (6.99e+10, 'cm^3/(mol*s)'),
+        n = 0,
+        Ea = (0.46, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 1,
+    shortDesc = u"""Thynne""",
+    longDesc = 
+u"""
+Analogous to Habs from Author(s):   Thynne, J.C.J.; Gray, P.
+Title:   The reactions of methoxyl radicals with methyl formate; comparisons between alkoxyl and alkyl
+Journal:   Proc. Chem. Soc. Londo
+Author(s):   Good, D.A.; Francisco, LJ.S.
+Title:   A Computational Study of the Reaction of Methyl Formate with H and CH3 Radicals, Journal:   J. Phys. Chem. A
+""",
+)
+
+entry(
+    index = 3080,
+    label = "H2SO4 + OH <=> HSO4 + H2O_p",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(
+        A = (9.03e+09, 'cm^3/(mol*s)'),
+        n = 0,
+        Ea = (0, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 1,
+    shortDesc = u"""Sole""",
+    longDesc = 
+u"""
+Author(s):   Anglada, J.M.;Olivella, S.;Sole, A.
+Title:   Hydrogen transfer between sulfuric acid and hydroxyl radical in the gas phase: Competition among hydrogen atom transfer, proton-coupled electron-transfer, and double proton transfer
+Journal:   J. Phys. Chem. A
+""",
+)
+

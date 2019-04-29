@@ -429,8 +429,21 @@ entry(
 """
 1 *1 O                         u0 {2,S} {3,S}
 2 *2 H                         u0 {1,S}
-3    [Cd,Ct,Cb,CO,CS,N3d,N5dc] u0 {1,S}
+3    [Cd,Ct,Cb,CO,CS,N3d,N5dc,S4d,S6d,S6dd] u0 {1,S}
 """,
+    kinetics = None,
+)
+
+entry(
+    index = 471,
+    label = "O/H/OneDeS",
+    group =
+"""
+1 *1 O   u0 {2,S} {3,S}
+2 *2 H   u0 {1,S}
+3    [S2s,S4d,S4s,S6dd,S6d,S6s] u0 {1,S}
+""",
+    nodalDistance = 3,
     kinetics = None,
 )
 
@@ -1334,10 +1347,50 @@ entry(
     label = "CO/H/NonDe",
     group = 
 """
-1 *1 C        u0 {2,D} {3,S} {4,S}
-2    O        u0 {1,D}
-3 *2 H        u0 {1,S}
-4    [Cs,O,S] u0 {1,S}
+1 *1 C        u0 p0 {2,D} {3,S} {4,S}
+2    O        u0 p2 {1,D}
+3 *2 H        u0 p0 {1,S}
+4    [Cs,O,S2s,S4s,S6s] u0 px {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 44,
+    label = "CO/H/NonDeOS",
+    group =
+"""
+1 *1 C        u0 p0 {2,D} {3,S} {4,S}
+2    O        u0 p2 {1,D}
+3 *2 H        u0 p0 {1,S}
+4    [O,S2s,S4s,S6s] u0 px {1,S}
+""",
+    nodalDistance = 3,
+    kinetics = None,
+)
+
+entry(
+    index = 44,
+    label = "CO/H/NonDeO",
+    group =
+"""
+1 *1 C        u0 p0 {2,D} {3,S} {4,S}
+2    O        u0 p2 {1,D}
+3 *2 H        u0 p0 {1,S}
+4    O        u0 p2 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 44,
+    label = "CO/H/NonDeS",
+    group =
+"""
+1 *1 C        u0 p0 {2,D} {3,S} {4,S}
+2    O        u0 p2 {1,D}
+3 *2 H        u0 p0 {1,S}
+4    [S2s,S4s,S6s] u0 px {1,S}
 """,
     kinetics = None,
 )
@@ -1378,7 +1431,7 @@ entry(
 1 *1 C                u0 {2,D} {3,S} {4,S}
 2    O                u0 {1,D}
 3 *2 H                u0 {1,S}
-4    [Cd,Ct,Cb,CO,CS] u0 {1,S}
+4    [Cd,Ct,Cb,CO,CS,S4d,S6d,S6dd,S4t,S6t,S6td] u0 {1,S}
 """,
     kinetics = None,
 )
@@ -7189,6 +7242,7 @@ L1: X_H_or_Xrad_H_Xbirad_H_Xtrirad_H
                 L5: O/H/OneDe
                     L6: O/H/OneDeC
                     L6: O/H/OneDeN
+		    L6: O/H/OneDeS
         L3: OSrad_O_H
             L4: Orad_O_H
             L4: Srad_O_H
@@ -7261,6 +7315,9 @@ L1: X_H_or_Xrad_H_Xbirad_H_Xtrirad_H
                 L5: CO/H/NonDe
                     L6: CO/H/Cs
                         L7: CO/H/Cs\Cs|Cs
+		    L6: CO/H/NonDeOS
+                        L7: CO/H/NonDeO
+                        L7: CO/H/NonDeS
                 L5: CO/H/OneDe
         L3: CS_H
             L4: CS_pri
