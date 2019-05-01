@@ -162,3 +162,24 @@ Converted to training reaction from rate rule: Y_rad;N_R_birad
 """,
 )
 
+entry(
+    index = 7,
+    label = "HSOO <=> HSO-2 + O",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(
+        A = (2.01e+19, 'cm^3/(mol*s)'),
+        n = -1.07,
+        Ea = (28.377, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 2,
+    longDesc = 
+u"""
+A. Goumri, J-D.R. Rocha, D. Laakso, C.E. Smith, P. Marshall, J. Phys. Chem. A, 1999, 103(51), 11328-11335 doi: 10.1021/jp9924070
+Table 7 on p. 11333
+calculations done at the QCISD(T)/6-311+G(3df,2p)//MP2=FULL/6-31G(d) level of theory
+Originally a Troe expression was given, only k_inf is taken here
+""",
+)

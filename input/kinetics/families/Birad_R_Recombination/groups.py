@@ -105,6 +105,39 @@ entry(
 )
 
 entry(
+    index = 7,
+    label = "O_rad/Os",
+    group = 
+"""
+1 *1 O u1 {2,S}
+2    O u0 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 7,
+    label = "O_rad/Ss",
+    group = 
+"""
+1 *1 O u1 {2,S}
+2    S u0 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 7,
+    label = "O_rad/Cs",
+    group = 
+"""
+1 *1 O u1 {2,S}
+2    C u0 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
     index = 8,
     label = "O_rad/OneDe",
     group = 
@@ -885,6 +918,9 @@ L1: Y_rad
         L3: O_pri_rad
         L3: O_sec_rad
             L4: O_rad/NonDe
+		L5: O_rad/Os
+		L5: O_rad/Ss
+		L5: O_rad/Cs
             L4: O_rad/OneDe
     L2: S_rad
         L3: S_pri_rad

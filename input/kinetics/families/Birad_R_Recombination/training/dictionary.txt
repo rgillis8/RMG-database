@@ -79,6 +79,30 @@ multiplicity 2
 1 *2 S u1 p2 c0 {2,S}
 2 *1 H u0 p0 c0 {1,S}
 
+HS-2
+multiplicity 2
+1 *1 S u1 p2 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+
+HSO
+multiplicity 2
+1 *1 S u0 p2 c0 {2,S} {3,S}
+2 H u0 p0 c0 {1,S}
+3 *2 O u1 p2 c0 {1,S}
+
+HSO-2
+multiplicity 2
+1 S u0 p2 c0 {2,S} {3,S}
+2 H u0 p0 c0 {1,S}
+3 *1 O u1 p2 c0 {1,S}
+
+HSOO
+multiplicity 2
+1 S u0 p2 c0 {2,S} {3,S}
+2 H u0 p0 c0 {1,S}
+3 *1 O u0 p2 c0 {1,S} {4,S}
+4 *2 O u1 p2 c0 {3,S}
+
 H2N
 multiplicity 2
 1 *2 N u1 p1 c0 {2,S} {3,S}
