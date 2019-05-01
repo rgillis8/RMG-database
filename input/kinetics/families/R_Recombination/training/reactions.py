@@ -3943,3 +3943,22 @@ E = E(CCSD(T)−F12/VDZ−F12) + E(MP2−F12/VTZ−F12) − E(MP2−F12/VDZ−F1
 """,
 )
 
+entry(
+    index = 145,
+    label = "O2 + CH3S <=> CH3SO2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(
+        A = (1.8e+06, 'cm^3/(mol*s)'),
+        n = 0,
+        Ea = (0, 'cal/mol'),
+        T0 = (1, 'K'),
+    ),
+    referenceType = "theory",
+    rank = 3,
+    longDesc = 
+u"""
+Demore 1997
+""",
+)
+
+
