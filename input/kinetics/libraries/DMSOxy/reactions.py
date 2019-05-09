@@ -18,6 +18,17 @@ Value at 298K reported by Ravishankara et al in "Reaction of OH with Dimethyl Su
 )
 
 entry(
+    index = 3,
+    label = "OH + DMS  <=> DMSrad + H2O",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(6.8e+12, 'cm^3/(mol*s)'), n=0, Ea=(2.1, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Experimentally observed by Atkinson at 240-400 K
+""",
+)
+
+entry(
     index = 2,
     label = "OH + DMS  <=> DMSOH",
     degeneracy = 1,
@@ -33,6 +44,7 @@ entry(
     label = "CSCOOrad + CSCOOrad  <=> CSCOrad + CSCOrad + O2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.312e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    #kinetics = Arrhenius(A=(7.8e+10, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
     longDesc =
 u"""
 by comparison to HOCOO rates given in Atkinson, R.; Baulch, D.L.; Cox, R.A.; Crowley, J.N.; Hampson, R.F, Jr.; Kerr, J.A.; Rossi, M.J.; Troe, J.
@@ -45,6 +57,7 @@ entry(
     label = "CSCOOrad + CSCOOrad  <=> CSCOH + MTF + O2",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3.43E+10, 'cm^3/(mol*s)'), n=0, Ea=(-6.236, 'kJ/mol'), T0=(1, 'K')),
+    #kinetics = Arrhenius(A=(1.3e+11, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
     longDesc =
 u"""
 by comparison to HOCOO rates given in Atkinson, R.; Baulch, D.L.; Cox, R.A.; Crowley, J.N.; Hampson, R.F, Jr.; Kerr, J.A.; Rossi, M.J.; Troe, J.
@@ -114,6 +127,7 @@ entry(
     label = "CSrad + O2 <=> CH2=S + OOH",
     degeneracy = 1,
     kinetics = Arrhenius(A=(5.25E+24, 'cm^3/(mol*s)'), n=-4.7, Ea=(34.73, 'kJ/mol'), T0=(1, 'K')),
+    #kinetics = Arrhenius(A=(3.33E+3, 'cm^3/(mol*s)'), n=2.93, Ea=(24.6, 'kcal/mol'), T0=(1, 'K')),
     longDesc =
 u"""
 Bozelli high pressure number... seems way to fast at low temperatures ambient pressures...
@@ -164,4 +178,5 @@ u"""
 Devush, S.S.; Prisyazhnyuk, Z.P.; Koval'skaya, A.M., Kinetics of the thermal gas phase decomposition of C1-C4 organic peracids, 1983 
 """,
 )
+
 
