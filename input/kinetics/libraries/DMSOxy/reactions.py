@@ -29,6 +29,17 @@ Experimentally observed by Atkinson at 298K
 )
 
 entry(
+    index = 3,
+    label = "OH + DMS  <=> DMSrad + H2O",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(6.8e+12, 'cm^3/(mol*s)'), n=0, Ea=(2.11, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Experimentally observed by Atkinson at 298K
+""",
+)
+
+entry(
     index = 9,
     label = "CSCOOrad + CSCOOrad  <=> CSCOrad + CSCOrad + O2",
     degeneracy = 1,
@@ -91,8 +102,10 @@ entry(
     label = "DMSOH + O2  <=> DMSO2 + OH",
     degeneracy = 1,
     kinetics = Arrhenius(A=(6.074e+12, 'cm^3/(mol*s)'), n=0, Ea=(8.24, 'kJ/mol'), T0=(1, 'K')),
+    #kinetics = Arrhenius(A=(1.02e+9, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
     longDesc =
 u"""
+#Bulatov from O2 + HSO -> SO2 + OH
 Pdep System - DMSOH + OOH - Rxn #2
 Calculated at CBS-QB3 by Ryan Gillis
 """,
@@ -164,4 +177,3 @@ u"""
 Devush, S.S.; Prisyazhnyuk, Z.P.; Koval'skaya, A.M., Kinetics of the thermal gas phase decomposition of C1-C4 organic peracids, 1983 
 """,
 )
-
