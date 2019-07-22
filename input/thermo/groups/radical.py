@@ -8832,6 +8832,44 @@ u""""
 )
 
 entry(
+    index = 2050,
+    label = "S6dJ",
+    group =
+"""
+1 * S6d   u1 p0
+""",
+    thermo = u'S6dJ-OdOCC',
+    shortDesc = u"""Calculated at CBS-QB3""",
+    longDesc =
+u""""
+""",
+)
+
+entry(
+    index = 2051,
+    label = "S6dJ-OdOCC",
+    group =
+"""
+1 * S6d    u1 p1 c0 {2,S} {3,S} {4,S} {5,D}
+2   O      ux {1,S}
+3   C      ux {1,S}
+4   C      ux {1,S}
+5   O      ux {1,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([3.35,1.6,-0.19,-0.45,-0.95,-1.42,-3.65],'cal/(mol*K)'),
+        H298 = (56.531,'kcal/mol'),
+        S298 = (3.34,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Sulfur/Oxygen Extension, Ryan Gillis""",
+    longDesc =
+u""""
+Based on radical calculations at CBS-QB3
+""",
+)
+
+entry(
     index = 2010,
     label = "S4sJ-CCC",
     group =
@@ -9295,6 +9333,8 @@ L1: Radical
                 L5: S4dJ-OdO
             L4:S6sJ
                 L5: S6sJ-CCCCC
+	    L4:S6dJ
+                L5: S6dJ-OdOCC
             L4:S6ddJ
                 L5: S6ddJ-OdOdH
                 L5: S6ddJ-OdOdO
