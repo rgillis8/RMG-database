@@ -29,15 +29,80 @@ Experimentally observed by Atkinson at 298K
 )
 
 entry(
-    index = 3,
-    label = "OH + DMS  <=> DMSrad + H2O",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(6.8e+12, 'cm^3/(mol*s)'), n=0, Ea=(2.11, 'kJ/mol'), T0=(1, 'K')),
+    index = 101,
+    label = "O2 + DMSO2H <=> DMSO2 + OOH",
+    degeneracy = 2,
+    kinetics = Arrhenius(A=(3.01e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
     longDesc =
 u"""
-Experimentally observed by Atkinson at 298K
+Analogy to value at 298K reported by Ravishankara et al in "Reaction of OH with Dimethyl Sulfide. 2. Products and Mechanisms
 """,
 )
+
+entry(
+    index = 102,
+    label = "OH + DMSO  <=> DMSO2H",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Analogy to experimentally observed by Atkinson at 298K
+""",
+)
+
+#entry(
+#    index = 103,
+#    label = "OH + DMSO  <=> CH3 + CS(=O)OH",
+#    degeneracy = 1,
+#    kinetics = Arrhenius(A=(5.418e+13, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+#    longDesc =
+#u"""
+#Author(s):   Kukui, A.; Borissenko, D.; Laverdet, G.; Le Bras, G.
+#Title:   Gas-Phase Reactions of OH Radicals with Dimethyl Sulfoxide and Methane Sulfinic Acid Using Turbulent Flow Reactor and Chemical Ionization #Mass Spectrometry
+#Journal:   J. Phys. Chem. A
+#Volume:   107
+#Page(s):   5732 - 5742
+#Year:   2003
+#""",
+#)
+
+#entry(
+#    index = 104,
+#    label = "OH + CS(=O)OH  <=> CH3 + SO2 + H2O",
+#    degeneracy = 1,
+#    kinetics = Arrhenius(A=(5.418e+13, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+#    longDesc =
+#u"""
+#Author(s):   Kukui, A.; Borissenko, D.; Laverdet, G.; Le Bras, G.
+#Title:   Gas-Phase Reactions of OH Radicals with Dimethyl Sulfoxide and Methane Sulfinic Acid Using Turbulent Flow Reactor and Chemical Ionization #Mass Spectrometry
+#Journal:   J. Phys. Chem. A
+#Volume:   107
+#Page(s):   5732 - 5742
+#Year:   2003
+#""",
+#)
+
+entry(
+    index = 105,
+    label = " DMSO2H  <=> CH3 + CS(=O)OH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1e-30, 's^-1'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Turns off a redundant disprop reaction (covered by SubstitutionS)
+""",
+)
+
+#entry(
+#    index = 3,
+#    label = "OH + DMS  <=> DMSrad + H2O",
+#    degeneracy = 1,
+#    kinetics = Arrhenius(A=(6.8e+12, 'cm^3/(mol*s)'), n=0, Ea=(2.11, 'kJ/mol'), T0=(1, 'K')),
+#    longDesc =
+#u"""
+#Experimentally observed by Atkinson at 298K
+#""",
+#)
 
 entry(
     index = 9,
@@ -85,31 +150,31 @@ Calculation by Good and Jeong, 1999
 """,
 )
 
-entry(
-    index = 13,
-    label = "DMSOH + O2  <=> DMSOHOO",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(2.67e+13, 'cm^3/(mol*s)'), n=0, Ea=(-1.66, 'kJ/mol'), T0=(1, 'K')),
-    longDesc =
-u"""
-Pdep System - DMSOH + OOH - Rxn #1
-Calculated at CBS-QB3 by Ryan Gillis
-""",
-)
+#entry(
+#    index = 13,
+#    label = "DMSOH + O2  <=> DMSOHOO",
+#    degeneracy = 1,
+#    kinetics = Arrhenius(A=(2.67e+13, 'cm^3/(mol*s)'), n=0, Ea=(-1.66, 'kJ/mol'), T0=(1, 'K')),
+#    longDesc =
+#u"""
+#Pdep System - DMSOH + OOH - Rxn #1
+#Calculated at CBS-QB3 by Ryan Gillis
+#""",
+#)
 
-entry(
-    index = 14,
-    label = "DMSOH + O2  <=> DMSO2 + OH",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(6.074e+12, 'cm^3/(mol*s)'), n=0, Ea=(8.24, 'kJ/mol'), T0=(1, 'K')),
-    #kinetics = Arrhenius(A=(1.02e+9, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
-    longDesc =
-u"""
-#Bulatov from O2 + HSO -> SO2 + OH
-Pdep System - DMSOH + OOH - Rxn #2
-Calculated at CBS-QB3 by Ryan Gillis
-""",
-)
+#entry(
+#    index = 14,
+#    label = "DMSOH + O2  <=> DMSO2 + OH",
+#    degeneracy = 1,
+#    kinetics = Arrhenius(A=(6.074e+12, 'cm^3/(mol*s)'), n=0, Ea=(8.24, 'kJ/mol'), T0=(1, 'K')),
+#    #kinetics = Arrhenius(A=(1.02e+9, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+#    longDesc =
+#u"""
+##Bulatov from O2 + HSO -> SO2 + OH
+#Pdep System - DMSOH + OOH - Rxn #2
+#Calculated at CBS-QB3 by Ryan Gillis
+#""",
+#)
 
 entry(
     index = 31,
