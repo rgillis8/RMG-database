@@ -52,12 +52,12 @@ Analogy to experimentally observed by Atkinson at 298K
 
 entry(
     index = 5,
-    label = " DMSO2H  <=> CH3 + CS(=O)OH",
+    label = "CH3 + CS(=O)OH <=> DMSO2H",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(1e-30, 's^-1'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(2.723e-06, 'cm^3/(mol*s)'), n=5.78, Ea=(130.188, 'kJ/mol'), T0=(1, 'K')),
     longDesc =
 u"""
-Turns off a redundant disprop reaction (covered by SubstitutionS)
+Calculation by Ryan Gillis in July 2019 - CBS-QB3
 """,
 )
 
@@ -171,6 +171,17 @@ entry(
     longDesc =
 u"""
 Devush, S.S.; Prisyazhnyuk, Z.P.; Koval'skaya, A.M., Kinetics of the thermal gas phase decomposition of C1-C4 organic peracids, 1983 
+""",
+)
+
+entry(
+    index = 17,
+    label = "CSCOOH + O2 <=> CSCOOrad + OOH",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(2.44e+01, 'cm^3/(mol*s)'), n=3, Ea=(149.114, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Calculation by Ryan Gillis in July 2019 - CBS-QB3
 """,
 )
 
