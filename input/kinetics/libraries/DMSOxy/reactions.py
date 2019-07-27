@@ -21,7 +21,18 @@ entry(
     index = 2,
     label = "OH + DMS  <=> DMSOH",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(1.02e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(1.82e+57, 'cm^3/(mol*s)'), n=-17.172, Ea=(14.7, 'kJ/mol'), T0=(1, 'K')),
+    longDesc =
+u"""
+Experimentally observed by Atkinson at 298K
+""",
+)
+
+entry(
+    index = 22,
+    label = "OH + DMS  <=> H2O + DMSrad",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(6.80e+12, 'cm^3/(mol*s)'), n=0, Ea=(2.11, 'kJ/mol'), T0=(1, 'K')),
     longDesc =
 u"""
 Experimentally observed by Atkinson at 298K
