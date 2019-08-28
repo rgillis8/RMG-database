@@ -64121,3 +64121,122 @@ sp: CCSD(T)-F12a/aug-cc-pVTZ
 rotors: B3LYP/6-311++G(3df,3pd)
 """,
 )
+
+entry(
+    index = 3085,
+    label = "DMS + H <=> DMSrad + H2",
+    degeneracy = 6,
+    kinetics = Arrhenius(A=(6.18e+01, 'cm^3/(mol*s)'), n=3.21, Ea=(20.1, 'kJ/mol'),
+        T0=(1, 'K'), Tmin=(250, 'K'), Tmax=(2500, 'K')),
+    rank = 3,
+    shortDesc = u"""CBS-QB3""",
+    longDesc =
+u"""
+Calculated by Ryan Gillis at CBS-QB3
+""",
+)
+
+entry(
+    index = 3086,
+    label = "DMS + CH3_r3 <=> DMSrad + CH4",
+    degeneracy = 6,
+    kinetics = Arrhenius(A=(8.35e-02, 'cm^3/(mol*s)'), n=3.88, Ea=(36.1, 'kJ/mol'),
+        T0=(1, 'K'), Tmin=(250, 'K'), Tmax=(2500, 'K')),
+    rank = 3,
+    shortDesc = u"""CBS-QB3""",
+    longDesc =
+u"""
+Calculated by Ryan Gillis at CBS-QB3
+""",
+)
+
+entry(
+    index = 3088,
+    label = "DMSO + H <=> DMSOrad + H2",
+    degeneracy = 6,
+    kinetics = Arrhenius(A=(3.37e+01, 'cm^3/(mol*s)'), n=3.29, Ea=(34.38, 'kJ/mol'),
+        T0=(1, 'K'), Tmin=(250, 'K'), Tmax=(2500, 'K'),
+        comment = 'Fitted to 51 data points; dA = *|/ 1.46606, dn = +|- 0.0488369, dEa = +|- 0.308498 kJ/mol'),
+    rank = 3,
+    shortDesc = u"""CBS-QB3""",
+    longDesc =
+u"""
+Calculated by Ryan Gillis at CBS-QB3
+""",
+)
+
+entry(
+    index = 3089,
+    label = "DMSO + OH <=> DMSOrad + H2O",
+    degeneracy = 6,
+    kinetics = Arrhenius(A=(2.33e-01, 'cm^3/(mol*s)'), n=3.39, Ea=(-17.5, 'kJ/mol'),
+        T0=(1, 'K'), Tmin=(250, 'K'), Tmax=(2500, 'K'),
+        comment = 'Fitted to 51 data points; dA = *|/ 1.27444, dn = +|- 0.030956, dEa = +|- 0.195546 kJ/mol'),
+    rank = 3,
+    shortDesc = u"""CBS-QB3""",
+    longDesc =
+u"""
+Calculated by Ryan Gillis at CBS-QB3
+""",
+)
+
+entry(
+    index = 3090,
+    label = "DMSO + CH3_r3 <=> DMSOrad + CH4",
+    degeneracy = 6,
+    kinetics = Arrhenius(A=(4.35e-02, 'cm^3/(mol*s)'), n=3.8, Ea=(43.44, 'kJ/mol'),
+        T0=(1, 'K'), Tmin=(250, 'K'), Tmax=(2500, 'K'),
+        comment = 'Fitted to 51 data points; dA = *|/ 1.30379, dn = +|- 0.0338626, dEa = +|- 0.213907 kJ/mol'),
+    rank = 3,
+    shortDesc = u"""CBS-QB3""",
+    longDesc =
+u"""
+Calculated by Ryan Gillis at CBS-QB3
+""",
+)
+
+entry(
+    index = 3091,
+    label = "DMSO2 + H <=> DMSO2rad + H2",
+    degeneracy = 6,
+    kinetics = Arrhenius(A=(3.76e+01, 'cm^3/(mol*s)'), n=3.31, Ea=(48.88, 'kJ/mol'),
+        T0=(1, 'K'), Tmin=(250, 'K'), Tmax=(2500, 'K'),
+        comment = 'Fitted to 51 data points; dA = *|/ 1.439, dn = +|- 0.0464588, dEa = +|- 0.293476 kJ/mol'),
+    rank = 3,
+    shortDesc = u"""CBS-QB3""",
+    longDesc =
+u"""
+Calculated by Ryan Gillis at CBS-QB3
+""",
+)
+
+entry(
+    index = 3092,
+    label = "DMSO2 + OH <=> DMSO2rad + H2O",
+    degeneracy = 6,
+    kinetics = Arrhenius(A=(5.52e-01, 'cm^3/(mol*s)'), n=3.62, Ea=(12.80, 'kJ/mol'),
+        T0=(1, 'K'), Tmin=(250, 'K'), Tmax=(2500, 'K'),
+        comment = 'Fitted to 51 data points; dA = *|/ 1.18724, dn = +|- 0.0219085, dEa = +|- 0.138394 kJ/mol'),
+    rank = 3,
+    shortDesc = u"""CBS-QB3""",
+    longDesc =
+u"""
+Calculated by Ryan Gillis at CBS-QB3
+""",
+)
+
+entry(
+    index = 3093,
+    label = "DMSO2 + CH3_r3 <=> DMSO2rad + CH4",
+    degeneracy = 6,
+    kinetics = Arrhenius(A=(4.84e-02, 'cm^3/(mol*s)'), n=3.89, Ea=(53.20, 'kJ/mol'),
+        T0=(1, 'K'), Tmin=(250, 'K'), Tmax=(2500, 'K'),
+        comment = 'Fitted to 51 data points; dA = *|/ 1.28286, dn = +|- 0.0317971, dEa = +|- 0.20086 kJ/mol'),
+    rank = 3,
+    shortDesc = u"""CBS-QB3""",
+    longDesc =
+u"""
+Calculated by Ryan Gillis at CBS-QB3
+""",
+)
+
